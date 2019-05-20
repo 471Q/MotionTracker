@@ -6,14 +6,13 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:MainScreenUI"
         mc:Ignorable="d"
-        Title="Motion-Tracker" Height="600" Width="1024" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
+        Title="Motion-Tracker" Height="600" Width="1024" ResizeMode="CanResizeWithGrip" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="130"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="30"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid Grid.Column="1" Grid.Row="1" Background="#FFD1D1D1">
@@ -25,47 +24,33 @@
                 <RowDefinition Height="100"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            
+
             <Grid.Effect>
                 <DropShadowEffect BlurRadius="20" Color="#FFEEEBEB" RenderingBias="Quality" ShadowDepth="1"/>
             </Grid.Effect>
-            
+
             <Grid Background="#FF68AFCA">
-                <TextBlock Text="Motion Tracker" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Agency FB" Foreground="#FFE9F7F7" FontSize="35"/>
+                <TextBlock Text="Motion Tracker" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="Agency FB" Foreground="#FFE9F7F7" FontSize="30" TextWrapping="WrapWithOverflow"/>
             </Grid>
 
             <StackPanel Grid.Row="1">
-                <Button Margin="5" Height="40" Background="#FF2594B0" BorderBrush="{x:Null}" Click="BtnClickProfile">
-                    <Grid Width="150">
-                        <materialDesign:PackIcon Kind="Account" VerticalAlignment="Center" Foreground="#FFF4F4F4"/>
-                        <TextBlock HorizontalAlignment="Center" Text="User Profile" Foreground="#FFFCFCFC" FontFamily="Candara"/>
+                <Button Margin="5" Height="30" Background="#FF2594B0" BorderBrush="{x:Null}" Click="BtnClickProfile">
+                    <Grid>
+                        <materialDesign:PackIcon Kind="Account" HorizontalContentAlignment="Left" VerticalAlignment="Center" Foreground="#FFF4F4F4"/>
+                        <TextBlock Padding="18,0,0,0" HorizontalAlignment="Center" Text="User Profile" Foreground="#FFFCFCFC" FontFamily="Candara"/>
                     </Grid>
                 </Button>
-                <Button Margin="5"  Height="40" Background="#FF2594B0" BorderBrush="{x:Null}" Click="BtnClickExercise">
-                    <Grid Width="150">
-                        <materialDesign:PackIcon Kind="ViewDashboard" VerticalAlignment="Center" Foreground="#FFF4F4F4"/>
-                        <TextBlock HorizontalAlignment="Center" Text="Exercise Menu" Foreground="#FFFCFCFC" FontFamily="Candara"/>
+                <Button Margin="5"  Height="30" Background="#FF2594B0" BorderBrush="{x:Null}" Click="BtnClickExercise">
+                    <Grid>
+                        <materialDesign:PackIcon Kind="ViewDashboard" HorizontalContentAlignment="Left" VerticalAlignment="Center" Foreground="#FFF4F4F4"/>
+                        <TextBlock Padding="18,0,0,0" HorizontalAlignment="Left" Text="Exercise Menu" Foreground="#FFFCFCFC" FontFamily="Candara"/>
                     </Grid>
                 </Button>
-                <Button Margin="5" Height="40" Background="#FF2594B0" BorderBrush="{x:Null}">
-                    <Grid Width="150">
-                        <materialDesign:PackIcon Kind="AchievementAward" VerticalAlignment="Center" Foreground="#FFF4F4F4"/>
-                        <TextBlock HorizontalAlignment="Center" Text="My Points" Foreground="#FFFCFCFC" FontFamily="Candara"/>
+                <Button Margin="5" Height="30" Background="#FF2594B0" BorderBrush="{x:Null}">
+                    <Grid>
+                        <materialDesign:PackIcon Kind="AchievementAward" HorizontalContentAlignment="Left" Foreground="#FFF4F4F4"/>
+                        <TextBlock Padding="18,0,0,0" HorizontalAlignment="Center" Text="My Points" Foreground="#FFFCFCFC" FontFamily="Candara"/>
                     </Grid>
-                </Button>
-            </StackPanel>
-        </Grid>
-
-        <Grid x:Name="GridCornerButtons" Grid.ColumnSpan="2" Background="#FF2594B0" MouseDown="GridCornerButtons_MouseDown">
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="10,0">
-                <Button  Width="25" Height="25" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White">
-                    <materialDesign:PackIcon Kind="Bell"/>
-                </Button>
-                <Button  Width="25" Height="25" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White">
-                    <materialDesign:PackIcon Kind="Account"/>
-                </Button>
-                <Button x:Name="ButtonLogOut" Width="25" Height="25" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Click="ButtonLogOut_Click">
-                    <materialDesign:PackIcon Kind="Power"/>
                 </Button>
             </StackPanel>
         </Grid>

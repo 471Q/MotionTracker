@@ -4,11 +4,9 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:MainScreenUI"
-      mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="Exercise">
+      Title="Exercise" ClipToBounds="True" SnapsToDevicePixels="True">
 
-    <Grid>
+    <Grid ClipToBounds="True">
         <Grid.RowDefinitions>
             <RowDefinition Height="22*"/>
             <RowDefinition Height="26*"/>
@@ -22,11 +20,13 @@
             <Label HorizontalAlignment="Center" Content="List of exercises"/>
         </ListBox>
         <Grid HorizontalAlignment="Left" Height="386" Margin="122,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="668" Grid.RowSpan="2">
-            <TextBox x:Name="UIExerciseName" Text="Flexion" Margin="9,9,567,344" Width="auto" TextAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-            <Canvas x:Name="UICanvasExample" HorizontalAlignment="Left" Height="250" VerticalAlignment="Center" Width="250" Margin="9,47,0,0" Background="Red"/>
-            <Canvas x:Name="UICanvasOutput" HorizontalAlignment="Left" Height="250" VerticalAlignment="Center" Width="250" Margin="408,47,0,0" Background="Red"/>
-            <TextBox x:Name="UIStatus" Text="Flexion" Width="auto" Padding="5" TextAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextChanged="TextBox_TextChanged" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <Label Content="Status&#xD;&#xA;" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="auto" Width="auto" VerticalAlignment="Center" Margin="308,148,318,212"/>
+            <TextBox Name="UIExerciseName" Text="Flexion" Margin="9,9,0,0" TextAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" ClipToBounds="True" HorizontalAlignment="Left" Width="92" Height="33" VerticalAlignment="Top"/>
+            <Image Name="UICameraExample" HorizontalAlignment="Left" VerticalAlignment="Top" Width="265" Height="265" Margin="10,47,0,0" Stretch="Fill" ClipToBounds="True"/>
+            <Canvas Name="UICanvasExample" HorizontalAlignment="Left" Height="265" VerticalAlignment="Top" Width="265" Margin="10,47,0,0" ClipToBounds="True" Background="Red"/>
+            <Image Name="UICameraOutput" Width="265" Margin="0,47,-5,0" Stretch="Fill" ClipToBounds="True" HorizontalAlignment="Right" Height="265" VerticalAlignment="Top"/>
+            <Canvas Name="UICanvasOutput" Height="265" Width="265" VerticalAlignment="Top" Margin="0,47,-5,0" ClipToBounds="True" HorizontalAlignment="Right"/>
+            <TextBox Name="UIStatus" Text="No Match" Width="auto" Padding="5" TextAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,348,589,10" ClipToBounds="True"/>
+            <Label Content="Status" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="auto" Width="42" VerticalAlignment="Center" Margin="10,317,0,43" ClipToBounds="True" HorizontalAlignment="Left"/>
         </Grid>
     </Grid>
 </Page>
