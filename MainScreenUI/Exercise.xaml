@@ -9,6 +9,24 @@
       Title="Exercise">
 
     <Grid>
-        <TextBlock Text="This is Exercise" FontSize="22" Background="#FFBDAFAF"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="22*"/>
+            <RowDefinition Height="26*"/>
+            <RowDefinition Height="177*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock FontSize="22" Margin="325,10,336,0" Text="Exercise Menu" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Top" Height="29" Width="139"/>
+        <ListBox x:Name="UIListBox" HorizontalAlignment="Left" Height="386" Margin="10,10,0,0" VerticalAlignment="Top" Width="107" Grid.Row="1" Grid.RowSpan="2">
+            <Label HorizontalAlignment="Center" Content="List of exercises"/>
+        </ListBox>
+        <Grid HorizontalAlignment="Left" Height="386" Margin="122,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="668" Grid.RowSpan="2">
+            <TextBox x:Name="UIExerciseName" Text="Flexion" Margin="9,9,567,344" Width="auto" TextAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Canvas x:Name="UICanvasExample" HorizontalAlignment="Left" Height="250" VerticalAlignment="Center" Width="250" Margin="9,47,0,0" Background="Red"/>
+            <Canvas x:Name="UICanvasOutput" HorizontalAlignment="Left" Height="250" VerticalAlignment="Center" Width="250" Margin="408,47,0,0" Background="Red"/>
+            <TextBox x:Name="UIStatus" Text="Flexion" Width="auto" Padding="5" TextAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" TextChanged="TextBox_TextChanged" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Label Content="Status&#xD;&#xA;" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="auto" Width="auto" VerticalAlignment="Center" Margin="308,148,318,212"/>
+        </Grid>
     </Grid>
 </Page>
