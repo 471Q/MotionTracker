@@ -1,52 +1,149 @@
-﻿using KinectCoordinateMapping;
-using Microsoft.Kinect;
-using System;
-using System.Collections.Generic;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Media;
-using System.Windows.Shapes;
-
-namespace MainScreenUI
+﻿namespace MainScreenUI
 {
+    using KinectCoordinateMapping;
+    using Microsoft.Kinect;
+    using System.Collections.Generic;
+    using System.Windows;
+    using System.Windows.Controls;
+    using System.Windows.Media;
+    using System.Windows.Shapes;
+    using System.ComponentModel;
+    using System.IO;
+    using Microsoft.Kinect.VisualGestureBuilder;
+    using System;
+    using Newtonsoft.Json;
+
     /// <summary>
     /// Interaction logic for Exercise.xaml
     /// </summary>
-    public partial class Exercise : Page
+    public partial class Exercise : Page, INotifyPropertyChanged
     {
         KinectSensor _sensor;
         MultiSourceFrameReader _reader;
         IList<Body> _bodies;
+        List<GestureDetector> gestureDetectorList;
 
         CameraMode _mode = CameraMode.Color;
+
+        GestureResultView result = null;
+
+        public string statusText;
+        public string gestureText;
+
+        List<FileInfo> selectedFiles = new List<FileInfo>();
+
         public Exercise()
         {
             InitializeComponent();
-            Page_Loaded();
         }
-        private void Page_Loaded()
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             _sensor = KinectSensor.GetDefault();
 
+            _sensor.Open();
+
             if (_sensor != null)
             {
-                _sensor.Open();
-
                 _reader = _sensor.OpenMultiSourceFrameReader(FrameSourceTypes.Color | FrameSourceTypes.Depth | FrameSourceTypes.Infrared | FrameSourceTypes.Body);
                 _reader.MultiSourceFrameArrived += Reader_MultiSourceFrameArrived;
             }
+            gestureDetectorList = new List<GestureDetector>();
+            int maxBodies = _sensor.BodyFrameSource.BodyCount;
+            for (int i = 0; i < maxBodies; ++i)
+            {
+                result = new GestureResultView(0, false, false, 0.0f);
+                GestureDetector detector = new GestureDetector(_sensor, result);
+                gestureDetectorList.Add(detector);
+                DataContext = new {
+                    GestureResultView = result,
+                    Exercise = this,
+                };
+            }
         }
 
-        private void Window_Closed(object sender, EventArgs e)
+        /// <summary>
+        /// Specify the directory which contain the gesture files
+        /// </summary>
+        private void Add_folder(object sender, RoutedEventArgs e)
         {
-            if (_reader != null)
+            var dialog = new System.Windows.Forms.FolderBrowserDialog();
+            dialog.RootFolder = Environment.SpecialFolder.MyComputer;
+            System.Windows.Forms.DialogResult result = dialog.ShowDialog();
+            try
             {
-                _reader.Dispose();
+                DirectoryInfo _directory = new DirectoryInfo(dialog.SelectedPath.ToString());
+                if (result == System.Windows.Forms.DialogResult.OK)
+                {
+                    FileInfo[] _Files = _directory.GetFiles("*.gbd");
+                    foreach (FileInfo _file in _Files)
+                    {
+                        selectedFiles.Add(_file);
+                        using (VisualGestureBuilderDatabase database = new VisualGestureBuilderDatabase(_file.FullName))
+                        {
+                            foreach (Gesture gesture in database.AvailableGestures)
+                            {
+                                Console.WriteLine(String.Concat("Gesture Name", Newtonsoft.Json.JsonConvert.SerializeObject(gesture.Name, Formatting.Indented)));
+                                UIListBox.Items.Add(gesture.Name);
+                            }
+                        }
+                    }
+                }
+            }
+            catch { }
+        }
+
+        /// <summary>
+        /// INotifyPropertyChangedPropertyChanged event to allow window controls to bind to changeable data
+        /// </summary>
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        public string UIGesture
+        {
+            get
+            {
+                return gestureText;
             }
 
-            if (_sensor != null)
+            set
             {
-                _sensor.Close();
+                if (gestureText != value)
+                {
+                    gestureText = value;
+
+                    // notify any bound elements that the text has changed
+                    OnPropertyChanged("UIGesture");
+                }
+            }
+        }
+
+        /// <summary>
+        /// Handles the body frame data arriving from the sensor and updates the associated gesture detector object for each body
+        /// </summary>
+        /// <param name="sender">object sending the event</param>
+        /// <param name="e">event arguments</param>
+        private void Reader_BodyFrameArrived(object sender, BodyFrameArrivedEventArgs e)
+        {
+            using (BodyFrame bodyFrame = e.FrameReference.AcquireFrame())
+            {
+                if (bodyFrame != null)
+                {
+                    if (_bodies == null)
+                    {
+                        // creates an array of 6 bodies, which is the max number of bodies that Kinect can track simultaneously
+                        _bodies = new Body[bodyFrame.BodyCount];
+                    }
+
+                    // The first time GetAndRefreshBodyData is called, Kinect will allocate each Body in the array.
+                    // As long as those body objects are not disposed and not set to null in the array,
+                    // those body objects will be re-used.
+                    bodyFrame.GetAndRefreshBodyData(_bodies);
+                }
             }
         }
 
@@ -60,30 +157,6 @@ namespace MainScreenUI
                 if (frame != null)
                 {
                     if (_mode == CameraMode.Color)
-                    {
-                        UICameraOutput.Source = frame.ToBitmap();
-                    }
-                }
-            }
-
-            // Depth
-            using (var frame = reference.DepthFrameReference.AcquireFrame())
-            {
-                if (frame != null)
-                {
-                    if (_mode == CameraMode.Depth)
-                    {
-                        UICameraOutput.Source = frame.ToBitmap();
-                    }
-                }
-            }
-
-            // Infrared
-            using (var frame = reference.InfraredFrameReference.AcquireFrame())
-            {
-                if (frame != null)
-                {
-                    if (_mode == CameraMode.Infrared)
                     {
                         UICameraOutput.Source = frame.ToBitmap();
                     }
@@ -105,6 +178,22 @@ namespace MainScreenUI
                     {
                         if (body.IsTracked)
                         {
+                            //
+                            int maxBodies = _sensor.BodyFrameSource.BodyCount;
+                            for (int i = 0; i < maxBodies; ++i)
+                            {
+                                ulong trackingId = body.TrackingId;
+
+                                // if the current body TrackingId changed, update the corresponding gesture detector with the new value
+                                if (trackingId != gestureDetectorList[i].TrackingId)
+                                {
+                                    gestureDetectorList[i].TrackingId = trackingId;
+
+                                    // if the current body is tracked, unpause its detector to get VisualGestureBuilderFrameArrived events
+                                    // if the current body is not tracked, pause its detector so we don't waste resources trying to get invalid gesture results
+                                    gestureDetectorList[i].IsPaused = trackingId == 0;
+                                }
+                            }
                             // COORDINATE MAPPING
                             foreach (Joint joint in body.Joints.Values)
                             {
@@ -119,8 +208,8 @@ namespace MainScreenUI
                                     if (_mode == CameraMode.Color)
                                     {
                                         ColorSpacePoint colorPoint = _sensor.CoordinateMapper.MapCameraPointToColorSpace(jointPosition);
-                                        point.X = (float.IsInfinity(colorPoint.X) ? 0 : colorPoint.X) / (1920 / UICanvasOutput.Width);
-                                        point.Y = (float.IsInfinity(colorPoint.Y) ? 0 : colorPoint.Y) / (1080 / UICanvasOutput.Height);
+                                        point.X = (float.IsInfinity(colorPoint.X) ? 0 : colorPoint.X);
+                                        point.Y = (float.IsInfinity(colorPoint.Y) ? 0 : colorPoint.Y);
                                     }
                                     else if (_mode == CameraMode.Depth || _mode == CameraMode.Infrared) // Change the Image and Canvas dimensions to 512x424
                                     {
@@ -134,8 +223,8 @@ namespace MainScreenUI
                                     Ellipse ellipse = new Ellipse
                                     {
                                         Fill = Brushes.Red,
-                                        Width = 10,
-                                        Height = 10
+                                        Width = 20,
+                                        Height = 20
                                     };
 
                                     Canvas.SetLeft(ellipse, point.X - ellipse.Width / 2);
@@ -149,12 +238,58 @@ namespace MainScreenUI
                 }
             }
         }
+
+        private void Page_Unloaded(object sender, RoutedEventArgs e)
+        {
+            if (_reader != null)
+            {
+                // BodyFrameReader is IDisposable
+                _reader.MultiSourceFrameArrived -= Reader_MultiSourceFrameArrived;
+                _reader.Dispose();
+                _reader = null;
+            }
+            if (gestureDetectorList != null)
+            {
+                foreach (GestureDetector detector in this.gestureDetectorList)
+                {
+                    detector.Dispose();
+                }
+
+                gestureDetectorList.Clear();
+                gestureDetectorList = null;
+            }
+            if (_sensor != null)
+            {
+                _sensor.Close();
+                _sensor = null;
+            }
+        }
+
+        private void UIListBox_MouseDoubleClick(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            Console.WriteLine("Clicked");
+            Console.WriteLine(String.Concat("Item Name: ", Convert.ToString(UIListBox.SelectedItem)));
+            if(UIListBox.SelectedItem != null)
+                Console.WriteLine(String.Concat("Selected Object ", Newtonsoft.Json.JsonConvert.SerializeObject(UIListBox.SelectedItem, Formatting.Indented)));
+            foreach(FileInfo _file in selectedFiles)
+                using (VisualGestureBuilderDatabase database = new VisualGestureBuilderDatabase(_file.FullName))
+                {
+                    foreach (Gesture gesture in database.AvailableGestures)
+                    {
+                        if (gesture.Name.Equals(Convert.ToString(UIListBox.SelectedItem)))
+                        {
+                            Console.WriteLine(String.Concat("Gesture ", Convert.ToString(UIListBox.SelectedItem), " is found in ", _file.FullName));
+                            UIGesture = Convert.ToString(UIListBox.SelectedItem);
+                        }
+                    }
+                }
+        }
     }
 }
 
-    enum CameraMode
-    {
-        Color,
-        Depth,
-        Infrared
-    }
+enum CameraMode
+{
+    Color,
+    Depth,
+    Infrared
+}

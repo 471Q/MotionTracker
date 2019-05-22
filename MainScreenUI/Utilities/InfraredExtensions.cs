@@ -1,6 +1,4 @@
 ﻿using Microsoft.Kinect;
-using System;
-using System.IO;
 using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Media;
