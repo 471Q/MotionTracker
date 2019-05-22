@@ -9,3 +9,5 @@ Dependacies:
    * [MaterialDesignThemes](https://www.nuget.org/packages/MaterialDesignThemes) by James Willock
    * [MaterialDesignColors](https://www.nuget.org/packages/MaterialDesignColors) by James Willock
    * [MicrosoftKinect](https://www.nuget.org/packages/Microsoft.Kinect) by Microsoft
+   * [Microsoft.Kinect.VisualGestureBuilder.x64](https://www.nuget.org/packages/Microsoft.Kinect.VisualGestureBuilder.x64) by Microsoft
+   * [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json) by James Newton-King for object debugging purpose
