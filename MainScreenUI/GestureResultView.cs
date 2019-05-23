@@ -163,7 +163,10 @@ namespace MainScreenUI
             UIConfidence = 0.0f;
 
             if (!IsTracked)
+            {
                 Detected = false;
+                UIDetected = "Not Match";
+            }
             else
             {
                 Detected = isGestureDetected;
@@ -172,7 +175,8 @@ namespace MainScreenUI
                     UIConfidence = detectionConfidence;
                     UIDetected = "Match";
                 }
-                else if (!Detected){
+                else if (!Detected)
+                {
                     UIDetected = "Not Match";
                 }
             }

@@ -234,6 +234,10 @@
                                 }
                             }
                         }
+                        else
+                        {
+                            result.UpdateGestureResult(false, false, 0.0f);
+                        }
                     }
                 }
             }
