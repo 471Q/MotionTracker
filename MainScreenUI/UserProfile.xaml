@@ -32,6 +32,8 @@
             <Button Content="Submit" Height="23" HorizontalAlignment="Left" Margin="183,204,0,0" Name="Submit" VerticalAlignment="Top" Width="70" />
             <Button Content="Reset" Height="23" HorizontalAlignment="Left" Margin="259,204,0,0" Name="button2" VerticalAlignment="Top" Width="70" />
         </Grid>
-        <Image HorizontalAlignment="Left" Height="100" Margin="67,54,0,0" VerticalAlignment="Top" Width="100"/>
-    </Grid>
+        <Image Name ="User">
+            <Image.Source>t.jpg</Image.Source>
+        </Image>
+        </Grid>
 </Page>
