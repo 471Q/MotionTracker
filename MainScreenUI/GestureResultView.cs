@@ -27,8 +27,6 @@ namespace MainScreenUI
         /// <summary> True, if the body is currently being tracked </summary>
         private bool isTracked = false;
 
-        private string gestureName = "";
-
         /// <summary>
         /// Initializes a new instance of the GestureResultView class and sets initial property values
         /// </summary>
@@ -42,6 +40,10 @@ namespace MainScreenUI
             IsTracked = isTracked;
             Detected = detected;
             UIConfidence = confidence;
+        }
+
+        public GestureResultView()
+        {
         }
 
         /// <summary>

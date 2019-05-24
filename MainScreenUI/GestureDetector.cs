@@ -18,11 +18,10 @@ namespace MainScreenUI
     /// </summary>
     public class GestureDetector : IDisposable
     {
-        /// <summary> Path to the gesture database that was trained withnout VGB </summary>
-        private string VGB_DATABASE_FILE = @"Database\ClapHands.gbd";
-
         /// <summary> Name of the discrete gesture in the database that we want to track </summary>
-        private readonly string GestureName = "ClapHands";
+        private string gestureName = "";
+
+        private string vGBPath = "";
 
         /// <summary> Gesture frame source which should be tied to a body tracking ID </summary>
         private VisualGestureBuilderFrameSource vgbFrameSource = null;
@@ -37,6 +36,7 @@ namespace MainScreenUI
         /// <param name="gestureResultView">GestureResultView object to store gesture results of a single body to</param>
         public GestureDetector(KinectSensor kinectSensor, GestureResultView gestureResultView)
         {
+            //this.GestureName = gesture_name;
             if (kinectSensor == null)
                 throw new ArgumentNullException("Kinect Sensor Not Found");
             GestureResultView = gestureResultView ?? throw new ArgumentNullException("Unable to produce detected body result, gestureResultView");
@@ -49,21 +49,8 @@ namespace MainScreenUI
             vgbFrameReader = this.vgbFrameSource.OpenReader();
             if (vgbFrameReader != null)
             {
-                this.vgbFrameReader.IsPaused = true;
-                this.vgbFrameReader.FrameArrived += this.Reader_GestureFrameArrived;
-            }
-
-            // load the defined gesture from the gesture database
-            using (VisualGestureBuilderDatabase database = new VisualGestureBuilderDatabase(VGB_DATABASE_FILE))
-            {
-                // we could load all available gestures in the database with a call to vgbFrameSource.AddGestures(database.AvailableGestures), 
-                // but for this program, we only want to track one discrete gesture from the database, so we'll load it by name
-                foreach (Gesture gesture in database.AvailableGestures)
-                {
-                    Console.WriteLine(String.Concat("Gesture Name", Newtonsoft.Json.JsonConvert.SerializeObject(gesture.Name, Formatting.Indented)));
-                    if (gesture.Name.Equals(GestureName))
-                        vgbFrameSource.AddGesture(gesture);
-                }
+                vgbFrameReader.IsPaused = true;
+                vgbFrameReader.FrameArrived += this.Reader_GestureFrameArrived;
             }
         }
 
@@ -78,13 +65,58 @@ namespace MainScreenUI
         {
             get
             {
-                return this.vgbFrameSource.TrackingId;
+                return vgbFrameSource.TrackingId;
             }
 
             set
             {
-                if (this.vgbFrameSource.TrackingId != value)
-                    this.vgbFrameSource.TrackingId = value;
+                if (vgbFrameSource.TrackingId != value)
+                    vgbFrameSource.TrackingId = value;
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the body tracking ID associated with the current detector
+        /// The tracking ID can change whenever a body comes in/out of scope
+        /// </summary>
+        public string GestureName
+        {
+            get
+            {
+                return gestureName;
+            }
+
+            set
+            {
+                if (gestureName != value)
+                    gestureName = value;
+                using (VisualGestureBuilderDatabase database = new VisualGestureBuilderDatabase(vGBPath))
+                {
+                    foreach (Gesture gesture in database.AvailableGestures)
+                    {
+                        //Console.WriteLine(String.Concat("Gesture Name", Newtonsoft.Json.JsonConvert.SerializeObject(gesture.Name, Formatting.Indented)));
+                        if (gesture.Name.Equals(gestureName))
+                            vgbFrameSource.AddGesture(gesture);
+                    }
+                }
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the body tracking ID associated with the current detector
+        /// The tracking ID can change whenever a body comes in/out of scope
+        /// </summary>
+        public string VGBPath
+        {
+            get
+            {
+                return vGBPath;
+            }
+
+            set
+            {
+                if (vGBPath != value)
+                    vGBPath = value;
             }
         }
 
@@ -96,13 +128,13 @@ namespace MainScreenUI
         {
             get
             {
-                return this.vgbFrameReader.IsPaused;
+                return vgbFrameReader.IsPaused;
             }
 
             set
             {
-                if (this.vgbFrameReader.IsPaused != value)
-                    this.vgbFrameReader.IsPaused = value;
+                if (vgbFrameReader.IsPaused != value)
+                    vgbFrameReader.IsPaused = value;
             }
         }
 
@@ -159,20 +191,20 @@ namespace MainScreenUI
                     if (discreteResults != null)
                         // we only have one gesture in this source object, but you can get multiple gestures
                         foreach (Gesture gesture in vgbFrameSource.Gestures)
-                            if (gesture.Name.Equals(this.GestureName))
+                            if (gesture.Name.Equals(GestureName))
                             { //&& gesture.GestureType == GestureType.Continuous
                                 //ContinuousGestureResult result = null;
                                 DiscreteGestureResult result = null;
                                 //continuousResults.TryGetValue(gesture, out result);
                                 discreteResults.TryGetValue(gesture, out result);
                                 //For debugging
-                                Console.WriteLine(String.Concat("Frame.discreteResult ", Newtonsoft.Json.JsonConvert.SerializeObject(frame.DiscreteGestureResults, Formatting.Indented)));
+                                //Console.WriteLine(String.Concat("Frame.discreteResult ", Newtonsoft.Json.JsonConvert.SerializeObject(frame.DiscreteGestureResults, Formatting.Indented)));
                                 //Console.WriteLine(String.Concat("continuosResult ", Newtonsoft.Json.JsonConvert.SerializeObject(continuousResults, Formatting.Indented)));
-                                Console.WriteLine(String.Concat("discreteResult ", Newtonsoft.Json.JsonConvert.SerializeObject(discreteResults, Formatting.Indented)));
-                                Console.WriteLine(String.Concat("Gesture ", Newtonsoft.Json.JsonConvert.SerializeObject(gesture, Formatting.Indented)));
-                                Console.WriteLine(String.Concat("Result ", Newtonsoft.Json.JsonConvert.SerializeObject(result, Formatting.Indented)));
+                                //Console.WriteLine(String.Concat("discreteResult ", Newtonsoft.Json.JsonConvert.SerializeObject(discreteResults, Formatting.Indented)));
+                                //Console.WriteLine(String.Concat("Gesture ", Newtonsoft.Json.JsonConvert.SerializeObject(gesture, Formatting.Indented)));
+                                //Console.WriteLine(String.Concat("Result ", Newtonsoft.Json.JsonConvert.SerializeObject(result, Formatting.Indented)));
                                 if (result != null)
-                                    if (result.Confidence > 0.01f)
+                                    if (result.Confidence > 0.35f)
                                         GestureResultView.UpdateGestureResult(true, true, result.Confidence);
                                     else
                                         GestureResultView.UpdateGestureResult(true, false, result.Confidence);
@@ -202,7 +234,8 @@ namespace MainScreenUI
         private void Source_TrackingIdLost(object sender, TrackingIdLostEventArgs e)
         {
             // update the GestureResultView object to show the 'Not Tracked' image in the UI
-            this.GestureResultView.UpdateGestureResult(false, false, 0.1f);
+            this.GestureResultView.UpdateGestureResult(false, false, 0.0f);
+            Console.WriteLine("Tracking ID is lost!");
         }
     }
 }
