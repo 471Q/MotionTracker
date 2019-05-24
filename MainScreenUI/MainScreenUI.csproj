@@ -179,7 +179,7 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="img\t.jpg" />
+    <Resource Include="t.jpg" />
     <Content Include="vgbtechs\AdaBoostTech.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
