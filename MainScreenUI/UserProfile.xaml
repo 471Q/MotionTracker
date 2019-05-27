@@ -9,9 +9,18 @@
       Title="UserProfile" Background="#FF2D2D30">
 
     <Grid Background="#FFD1D1D1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="214*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="12"/>
+            <ColumnDefinition Width="621*"/>
+        </Grid.ColumnDefinitions>
         <!--Button as a Link button using style-->
         <!--end Button as a Link button using style-->
-        <Grid Margin="256,34,93,0" Background="#FFD1D1D1" Height="377" VerticalAlignment="Top">
+        <Grid Margin="10,34,10,0" Background="#FFD1D1D1" Height="406" VerticalAlignment="Top" Grid.Column="2" Grid.RowSpan="2">
             <Grid.RowDefinitions>
                 <RowDefinition Height="252*" />
                 <!--   <RowDefinition Height="12*" />-->
@@ -28,12 +37,15 @@
             <PasswordBox Height="23" HorizontalAlignment="Left" Margin="183,107,0,0" Name="passwordBox1" VerticalAlignment="Top" Width="222" />
             <TextBox Height="23" HorizontalAlignment="Left" Margin="183,137,0,0" Name="address" VerticalAlignment="Top" Width="222" />
             <!--For password-->
-            <Button Content="Update" Height="23" HorizontalAlignment="Left" Margin="183,204,0,0" Name="Submit" VerticalAlignment="Top" Width="70" Click="Submit_Click" />
+            <Button Content="Update" Height="23" HorizontalAlignment="Left" Margin="183,204,0,0" Name="Submit" VerticalAlignment="Top" Width="70" />
             <Button Content="Reset" Height="23" HorizontalAlignment="Left" Margin="259,204,0,0" Name="button2" VerticalAlignment="Top" Width="70" />
         </Grid>
-        <Image Name ="User" Height="160px"  Width="160px" Margin="10,53,650,0" VerticalAlignment="Top">
-            <Image.Source>t.jpg</Image.Source>
-        </Image>
-        <Button Content="Update" Height="23" HorizontalAlignment="Left" Margin="55,238,0,0"  VerticalAlignment="Top" Width="70" Click="Update_Img"/>
-        </Grid>
+
+
+        <Image Grid.Column="0" Grid.Row="0" Name ="User" Margin="20,49,10,0" Height="160" VerticalAlignment="Top" >
+                <Image.Source>t.jpg</Image.Source>
+            </Image>
+     
+        <Button Content="Update" Height="23" HorizontalAlignment="Left" Margin="20,5,0,0"  VerticalAlignment="Top" Width="70" Click="Update_Img" Grid.Column="0" Grid.Row="1"/>
+    </Grid>
 </Page>
