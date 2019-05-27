@@ -46,7 +46,7 @@
                         <TextBlock Padding="18,0,0,0" HorizontalAlignment="Left" Text="Exercise Menu" Foreground="#FFFCFCFC" FontFamily="Candara"/>
                     </Grid>
                 </Button>
-                <Button Margin="5" Height="30" Background="#FF2594B0" BorderBrush="{x:Null}">
+                <Button Margin="5" Height="30" Background="#FF2594B0" BorderBrush="{x:Null}" Click="BtnClickPoints">
                     <Grid>
                         <materialDesign:PackIcon Kind="AchievementAward" HorizontalContentAlignment="Left" Foreground="#FFF4F4F4"/>
                         <TextBlock Padding="18,0,0,0" HorizontalAlignment="Center" Text="My Points" Foreground="#FFFCFCFC" FontFamily="Candara"/>

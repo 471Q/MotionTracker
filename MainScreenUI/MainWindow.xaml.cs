@@ -31,5 +31,9 @@ namespace MainScreenUI
         {
             Main.Content = new Exercise();
         }
+        private void BtnClickPoints(object sender, RoutedEventArgs e)
+        {
+            Main.Content = new Points();
+        }
     }
 }
