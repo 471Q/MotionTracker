@@ -19,40 +19,43 @@
         </DataTemplate>
     </Page.Resources>
 
-    <Grid ClipToBounds="True" MinWidth="680" MinHeight="400">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <TextBlock Grid.Row="0" FontSize="22" Text="Exercise Menu" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Top" Height="29" Width="140" Margin="956,0"/>
-        <Label Content="List of exercises" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="1" VerticalAlignment="Top" Width="107" Height="26"/>
-        <ListBox x:Name="UIListBox" HorizontalAlignment="Left" Grid.Row="1" Width="100" Margin="10,25,0,10" MouseDoubleClick="UIListBox_MouseDoubleClick"/>
+    <Viewbox Stretch="UniformToFill" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
 
-        <Grid x:Name="contentGrid" Margin="122,10,10,10" Grid.Row="1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="7*"/>
-                <ColumnDefinition Width="1*"/>
-            </Grid.ColumnDefinitions>
+        <Grid ClipToBounds="True">
             <Grid.RowDefinitions>
-                <RowDefinition />
-                <RowDefinition />
-                <RowDefinition />
-                <RowDefinition />
-                <RowDefinition />
-                <RowDefinition />
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
-            <Viewbox Grid.Column="0" Grid.RowSpan="6" HorizontalAlignment="Left" VerticalAlignment="Center">
-                <Grid>
-                    <Image RenderOptions.BitmapScalingMode="HighQuality" Name="UICameraOutput" Stretch="Uniform" ClipToBounds="True" Height="auto" Width="auto" VerticalAlignment="Top" HorizontalAlignment="Left" />
-                    <Canvas Name="UICanvasOutput" ClipToBounds="True" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="1920" Height="1080" />
-                </Grid>
-            </Viewbox>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" FontSize="22" Text="Exercise Menu" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Top" Height="29" Width="140" Margin="956,0"/>
+            <Label Content="List of exercises" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="1" VerticalAlignment="Top" Width="107" Height="26"/>
+            <ListBox x:Name="UIListBox" HorizontalAlignment="Left" Grid.Row="1" Width="100" Margin="10,25,0,10" MouseDoubleClick="UIListBox_MouseDoubleClick"/>
+
+            <Grid x:Name="contentGrid" Margin="122,10,10,10" Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="7*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <Viewbox Grid.Column="0" Grid.RowSpan="6" HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <Grid>
+                        <Image RenderOptions.BitmapScalingMode="HighQuality" x:Name="UICameraOutput" Stretch="Uniform" ClipToBounds="True" Height="auto" Width="auto" VerticalAlignment="Top" HorizontalAlignment="Left" />
+                        <Canvas x:Name="UICanvasOutput" ClipToBounds="True" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="1920" Height="1080" />
+                    </Grid>
+                </Viewbox>
+            </Grid>
+            <Button Grid.Row="2" Grid.Column="0" Content="Add Gesture" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,10" Width="75" Click="Add_folder" Height="Auto"/>
+            <TextBlock Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Text="{Binding UIGesture, StringFormat=Selected Gesture: \{0\}}" Width="Auto" Height="Auto" Margin="120,10,0,10" FontSize="12" FontFamily="Segoe UI" FontWeight="SemiBold"/>
         </Grid>
-        <Button Grid.Row="2" Grid.Column="0" Content="Add Gesture" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,10" Width="75" Click="Add_folder" Height="Auto"/>
-        <TextBlock Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Text="{Binding UIGesture, StringFormat='Selected Gesture: {0}'}" Width="Auto" Height="Auto" Margin="120,10,0,10" FontSize="12" FontFamily="Segoe UI" FontWeight="SemiBold"/>
-    </Grid>
+    </Viewbox>
 </Page>

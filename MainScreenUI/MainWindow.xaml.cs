@@ -25,15 +25,15 @@ namespace MainScreenUI
 
         private void BtnClickProfile(object sender, RoutedEventArgs e)
         {
-            Main.Content = new UserProfile();
+            PageArea.Content = new UserProfile();
         }
         private void BtnClickExercise(object sender, RoutedEventArgs e)
         {
-            Main.Content = new Exercise();
+            PageArea.Content = new Exercise1();
         }
         private void BtnClickPoints(object sender, RoutedEventArgs e)
         {
-            Main.Content = new Points();
+            PageArea.Content = new Points();
         }
     }
 }
