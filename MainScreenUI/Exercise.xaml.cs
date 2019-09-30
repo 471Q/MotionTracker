@@ -3,14 +3,12 @@
     using KinectCoordinateMapping;
     using Microsoft.Kinect;
     using Microsoft.Kinect.VisualGestureBuilder;
-    using Newtonsoft.Json;
     using System;
     using System.Collections.Generic;
     using System.ComponentModel;
     using System.IO;
     using System.Windows;
     using System.Windows.Controls;
-    using System.Windows.Data;
     using System.Windows.Media;
     using System.Windows.Shapes;
 
@@ -314,7 +312,7 @@
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void UIListBox_MouseDoubleClick(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        private void UIListBox_MouseDoubleClick(object sender, RoutedEventArgs e)
         {
             selectedGesture = ((ListBox)sender).SelectedItem.ToString();
             //Console.WriteLine(String.Concat("Clicked item is ", selectedGesture));
