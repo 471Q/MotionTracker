@@ -4,27 +4,26 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:MainScreenUI"
-      mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      mc:Ignorable="d"
+      Background="White"
       Title="Points">
 
-    <Grid Background="#FFD1D1D1">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="5*"/>
-            <ColumnDefinition Width="11*"/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="105*"/>
-            <RowDefinition Height="40*"/>
-            <RowDefinition Height="63*"/>
-            <RowDefinition Height="242*"/>
-        </Grid.RowDefinitions>
-        <TextBlock HorizontalAlignment="Left" Margin="181,10.2,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Points" VerticalAlignment="Top" FontSize="20" Grid.RowSpan="2"/>
-        <ProgressBar Grid.Column="1" HorizontalAlignment="Left" Height="16" Margin="10.4,16.2,0,0" Grid.Row="1" VerticalAlignment="Top" Width="326" Minimum="0" Maximum="100" Value="75"/>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="10.4,0.2,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Points to Next Level: 1000" VerticalAlignment="Top" RenderTransformOrigin="0.574,-0.109" FontSize="16"/>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="10.4,44,0,0" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Top">
-            *Every level will get you 2% discount at our physiology center
-        </TextBlock>
-
-    </Grid>
+    <Viewbox>
+        <Grid Height="480" Width="852">
+            <Border BorderBrush="#82CAFA" CornerRadius="5" BorderThickness="1" HorizontalAlignment="Left" Height="190" Margin="10,39,0,0" VerticalAlignment="Top" Width="823">
+                <Border.Effect>
+                    <DropShadowEffect Color="#82CAFA" />
+                </Border.Effect>
+                <ProgressBar Foreground="#82CAFA" BorderBrush="#82CAFA" HorizontalAlignment="Left" Height="15" VerticalAlignment="Top" Width="790" Margin="15,115,0,0" Value="25"/>
+            </Border>
+            <Border BorderBrush="#82CAFA" CornerRadius="5" BorderThickness="1" HorizontalAlignment="Left" Height="175" Margin="10,265,0,0" VerticalAlignment="Top" Width="823">
+                <Border.Effect>
+                    <DropShadowEffect Color="#82CAFA" />
+                </Border.Effect>
+            </Border>
+            <TextBlock HorizontalAlignment="Left" Margin="28,61,0,0" TextWrapping="Wrap" Text="Get rewarded with great discounts and perks when you complete exercises" VerticalAlignment="Top" FontSize="18"/>
+            <TextBlock HorizontalAlignment="Left" Margin="28,122,0,0" TextWrapping="Wrap" Text="Exercise completed this week" VerticalAlignment="Top" FontSize="14"/>
+            <TextBlock HorizontalAlignment="Left" Margin="378,186,0,0" TextWrapping="Wrap" Text="50/200" VerticalAlignment="Top" FontSize="14"/>
+        </Grid>
+    </Viewbox>
 </Page>
