@@ -6,88 +6,67 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:MainScreenUI"
         mc:Ignorable="d"
-        Title="Motion-Tracker" Height="600" Width="1024" ResizeMode="CanResizeWithGrip" WindowStartupLocation="CenterScreen">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0.20*" MinWidth="140"/>
-            <ColumnDefinition Width="0.80*"/>
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" MinHeight="100"/>
-        </Grid.RowDefinitions>
+        Title="Motion-Tracker" MinHeight="535" MinWidth="535" ResizeMode="CanResizeWithGrip" WindowStartupLocation="CenterScreen">
 
-        <Viewbox>
-            <Border BorderBrush="#82CAFA" CornerRadius="5" BorderThickness="1" Margin="10,10,10,10" HorizontalAlignment="Stretch" Padding="10" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+    <Viewbox Grid.Column="0" Stretch="Uniform">
+        <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*" MinWidth="591"/>
+        </Grid.ColumnDefinitions>
+
+            <Border Grid.Row="0" Grid.Column="0" BorderBrush="#82CAFA" CornerRadius="5" BorderThickness="1" Margin="10,10,5,10" HorizontalAlignment="Stretch" Padding="10">
                 <Border.Effect>
                     <DropShadowEffect Color="#82CAFA" />
                 </Border.Effect>
 
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="auto"/>
-                        <RowDefinition Height="auto"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
-                    <Ellipse Grid.Row="0" Stretch="UniformToFill" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" MinHeight="100" Stroke="Transparent" MinWidth="100">
+                <StackPanel Margin="10">
+                    <Ellipse Stretch="UniformToFill" MinHeight="100" MinWidth="100" Stroke="Transparent" Margin="0,0,0,10">
                         <Ellipse.Fill>
                             <ImageBrush ImageSource="/Resources/profilepicture.jpg"/>
                         </Ellipse.Fill>
                     </Ellipse>
-                    <TextBlock Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" TextAlignment="Center" TextWrapping="Wrap" Text="Jesse McCree" FontSize="12"/>
 
-                    <Grid Grid.Row="2">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*" MinWidth="99"/>
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="*" MinHeight="60"/>
-                            <RowDefinition Height="*" MinHeight="60"/>
-                            <RowDefinition Height="*" MinHeight="60"/>
-                        </Grid.RowDefinitions>
+                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Stretch" TextAlignment="Center" TextWrapping="WrapWithOverflow" Text="Jesse McCree" FontSize="12" Margin="0,0,0,10"/>
 
-                        <Button Grid.Row="0" Background="#82CAFA" BorderThickness="0" Padding="10" Margin="14" Click="BtnClickExercise">
-                            <Button.Resources>
-                                <Style TargetType="{x:Type Border}">
-                                    <Setter Property="CornerRadius" Value="10"/>
-                                </Style>
-                            </Button.Resources>
-                            <StackPanel>
-                                <Image Source="/Resources/exercise_icon.png" Height="25" Width="25" />
-                                <TextBlock Text="Exercise" Foreground="White"/>
-                            </StackPanel>
-                        </Button>
-                        <Button Grid.Row="1" Background="#82CAFA" BorderThickness="0" HorizontalAlignment="Stretch" Padding="10" Margin="14" VerticalAlignment="Stretch" >
-                            <Button.Resources>
-                                <Style TargetType="{x:Type Border}">
-                                    <Setter Property="CornerRadius" Value="10"/>
-                                </Style>
-                            </Button.Resources>
-                            <StackPanel>
-                                <Image Source="/Resources/profile_icon.png" Height="25" Width="25" />
-                                <TextBlock Text="Profile" Foreground="White"/>
-                            </StackPanel>
-                        </Button>
-                        <Button Grid.Row="2" Background="#82CAFA" BorderThickness="0" HorizontalAlignment="Stretch" Padding="10" Margin="14" VerticalAlignment="Stretch">
-                            <Button.Resources>
-                                <Style TargetType="{x:Type Border}">
-                                    <Setter Property="CornerRadius" Value="10"/>
-                                </Style>
-                            </Button.Resources>
-                            <StackPanel>
-                                <Image Source="/Resources/rewards_icon.png" Height="25" Width="25" />
-                                <TextBlock Text="Rewards" Foreground="White"/>
-                            </StackPanel>
-                        </Button>
-                    </Grid>
-                </Grid>
+                    <Button Background="#82CAFA" BorderThickness="0" Padding="10" Click="BtnClickExercise" Margin="0,0,0,10">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="10"/>
+                            </Style>
+                        </Button.Resources>
+                        <StackPanel>
+                            <Image Source="/Resources/exercise_icon.png" Height="25" Width="25" />
+                            <TextBlock Text="Exercise" Foreground="White"/>
+                        </StackPanel>
+                    </Button>
+
+                    <Button Background="#82CAFA" BorderThickness="0" Padding="10" Margin="0,0,0,10">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="10"/>
+                            </Style>
+                        </Button.Resources>
+                        <StackPanel>
+                            <Image Source="/Resources/profile_icon.png" Height="25" Width="25" />
+                            <TextBlock Text="Profile" Foreground="White"/>
+                        </StackPanel>
+                    </Button>
+
+                    <Button Background="#82CAFA" BorderThickness="0" Padding="10" Margin="0,0,0,10">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="10"/>
+                            </Style>
+                        </Button.Resources>
+                        <StackPanel>
+                            <Image Source="/Resources/rewards_icon.png" Height="25" Width="25" />
+                            <TextBlock Text="Reward" Foreground="White"/>
+                        </StackPanel>
+                    </Button>
+                </StackPanel>
             </Border>
-        </Viewbox>
-
-        <Viewbox Grid.Column="1" Stretch="Fill">
-            <Frame x:Name="PageArea" NavigationUIVisibility="Hidden"/>
-        </Viewbox>
+            <Frame Grid.Column="1" x:Name="PageArea" NavigationUIVisibility="Hidden"/>
     </Grid>
+    </Viewbox>
 </Window>

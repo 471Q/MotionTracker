@@ -6,11 +6,11 @@ namespace MainScreenUI
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow1 : Window
     {
-        public MainWindow()
+        public MainWindow1()
         {
-            InitializeComponent();
+            //InitializeComponent();
         }
 
         private void ButtonLogOut_Click(object sender, RoutedEventArgs e)
@@ -25,15 +25,15 @@ namespace MainScreenUI
 
         private void BtnClickProfile(object sender, RoutedEventArgs e)
         {
-            PageArea.Content = new UserProfile();
+            //PageArea.Content = new UserProfile();
         }
         private void BtnClickExercise(object sender, RoutedEventArgs e)
         {
-            PageArea.Content = new Exercise3();
+            //PageArea.Content = new Exercise2();
         }
         private void BtnClickPoints(object sender, RoutedEventArgs e)
         {
-            PageArea.Content = new Points();
+            //PageArea.Content = new Points();
         }
     }
 }
