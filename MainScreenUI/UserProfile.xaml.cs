@@ -41,7 +41,7 @@ namespace MainScreenUI
                 bitmap.BeginInit();
                 bitmap.UriSource = new Uri(selectedFileName);
                 bitmap.EndInit();
-                User.Source = bitmap;
+                //User.Source = bitmap;
             }
         }
     }

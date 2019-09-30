@@ -54,7 +54,7 @@
                     </Grid>
                 </Viewbox>
             </Grid>
-            <Button Grid.Row="2" Grid.Column="0" Content="Add Gesture" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,10" Width="75" Click="Add_folder" Height="Auto"/>
+            <Button Grid.Row="2" Grid.Column="0" Content="Add Gesture" HorizontalAlignment="Left" Margin="10,10,0,10" Width="75" Click="Add_folder" Height="Auto"/>
             <TextBlock Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Bottom" Text="{Binding UIGesture, StringFormat=Selected Gesture: \{0\}}" Width="Auto" Height="Auto" Margin="120,10,0,10" FontSize="12" FontFamily="Segoe UI" FontWeight="SemiBold"/>
         </Grid>
     </Viewbox>

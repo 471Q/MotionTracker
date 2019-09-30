@@ -77,7 +77,32 @@
         /// </summary>
         private void Add_folder(object sender, RoutedEventArgs e)
         {
-            var dialog = new System.Windows.Forms.FolderBrowserDialog
+            var dialog = new System.Windows.Forms.OpenFileDialog
+            {
+                InitialDirectory = "::{20D04FE0-3AEA-1069-A2D8-08002B30309D}"
+            };
+
+            System.Windows.Forms.DialogResult result = dialog.ShowDialog();
+            try
+            {
+                FileInfo _file = new FileInfo(dialog.FileName.ToString());
+                if (result == System.Windows.Forms.DialogResult.OK)
+                {
+                    {
+                        selectedFiles.Add(_file);
+                        using (VisualGestureBuilderDatabase database = new VisualGestureBuilderDatabase(_file.FullName))
+                        {
+                            foreach (Gesture gesture in database.AvailableGestures)
+                            {
+                                //Console.WriteLine(String.Concat("Gesture Name", Newtonsoft.Json.JsonConvert.SerializeObject(gesture.Name, Formatting.Indented)));
+                                UIListBox.Items.Add(gesture.Name);
+                            }
+                        }
+                    }
+                }
+            }
+            catch { }
+            /*var dialog = new System.Windows.Forms.FolderBrowserDialog
             {
                 RootFolder = Environment.SpecialFolder.MyComputer
             };
@@ -102,7 +127,7 @@
                     }
                 }
             }
-            catch { }
+            catch { }*/
         }
 
         /// <summary>

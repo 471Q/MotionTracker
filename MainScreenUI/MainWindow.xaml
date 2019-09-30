@@ -41,7 +41,7 @@
                         </StackPanel>
                     </Button>
 
-                    <Button Background="#82CAFA" BorderThickness="0" Padding="10" Margin="0,0,0,10">
+                    <Button Background="#82CAFA" BorderThickness="0" Padding="10" Click="BtnClickProfile" Margin="0,0,0,10">
                         <Button.Resources>
                             <Style TargetType="{x:Type Border}">
                                 <Setter Property="CornerRadius" Value="10"/>
@@ -53,7 +53,7 @@
                         </StackPanel>
                     </Button>
 
-                    <Button Background="#82CAFA" BorderThickness="0" Padding="10" Margin="0,0,0,10">
+                    <Button Background="#82CAFA" BorderThickness="0" Padding="10" Click="BtnClickPoints" Margin="0,0,0,10">
                         <Button.Resources>
                             <Style TargetType="{x:Type Border}">
                                 <Setter Property="CornerRadius" Value="10"/>
@@ -66,7 +66,8 @@
                     </Button>
                 </StackPanel>
             </Border>
+            
             <Frame Grid.Column="1" x:Name="PageArea" NavigationUIVisibility="Hidden"/>
-    </Grid>
+        </Grid>
     </Viewbox>
 </Window>
