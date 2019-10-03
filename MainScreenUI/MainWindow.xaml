@@ -6,68 +6,9 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:MainScreenUI"
         mc:Ignorable="d"
-        Title="Motion-Tracker" MinHeight="535" MinWidth="535" ResizeMode="CanResizeWithGrip" WindowStartupLocation="CenterScreen">
+        d:DesignWidth="854" d:DesignHeight="480"
+        MinHeight="520" MinWidth="892"
+        Title="Motion-Tracker" ResizeMode="CanResizeWithGrip" WindowStartupLocation="CenterScreen">
 
-    <Viewbox Grid.Column="0" Stretch="Uniform">
-        <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="*" MinWidth="591"/>
-        </Grid.ColumnDefinitions>
-
-            <Border Grid.Row="0" Grid.Column="0" BorderBrush="#82CAFA" CornerRadius="5" BorderThickness="1" Margin="10,10,5,10" HorizontalAlignment="Stretch" Padding="10">
-                <Border.Effect>
-                    <DropShadowEffect Color="#82CAFA" />
-                </Border.Effect>
-
-                <StackPanel Margin="10">
-                    <Ellipse Stretch="UniformToFill" MinHeight="100" MinWidth="100" Stroke="Transparent" Margin="0,0,0,10">
-                        <Ellipse.Fill>
-                            <ImageBrush ImageSource="/Resources/profilepicture.jpg"/>
-                        </Ellipse.Fill>
-                    </Ellipse>
-
-                    <TextBlock VerticalAlignment="Center" HorizontalAlignment="Stretch" TextAlignment="Center" TextWrapping="WrapWithOverflow" Text="Jesse McCree" FontSize="12" Margin="0,0,0,10"/>
-
-                    <Button Background="#82CAFA" BorderThickness="0" Padding="10" Click="BtnClickExercise" Margin="0,0,0,10">
-                        <Button.Resources>
-                            <Style TargetType="{x:Type Border}">
-                                <Setter Property="CornerRadius" Value="10"/>
-                            </Style>
-                        </Button.Resources>
-                        <StackPanel>
-                            <Image Source="/Resources/exercise_icon.png" Height="25" Width="25" />
-                            <TextBlock Text="Exercise" Foreground="White"/>
-                        </StackPanel>
-                    </Button>
-
-                    <Button Background="#82CAFA" BorderThickness="0" Padding="10" Click="BtnClickProfile" Margin="0,0,0,10">
-                        <Button.Resources>
-                            <Style TargetType="{x:Type Border}">
-                                <Setter Property="CornerRadius" Value="10"/>
-                            </Style>
-                        </Button.Resources>
-                        <StackPanel>
-                            <Image Source="/Resources/profile_icon.png" Height="25" Width="25" />
-                            <TextBlock Text="Profile" Foreground="White"/>
-                        </StackPanel>
-                    </Button>
-
-                    <Button Background="#82CAFA" BorderThickness="0" Padding="10" Click="BtnClickPoints" Margin="0,0,0,10">
-                        <Button.Resources>
-                            <Style TargetType="{x:Type Border}">
-                                <Setter Property="CornerRadius" Value="10"/>
-                            </Style>
-                        </Button.Resources>
-                        <StackPanel>
-                            <Image Source="/Resources/rewards_icon.png" Height="25" Width="25" />
-                            <TextBlock Text="Reward" Foreground="White"/>
-                        </StackPanel>
-                    </Button>
-                </StackPanel>
-            </Border>
-            
-            <Frame Grid.Column="2" Grid.ColumnSpan="2" x:Name="PageArea" NavigationUIVisibility="Hidden"/>
-        </Grid>
-    </Viewbox>
+    <Frame x:Name="PageArea" NavigationUIVisibility="Hidden"/>
 </Window>

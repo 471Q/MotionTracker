@@ -13,9 +13,9 @@ namespace MainScreenUI
             
            InitializeComponent();
 
-            PageArea.Content = new login();
+           PageArea.Content = new login();
 
-           // PageArea.Content = new registration();
+            // PageArea.Content = new registration();
         }
 
         private void ButtonLogOut_Click(object sender, RoutedEventArgs e)
@@ -26,19 +26,6 @@ namespace MainScreenUI
         private void GridCornerButtons_MouseDown(object sender, MouseButtonEventArgs e)
         {
             DragMove();
-        }
-
-        private void BtnClickProfile(object sender, RoutedEventArgs e)
-        {
-            PageArea.Content = new UserProfile();
-        }
-        private void BtnClickExercise(object sender, RoutedEventArgs e)
-        {
-            PageArea.Content = new Exercise3();
-        }
-        private void BtnClickPoints(object sender, RoutedEventArgs e)
-        {
-            PageArea.Content = new Points();
         }
     }
 }

@@ -6,24 +6,74 @@
       xmlns:local="clr-namespace:MainScreenUI"
       mc:Ignorable="d"
       Background="White"
+      d:DesignWidth="854" d:DesignHeight="480"
       Title="Points">
 
     <Viewbox>
-        <Grid Height="480" Width="852">
-            <Border BorderBrush="#82CAFA" CornerRadius="5" BorderThickness="1" HorizontalAlignment="Left" Height="190" Margin="10,39,0,0" VerticalAlignment="Top" Width="823">
-                <Border.Effect>
-                    <DropShadowEffect Color="#82CAFA" />
-                </Border.Effect>
-                <ProgressBar Foreground="#82CAFA" BorderBrush="#82CAFA" HorizontalAlignment="Left" Height="15" VerticalAlignment="Top" Width="790" Margin="15,115,0,0" Value="25"/>
-            </Border>
-            <Border BorderBrush="#82CAFA" CornerRadius="5" BorderThickness="1" HorizontalAlignment="Left" Height="175" Margin="10,265,0,0" VerticalAlignment="Top" Width="823">
+        <Grid Width="854" Height="480">
+            <!--Navigation Panel-->
+            <Border BorderBrush="#82CAFA" CornerRadius="5" BorderThickness="1" Height="460" VerticalAlignment="Top" Margin="5,10,703,0">
                 <Border.Effect>
                     <DropShadowEffect Color="#82CAFA" />
                 </Border.Effect>
             </Border>
-            <TextBlock HorizontalAlignment="Left" Margin="28,61,0,0" TextWrapping="Wrap" Text="Get rewarded with great discounts and perks when you complete exercises" VerticalAlignment="Top" FontSize="18"/>
-            <TextBlock HorizontalAlignment="Left" Margin="28,122,0,0" TextWrapping="Wrap" Text="Exercise completed this week" VerticalAlignment="Top" FontSize="14"/>
-            <TextBlock HorizontalAlignment="Left" Margin="378,186,0,0" TextWrapping="Wrap" Text="50/200" VerticalAlignment="Top" FontSize="14"/>
+            <Ellipse HorizontalAlignment="Left"  Height="100" Margin="28,38,0,0" Stroke="Transparent" VerticalAlignment="Top" Width="100">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="/Resources/profilepicture.jpg" Stretch="Fill" />
+                </Ellipse.Fill>
+            </Ellipse>
+
+            <Button Background="#82CAFA" BorderThickness="0" HorizontalAlignment="Left" Margin="43,196,0,0" VerticalAlignment="Top" Width="70" Height="55">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+                <StackPanel>
+                    <Image Source="/Resources/exercise_icon.png" Height="25" Width="25" />
+                    <TextBlock Text="Exercise" Foreground="White"/>
+                </StackPanel>
+            </Button>
+            <Button Background="#82CAFA" BorderThickness="0" HorizontalAlignment="Left" Margin="43,280,0,0" VerticalAlignment="Top" Width="70" Height="55">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+                <StackPanel>
+                    <Image Source="/Resources/rewards_icon.png" Height="25" Width="25" />
+                    <TextBlock Text="Rewards" Foreground="White"/>
+                </StackPanel>
+            </Button>
+            <Button Background="#82CAFA" BorderThickness="0" Margin="43,365,741,0" VerticalAlignment="Top" Height="56">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="10"/>
+                    </Style>
+                </Button.Resources>
+                <StackPanel>
+                    <Image Source="/Resources/profile_icon.png" Height="25" Width="25" />
+                    <TextBlock Text="Profile" Foreground="White"/>
+                </StackPanel>
+            </Button>
+            <TextBlock HorizontalAlignment="Left" TextAlignment="Center" Margin="28,143,0,0" TextWrapping="Wrap" Text="Jesse McCree" VerticalAlignment="Top" Height="26" Width="100"/>
+            <!--End of Navigation Panel-->
+
+
+            <Border BorderBrush="#82CAFA" CornerRadius="5" BorderThickness="1" Height="213" Margin="174,10,10,0" VerticalAlignment="Top">
+                <Border.Effect>
+                    <DropShadowEffect Color="#82CAFA" />
+                </Border.Effect>
+                <ProgressBar Foreground="#82CAFA" BorderBrush="#82CAFA" HorizontalAlignment="Left" Height="15" VerticalAlignment="Top" Width="630" Margin="15,127,0,0" Value="25"/>
+            </Border>
+            <Border BorderBrush="#82CAFA" CornerRadius="5" BorderThickness="1" Margin="174,249,10,10">
+                <Border.Effect>
+                    <DropShadowEffect Color="#82CAFA" />
+                </Border.Effect>
+            </Border>
+            <TextBlock HorizontalAlignment="Left" Margin="189,27,0,0" TextWrapping="Wrap" Text="Get rewarded with great discounts and perks when you complete exercises" VerticalAlignment="Top" FontSize="18"/>
+            <TextBlock HorizontalAlignment="Left" Margin="189,109,0,0" TextWrapping="Wrap" Text="Exercise completed this week" VerticalAlignment="Top" FontSize="14"/>
+            <TextBlock HorizontalAlignment="Left" Margin="473,165,0,0" TextWrapping="Wrap" Text="50/200" VerticalAlignment="Top" FontSize="14"/>
         </Grid>
     </Viewbox>
 </Page>

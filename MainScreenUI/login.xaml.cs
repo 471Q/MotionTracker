@@ -64,17 +64,12 @@ namespace MainScreenUI
             }
         }
 
-      
-
         private void SignUP_Click(object sender, RoutedEventArgs e)
         {
             registration reg = new registration();
-
-          
-
-            MessageBox.Show("Shit");
-            // reg.ShowDialog();
+            NavigationService.Navigate(reg);
         }
+
 
         IFirebaseClient client;
         private void Login1_Loaded(object sender, RoutedEventArgs e)

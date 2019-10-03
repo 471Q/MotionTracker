@@ -331,5 +331,11 @@ namespace MainScreenUI
                 Console.WriteLine("Error in handling _reader");
             }
         }
+
+        private void GoToPoints(object sender, RoutedEventArgs e)
+        {
+            Points points = new Points();
+            NavigationService.Navigate(points);
+        }
     }
 }
