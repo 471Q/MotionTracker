@@ -67,7 +67,7 @@
                 </StackPanel>
             </Border>
             
-            <Frame Grid.Column="1" x:Name="PageArea" NavigationUIVisibility="Hidden"/>
+            <Frame Grid.Column="2" Grid.ColumnSpan="2" x:Name="PageArea" NavigationUIVisibility="Hidden"/>
         </Grid>
     </Viewbox>
 </Window>

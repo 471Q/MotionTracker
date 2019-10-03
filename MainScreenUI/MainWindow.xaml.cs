@@ -10,7 +10,12 @@ namespace MainScreenUI
     {
         public MainWindow()
         {
-            InitializeComponent();
+            
+           InitializeComponent();
+
+            PageArea.Content = new login();
+
+           // PageArea.Content = new registration();
         }
 
         private void ButtonLogOut_Click(object sender, RoutedEventArgs e)

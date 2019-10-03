@@ -25,24 +25,14 @@ namespace MainScreenUI
         public UserProfile()
         {
             InitializeComponent();
+
+            Init();
         }
 
-        private void Update_Img(object sender, RoutedEventArgs e)
+        public void Init()
         {
-            OpenFileDialog dlg = new OpenFileDialog();
-            dlg.InitialDirectory = "c:\\";
-            dlg.Filter = "Image files (*.jpg)|*.jpg|All Files (*.*)|*.*";
-            dlg.RestoreDirectory = true;
-
-            if (dlg.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            {
-                string selectedFileName = dlg.FileName;
-                BitmapImage bitmap = new BitmapImage();
-                bitmap.BeginInit();
-                bitmap.UriSource = new Uri(selectedFileName);
-                bitmap.EndInit();
-                //User.Source = bitmap;
-            }
+            userName.Text = login.UserName;
         }
     }
+
 }

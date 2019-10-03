@@ -1,0 +1,19 @@
+﻿<Page x:Class="MainScreenUI.registration"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MainScreenUI"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Background="White"
+      Title="login">
+
+    <Grid x:Name="RegForm" Loaded="RegForm_Loaded">
+        <TextBox x:Name="RegUserName" HorizontalAlignment="Left" Height="23" Margin="257,178,0,0" TextWrapping="Wrap" Text="username" VerticalAlignment="Top" Width="229"/>
+        <TextBox x:Name="RegPass" HorizontalAlignment="Left" Height="23" Margin="257,283,0,0" TextWrapping="Wrap" Text="password" VerticalAlignment="Top" Width="229"/>
+        <Label Content="Username" HorizontalAlignment="Left" Margin="257,147,0,0" VerticalAlignment="Top"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="257,252,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="Register" Content="Register" HorizontalAlignment="Left" Margin="257,336,0,0" VerticalAlignment="Top" Width="75" Click="Register_Click"/>
+    </Grid>
+</Page>
