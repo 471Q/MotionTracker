@@ -13,7 +13,7 @@ namespace MainScreenUI
             
            InitializeComponent();
 
-           PageArea.Content = new login();
+           PageArea.Content = new Exercise3();
 
             // PageArea.Content = new registration();
         }
