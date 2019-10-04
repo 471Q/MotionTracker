@@ -337,5 +337,11 @@ namespace MainScreenUI
             Points points = new Points();
             NavigationService.Navigate(points);
         }
+
+        private void GoToProfile(object sender, RoutedEventArgs e)
+        {
+            UserProfile profile = new UserProfile();
+            NavigationService.Navigate(profile);
+        }
     }
 }

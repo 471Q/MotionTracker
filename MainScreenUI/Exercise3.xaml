@@ -68,7 +68,7 @@
                 </Ellipse.Fill>
             </Ellipse>
 
-            <Button Background="#82CAFA" BorderThickness="0" HorizontalAlignment="Left" Margin="43,196,0,0" VerticalAlignment="Top" Width="70" Height="55">
+            <Button Background="#4093CB" BorderThickness="0" HorizontalAlignment="Left" Margin="43,196,0,0" VerticalAlignment="Top" Width="70" Height="55">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="10"/>
@@ -90,7 +90,7 @@
                     <TextBlock Text="Rewards" Foreground="White"/>
                 </StackPanel>
             </Button>
-            <Button Background="#82CAFA" BorderThickness="0" HorizontalAlignment="Left" Margin="43,365,0,0" VerticalAlignment="Top" Width="70" Height="56">
+            <Button Background="#82CAFA" BorderThickness="0" HorizontalAlignment="Left" Margin="43,365,0,0" VerticalAlignment="Top" Width="70" Height="56" Click="GoToProfile">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="10"/>

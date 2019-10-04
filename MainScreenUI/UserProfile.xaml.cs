@@ -33,6 +33,18 @@ namespace MainScreenUI
         {
             userName.Text = login.UserName;
         }
+
+        private void GoToExercise(object sender, RoutedEventArgs e)
+        {
+            Exercise3 exercise = new Exercise3();
+            NavigationService.Navigate(exercise);
+        }
+
+        private void GoToPoints(object sender, RoutedEventArgs e)
+        {
+            Points points = new Points();
+            NavigationService.Navigate(points);
+        }
     }
 
 }
