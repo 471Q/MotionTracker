@@ -6,15 +6,68 @@
       xmlns:local="clr-namespace:MainScreenUI"
       mc:Ignorable="d" 
       d:DesignHeight="480" d:DesignWidth="854"
-      Background="White"
       Title="login">
 
-    <Grid x:Name="loginForm">
-        <TextBox x:Name="userName" HorizontalAlignment="Left" Height="23" Margin="257,178,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="229"/>
-        <TextBox x:Name="pass" HorizontalAlignment="Left" Height="23" Margin="257,283,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="229"/>
-        <Label Content="Username" HorizontalAlignment="Left" Margin="257,147,0,0" VerticalAlignment="Top"/>
-        <Label Content="Password" HorizontalAlignment="Left" Margin="257,252,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="login1" Content="Login" HorizontalAlignment="Left" Margin="257,336,0,0" VerticalAlignment="Top" Width="75" Click="Login1_Click" Loaded="Login1_Loaded"/>
-        <Button x:Name="signUP" Content="Sign up" HorizontalAlignment="Left" Margin="374,336,0,0" VerticalAlignment="Top" Width="75" Click="SignUP_Click"/>
-    </Grid>
+    <Page.Background>
+        <ImageBrush ImageSource="/Resources/login_background.jpg" Stretch="UniformToFill"/>
+    </Page.Background>
+    
+    <Viewbox>
+        <Grid x:Name="loginForm">
+            <!--Title-->
+            <TextBlock Foreground="White" Margin="320,68,312,349" TextWrapping="Wrap" Text="Swiftcare" TextAlignment="Center" FontSize="40" FontWeight="SemiBold" FontStyle="Italic"/>
+            <TextBlock Foreground="White" Margin="312,145,312,298" TextWrapping="Wrap" Text="Login" TextAlignment="Center" FontSize="21" FontWeight="SemiBold"/>
+
+            
+            <!--Username-->
+            <Label Content="Username" Foreground="White" Margin="394,187,395,267" FontWeight="SemiBold"/>
+            <TextBox x:Name="userName" Margin="312,226,312,231" TextWrapping="Wrap" VerticalContentAlignment="Center"/>
+            <TextBlock IsHitTestVisible="False" Text="Username" Margin="316,229,468,231"  Foreground="DarkGray">
+                <TextBlock.Style>
+                    <Style TargetType="{x:Type TextBlock}">
+                        <Setter Property="Visibility" Value="Collapsed"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding Text, ElementName=userName}" Value="">
+                                <Setter Property="Visibility" Value="Visible"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+
+
+            <!--Password-->
+            <Label Content="Password" Foreground="White" Margin="394,271,399,183" FontWeight="SemiBold"/>
+            <TextBox x:Name="pass" Margin="312,311,312,146" TextWrapping="Wrap" VerticalContentAlignment="Center"/>
+            <TextBlock IsHitTestVisible="False" Text="Password" Margin="316,314,468,146"  Foreground="DarkGray">
+                <TextBlock.Style>
+                    <Style TargetType="{x:Type TextBlock}">
+                        <Setter Property="Visibility" Value="Collapsed"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding Text, ElementName=pass}" Value="">
+                                <Setter Property="Visibility" Value="Visible"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+
+
+            <!--Buttons-->
+            <Button Foreground="White" Background="#82CAFA" BorderThickness="0" x:Name="login1" Content="Login" Margin="320,363,450,89" Click="Login1_Click" Loaded="Login1_Loaded">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Foreground="White" Background="#82CAFA" BorderThickness="0" x:Name="signUP" Content="Sign up" Margin="450,363,320,89" Click="SignUP_Click">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </Grid>
+    </Viewbox>
 </Page>

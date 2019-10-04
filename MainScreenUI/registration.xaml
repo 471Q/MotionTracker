@@ -4,16 +4,131 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:MainScreenUI"
-      mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Background="White"
-      Title="login">
+      mc:Ignorable="d"
+      d:DesignHeight="480" d:DesignWidth="854"
+      Title="registration">
 
-    <Grid x:Name="RegForm" Loaded="RegForm_Loaded">
-        <TextBox x:Name="RegUserName" HorizontalAlignment="Left" Height="23" Margin="257,178,0,0" TextWrapping="Wrap" Text="username" VerticalAlignment="Top" Width="229"/>
-        <TextBox x:Name="RegPass" HorizontalAlignment="Left" Height="23" Margin="257,283,0,0" TextWrapping="Wrap" Text="password" VerticalAlignment="Top" Width="229"/>
-        <Label Content="Username" HorizontalAlignment="Left" Margin="257,147,0,0" VerticalAlignment="Top"/>
-        <Label Content="Password" HorizontalAlignment="Left" Margin="257,252,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="Register" Content="Register" HorizontalAlignment="Left" Margin="257,336,0,0" VerticalAlignment="Top" Width="75" Click="Register_Click"/>
-    </Grid>
+    <Page.Background>
+        <ImageBrush ImageSource="/Resources/login_background.jpg" Stretch="UniformToFill"/>
+    </Page.Background>
+
+    <Viewbox>
+        <Grid x:Name="RegForm" Loaded="RegForm_Loaded">
+            <!--Title-->
+            <TextBlock Foreground="White" Margin="329,34,312,383" TextWrapping="Wrap" Text="Swiftcare" TextAlignment="Center" FontSize="40" FontWeight="SemiBold" FontStyle="Italic"/>
+            <TextBlock Foreground="White" Margin="386,113,380,334" TextWrapping="Wrap" Text="Sign Up" TextAlignment="Center" FontSize="21" FontWeight="SemiBold"/>
+
+
+            <!--Username-->
+            <Label Content="Username" Foreground="White" Margin="398,151,391,303" FontWeight="SemiBold"/>
+            <TextBox x:Name="RegUserName" HorizontalAlignment="Left" Height="23" Margin="312,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="229"/>
+            <TextBlock IsHitTestVisible="False" Text="Username" Margin="316,185,468,275"  Foreground="DarkGray">
+                <TextBlock.Style>
+                    <Style TargetType="{x:Type TextBlock}">
+                        <Setter Property="Visibility" Value="Collapsed"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding Text, ElementName=RegUserName}" Value="">
+                                <Setter Property="Visibility" Value="Visible"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+
+
+            <!--Password-->
+            <Label Content="Password" Foreground="White" Margin="398,213,395,241" FontWeight="SemiBold" HorizontalAlignment="Center"/>
+            <TextBox x:Name="RegPass" HorizontalAlignment="Left" Height="23" Margin="312,244,0,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="230"/>
+            <TextBlock IsHitTestVisible="False" Text="Password" Margin="316,247,468,213"  Foreground="DarkGray">
+                <TextBlock.Style>
+                    <Style TargetType="{x:Type TextBlock}">
+                        <Setter Property="Visibility" Value="Collapsed"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding Text, ElementName=RegPass}" Value="">
+                                <Setter Property="Visibility" Value="Visible"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+
+
+            <!--Full Name-->
+            <Label Content="Full Name" Foreground="White" Margin="398,276,391,178" FontWeight="SemiBold"/>
+            <TextBox x:Name="RegFullName" HorizontalAlignment="Left" Height="23" Margin="312,307,0,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="230"/>
+            <TextBlock IsHitTestVisible="False" Text="Full Name" Margin="316,310,468,150"  Foreground="DarkGray">
+                <TextBlock.Style>
+                    <Style TargetType="{x:Type TextBlock}">
+                        <Setter Property="Visibility" Value="Collapsed"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding Text, ElementName=RegFullName}" Value="">
+                                <Setter Property="Visibility" Value="Visible"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+
+
+            <!--Age-->
+            <Label Content="Age" Foreground="White" Margin="312,345,510,109" FontWeight="SemiBold" HorizontalAlignment="Center" Width="32"/>
+            <TextBox x:Name="RegAge" HorizontalAlignment="Left" Height="23" Margin="314,376,0,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="54"/>
+            <TextBlock IsHitTestVisible="False" Text="Age" Margin="317,379,484,81"  Foreground="DarkGray">
+                <TextBlock.Style>
+                    <Style TargetType="{x:Type TextBlock}">
+                        <Setter Property="Visibility" Value="Collapsed"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding Text, ElementName=RegAge}" Value="">
+                                <Setter Property="Visibility" Value="Visible"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+            
+            
+            <!--Height-->
+            <Label Content="Height(cm)" Foreground="White" Margin="386,345,394,109" FontWeight="SemiBold" HorizontalAlignment="Center" Width="74"/>
+            <TextBox x:Name="RegHeight" HorizontalAlignment="Left" Height="23" Margin="389,376,0,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="71"/>
+            <TextBlock IsHitTestVisible="False" Text="Height" Margin="392,379,395,81"  Foreground="DarkGray">
+                <TextBlock.Style>
+                    <Style TargetType="{x:Type TextBlock}">
+                        <Setter Property="Visibility" Value="Collapsed"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding Text, ElementName=RegHeight}" Value="">
+                                <Setter Property="Visibility" Value="Visible"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+
+
+            <!--Weight-->
+            <Label Content="Weight(kg)" Foreground="White" Margin="471,345,312,109" FontWeight="SemiBold" HorizontalAlignment="Center" Width="71"/>
+            <TextBox x:Name="RegWeight" HorizontalAlignment="Left" Height="23" Margin="474,376,0,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="67"/>
+            <TextBlock IsHitTestVisible="False" Text="Weight" Margin="476,379,313,81"  Foreground="DarkGray">
+                <TextBlock.Style>
+                    <Style TargetType="{x:Type TextBlock}">
+                        <Setter Property="Visibility" Value="Collapsed"/>
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding Text, ElementName=RegWeight}" Value="">
+                                <Setter Property="Visibility" Value="Visible"/>
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </TextBlock.Style>
+            </TextBlock>
+
+
+            <!--Buttons-->
+            <Button Foreground="White" Background="#82CAFA" BorderThickness="0" x:Name="Register" Content="Sign Up"  Margin="383,430,383,22" Click="Register_Click">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </Grid>
+    </Viewbox>
 </Page>
