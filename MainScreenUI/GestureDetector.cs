@@ -6,11 +6,11 @@
 
 namespace MainScreenUI
 {
-    using System;
-    using System.Collections.Generic;
     using Microsoft.Kinect;
     using Microsoft.Kinect.VisualGestureBuilder;
-    using Newtonsoft.Json;
+    using System;
+    using System.Collections.Generic;
+    using System.Threading.Tasks;
 
     /// <summary>
     /// Gesture Detector class which listens for VisualGestureBuilderFrame events from the service
@@ -18,6 +18,10 @@ namespace MainScreenUI
     /// </summary>
     public class GestureDetector : IDisposable
     {
+        float temp = 0f;
+        int i = 0;
+        DiscreteGestureResult result = null;
+        List<DiscreteGestureResult> results = new List<DiscreteGestureResult>();
         /// <summary> Name of the discrete gesture in the database that we want to track </summary>
         private string gestureName = "";
 
@@ -36,6 +40,7 @@ namespace MainScreenUI
         /// <param name="gestureResultView">GestureResultView object to store gesture results of a single body to</param>
         public GestureDetector(KinectSensor kinectSensor, GestureResultView gestureResultView)
         {
+            
             //this.GestureName = gesture_name;
             if (kinectSensor == null)
                 throw new ArgumentNullException("Kinect Sensor Not Found");
@@ -51,6 +56,36 @@ namespace MainScreenUI
             {
                 vgbFrameReader.IsPaused = true;
                 vgbFrameReader.FrameArrived += this.Reader_GestureFrameArrived;
+            }
+
+            //Create a indefinitely looped independent task that wait for every 0.5 seconds; 
+            //Calculate the average value of confidence value in list of results;
+            //Update the GestureResultView, and in turn update the XAML UI
+            Task.Factory.StartNew(() =>
+            {
+                while (true)
+                {
+                    temp = 0.0f;
+                    results.Clear();
+                    System.Threading.Thread.Sleep(500);
+                    Calculation();
+                    System.Threading.Thread.Sleep(50);
+                    if ((temp / i) > 0.35f)
+                    {
+                        GestureResultView.UpdateGestureResult(true, true, (temp / i));
+                        Console.WriteLine(String.Concat("Confidence ", (temp / i)));
+                    }
+                    else
+                        GestureResultView.UpdateGestureResult(true, false, (temp / i));
+                }
+            });
+        }
+
+        private void Calculation()
+        {
+            for (i = 0; i < results.Count; i++)
+            {
+                temp += results[i].Confidence;
             }
         }
 
@@ -193,8 +228,8 @@ namespace MainScreenUI
                         foreach (Gesture gesture in vgbFrameSource.Gestures)
                             if (gesture.Name.Equals(GestureName))
                             { //&& gesture.GestureType == GestureType.Continuous
-                                //ContinuousGestureResult result = null;
-                                DiscreteGestureResult result = null;
+                              //ContinuousGestureResult result = null;
+                                result = null;
                                 //continuousResults.TryGetValue(gesture, out result);
                                 discreteResults.TryGetValue(gesture, out result);
                                 //For debugging
@@ -204,31 +239,12 @@ namespace MainScreenUI
                                 //Console.WriteLine(String.Concat("Gesture ", Newtonsoft.Json.JsonConvert.SerializeObject(gesture, Formatting.Indented)));
                                 //Console.WriteLine(String.Concat("Result ", Newtonsoft.Json.JsonConvert.SerializeObject(result, Formatting.Indented)));
                                 //Console.WriteLine(String.Concat("Detection ", result.Detected));
-                                if (result != null)
-                                    if (result.Confidence > 0.35f)
-                                    {
-                                        GestureResultView.UpdateGestureResult(true, true, result.Confidence);
-                                        Console.WriteLine(String.Concat("Confidence ", result.Confidence));
-                                    }
-                                    else
-                                        GestureResultView.UpdateGestureResult(true, false, result.Confidence);
-                                //{
-                                //    // update the GestureResultView object with new gesture result values
-                                //    //  this.GestureResultView.UpdateGestureResult(true, result.Detected, result.Confidence);
-                                //    var progress = result.Progress;
-                                //    if (progress > 1.48 && progress < 3)
-                                //    {
-                                //        //we're clapping but not finished
-                                //        this.GestureResultView.UpdateGestureResult(true, true, 1.0f);
-                                //    }
-                                //    else
-                                //    {
-                                //        this.GestureResultView.UpdateGestureResult(true, false, 1.0f);
-                                //    }
-                                //}
+                                //Console.WriteLine(String.Concat("Confidence ", result.Confidence));
+                                results.Add(result);
                             }
                 }
         }
+
 
         /// <summary>
         /// Handles the TrackingIdLost event for the VisualGestureBuilderSource object

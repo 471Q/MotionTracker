@@ -3,7 +3,6 @@ using Microsoft.Kinect;
 using Microsoft.Kinect.VisualGestureBuilder;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
@@ -122,7 +121,7 @@ namespace MainScreenUI
             }
 
             // Gesture detection
-            bool dataReceived = false;
+            //bool dataReceived = false;
             using (BodyFrame bodyFrame = reference.BodyFrameReference.AcquireFrame())
             {
                 if (bodyFrame != null)
@@ -134,51 +133,47 @@ namespace MainScreenUI
                     // As long as those body objects are not disposed and not set to null in the array,
                     // those body objects will be re-used.
                     bodyFrame.GetAndRefreshBodyData(_bodies);
-                    dataReceived = true;
-                }
-            }
-
-            if (dataReceived)
-            {
-                foreach (Body _body in _bodies)
-                {
-                    if (_body != null)
-                        if (_body.IsTracked && _body.TrackingId != 0)
-                        {
-                            ulong trackingId = _body.TrackingId;
-                            detector.TrackingId = trackingId;
-                            detector.IsPaused = trackingId == 0;
-
-                            // COORDINATE MAPPING
-                            foreach (Joint joint in _body.Joints.Values)
+                    //dataReceived = true;
+                    foreach (Body _body in _bodies)
+                    {
+                        if (_body != null)
+                            if (_body.IsTracked && _body.TrackingId != 0)
                             {
-                                if (joint.TrackingState == TrackingState.Tracked)
+                                ulong trackingId = _body.TrackingId;
+                                detector.TrackingId = trackingId;
+                                detector.IsPaused = trackingId == 0;
+
+                                // COORDINATE MAPPING
+                                foreach (Joint joint in _body.Joints.Values)
                                 {
-                                    // 3D space point
-                                    CameraSpacePoint jointPosition = joint.Position;
-
-                                    // 2D space point
-                                    Point point = new Point();
-
-                                    ColorSpacePoint colorPoint = _sensor.CoordinateMapper.MapCameraPointToColorSpace(jointPosition);
-                                    point.X = (float.IsInfinity(colorPoint.X) ? 0 : colorPoint.X);
-                                    point.Y = (float.IsInfinity(colorPoint.Y) ? 0 : colorPoint.Y);
-
-                                    // Draw
-                                    Ellipse ellipse = new Ellipse
+                                    if (joint.TrackingState == TrackingState.Tracked)
                                     {
-                                        Fill = Brushes.Red,
-                                        Width = 20,
-                                        Height = 20
-                                    };
+                                        // 3D space point
+                                        CameraSpacePoint jointPosition = joint.Position;
 
-                                    Canvas.SetLeft(ellipse, point.X - ellipse.Width / 2);
-                                    Canvas.SetTop(ellipse, point.Y - ellipse.Height / 2);
+                                        // 2D space point
+                                        Point point = new Point();
 
-                                    UICanvasOutput.Children.Add(ellipse);
+                                        ColorSpacePoint colorPoint = _sensor.CoordinateMapper.MapCameraPointToColorSpace(jointPosition);
+                                        point.X = (float.IsInfinity(colorPoint.X) ? 0 : colorPoint.X);
+                                        point.Y = (float.IsInfinity(colorPoint.Y) ? 0 : colorPoint.Y);
+
+                                        // Draw
+                                        Ellipse ellipse = new Ellipse
+                                        {
+                                            Fill = Brushes.Red,
+                                            Width = 20,
+                                            Height = 20
+                                        };
+
+                                        Canvas.SetLeft(ellipse, point.X - ellipse.Width / 2);
+                                        Canvas.SetTop(ellipse, point.Y - ellipse.Height / 2);
+
+                                        UICanvasOutput.Children.Add(ellipse);
+                                    }
                                 }
                             }
-                        }
+                    }
                 }
             }
         }
@@ -225,12 +220,6 @@ namespace MainScreenUI
                             selectedDb = _file.FullName;
             if (((Button)e.OriginalSource).Content != null && selectedDb != null)
             {
-                /*int maxBodies = _sensor.BodyFrameSource.BodyCount;
-                foreach (GestureDetector gs in gestureDetectorList)
-                {
-                    gs.VGBPath = selectedDb;
-                    gs.GestureName = ((Button)e.OriginalSource).Content.ToString();
-                }*/
                 detector.VGBPath = selectedDb;
                 detector.GestureName = ((Button)e.OriginalSource).Content.ToString();
             }

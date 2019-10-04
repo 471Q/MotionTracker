@@ -122,12 +122,16 @@
             <!--Canvas-->
             <Viewbox Height="390" Margin="289,10,10,0" VerticalAlignment="Top">
                 <Grid x:Name="KinectOutput" Height="1352">
-                    <Image RenderOptions.BitmapScalingMode="HighQuality" x:Name="UICameraOutput" Stretch="Uniform" ClipToBounds="True" Height="auto" Width="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    <Canvas x:Name="UICanvasOutput" HorizontalAlignment="Stretch" Width="1920" Height="1080"/>
-                    <StackPanel>
-                        <TextBlock TextWrapping="Wrap" Text="{Binding UIDetected, StringFormat='Status: {0}'}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="200"/>
-                        <TextBlock TextWrapping="Wrap" Text="{Binding BodyIndex, StringFormat='Body Index: {0}'}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="200"/>
-                        <TextBlock TextWrapping="Wrap" Text="{Binding UIConfidence, StringFormat='Confidence Level: {0}'}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="200"/>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <Image Grid.Row="0" RenderOptions.BitmapScalingMode="HighQuality" x:Name="UICameraOutput" Stretch="Uniform" ClipToBounds="True" Height="auto" Width="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Canvas Grid.Row="0" x:Name="UICanvasOutput" HorizontalAlignment="Stretch" Width="1920" Height="1080"/>
+                    <StackPanel Grid.Row="1">
+                        <TextBlock TextWrapping="Wrap" Text="{Binding UIDetected, StringFormat='Status: {0}'}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50"/>
+                        <TextBlock TextWrapping="Wrap" Text="{Binding BodyIndex, StringFormat='Body Index: {0}'}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50"/>
+                        <TextBlock TextWrapping="Wrap" Text="{Binding UIConfidence, StringFormat='Confidence Level: {0}'}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50"/>
                     </StackPanel>
                 </Grid>
             </Viewbox>
