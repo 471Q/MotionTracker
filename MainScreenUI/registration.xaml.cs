@@ -21,9 +21,9 @@ namespace MainScreenUI
     /// <summary>
     /// Interaction logic for registration.xaml
     /// </summary>
-    public partial class registration : Page
+    public partial class Registration : Page
     {
-        public registration()
+        public Registration()
         {
             InitializeComponent();
         }

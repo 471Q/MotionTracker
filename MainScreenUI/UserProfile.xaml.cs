@@ -31,7 +31,7 @@ namespace MainScreenUI
 
         public void Init()
         {
-            userName.Text = login.UserName;
+            userName.Text = Login.UserName;
         }
 
         private void GoToExercise(object sender, RoutedEventArgs e)
