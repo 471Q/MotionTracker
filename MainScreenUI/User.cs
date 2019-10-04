@@ -14,6 +14,13 @@ namespace MainScreenUI
 
         public String Password { get; set; }
 
+        public String Name { get; set; }
+
+        public int Age { get; set; }
+
+        public Double Height { get; set; }
+
+        public Double Weight { get; set; }
         public User(string user, string pass)
         {
             Username = user;
