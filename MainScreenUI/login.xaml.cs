@@ -21,9 +21,9 @@ namespace MainScreenUI
     /// <summary>
     /// Interaction logic for login.xaml
     /// </summary>
-    public partial class login : Page
+    public partial class Login : Page
     {
-        public login()
+        public Login()
         {
             InitializeComponent();
         }
@@ -68,7 +68,7 @@ namespace MainScreenUI
 
         private void SignUP_Click(object sender, RoutedEventArgs e)
         {
-            registration reg = new registration();
+            Registration reg = new Registration();
             NavigationService.Navigate(reg);
         }
 
