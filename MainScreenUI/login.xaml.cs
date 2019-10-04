@@ -55,6 +55,8 @@ namespace MainScreenUI
                     MessageBox.Show("Logged in");
 
                     UserName = resUser.Username;
+                    UserProfile userProfile = new UserProfile();
+                    NavigationService.Navigate(userProfile);
                     ///rest of the application goes here 
                 }
                 else

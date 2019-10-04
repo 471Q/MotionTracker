@@ -106,16 +106,16 @@
 
 
             <!--Category Selection-->
-            <Border BorderBrush="#82CAFA" CornerRadius="5" BorderThickness="1" Height="390" VerticalAlignment="Top" Margin="174,10,578,0">
+            <Border BorderBrush="#82CAFA" CornerRadius="5" BorderThickness="1" Height="390" VerticalAlignment="Top" Margin="174,10,570,0">
                 <Border.Effect>
                     <DropShadowEffect Color="#82CAFA" />
                 </Border.Effect>
+                <StackPanel x:Name="UICategory" Orientation="Vertical" HorizontalAlignment="Left" Height="365" Margin="10" VerticalAlignment="Top" Width="90">
+                    <TextBlock HorizontalAlignment="Center" TextWrapping="WrapWithOverflow" Text="Select Category" TextAlignment="Center" VerticalAlignment="Top" Width="82" Margin="4,0" Height="48"/>
+                    <Button Style="{StaticResource RoundedBlueButtonRow0Column0}" Content="Arm"/>
+                    <Button Content="+" Style="{StaticResource RoundedBlueButtonRow0Column0}" Click="Add_file"/>
+                </StackPanel>
             </Border>
-            <StackPanel x:Name="UICategory" Orientation="Vertical" HorizontalAlignment="Left" Height="365" Margin="180,30,0,0" VerticalAlignment="Top" Width="90">
-                <TextBlock HorizontalAlignment="Center" TextWrapping="WrapWithOverflow" Text="Select Category" TextAlignment="Center" VerticalAlignment="Top" Width="82" Margin="4,0" Height="48"/>
-                <Button Style="{StaticResource RoundedBlueButtonRow0Column0}" Content="Arm"/>
-                <Button Content="+" Style="{StaticResource RoundedBlueButtonRow0Column0}" Click="Add_file"/>
-            </StackPanel>
             <!--End of Category Selection-->
 
             <!--Canvas-->
