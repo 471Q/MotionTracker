@@ -16,25 +16,24 @@ namespace MainScreenUI
     /// <summary>
     /// Interaction logic for Exercise3.xaml
     /// </summary>
-    public partial class Exercise3 : Page, INotifyPropertyChanged
+    public partial class Exercise3 : Page
     {
         KinectSensor _sensor = null;
         MultiSourceFrameReader _reader = null;
         IList<Body> _bodies = null;
         List<GestureDetector> gestureDetectorList = new List<GestureDetector>();
         VisualGestureBuilderDatabase database = null;
-        GestureResultView result = new GestureResultView();
         GestureDetector detector = null;
         List<FileInfo> selectedFiles = new List<FileInfo>();
+        GestureResultView result = new GestureResultView(0, false, false, 0.0f);
 
         public string gestureText = "";
-        private string selectedGesture = "";
         private string selectedDb = "";
 
         public Exercise3()
         {
             InitializeComponent();
-            DataContext = this;
+            DataContext = result;
         }
 
         /// <summary>
@@ -55,22 +54,7 @@ namespace MainScreenUI
             }
             if (_sensor == null)
                 Console.WriteLine("Can't find kinect sensor!");
-            int maxBodies = _sensor.BodyFrameSource.BodyCount;
-            for (int i = 0; i < maxBodies; ++i)
-            {
-                result = new GestureResultView(i, false, false, 0.0f);
-                detector = new GestureDetector(_sensor, result);
-                gestureDetectorList.Add(detector);
-
-                // Split gesture results across the rows of the content grid
-                ContentControl contentControl = new ContentControl
-                {
-                    Content = gestureDetectorList[i].GestureResultView
-                };
-                Grid.SetColumn(contentControl, 1);
-                Grid.SetRow(contentControl, i);
-                //contentGrid.Children.Add(contentControl);
-            }
+            detector = new GestureDetector(_sensor, result);
         }
 
         /// <summary>
@@ -121,42 +105,6 @@ namespace MainScreenUI
         }
 
         /// <summary>
-        /// INotifyPropertyChangedPropertyChanged event to allow window controls to bind to changeable data
-        /// </summary>
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        /// <summary>
-        /// To invoke event that handle property change if called
-        /// </summary>
-        /// <param name="propertyName">Name of the property that need to be handled</param>
-        protected void OnPropertyChanged(string propertyName)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-
-        /// <summary>
-        /// Get or Set the UIGesture Property
-        /// </summary>
-        public string UIGesture
-        {
-            get
-            {
-                return gestureText;
-            }
-
-            set
-            {
-                if (gestureText != value)
-                {
-                    gestureText = value;
-
-                    // notify any bound elements that the text has changed
-                    OnPropertyChanged("UIGesture");
-                }
-            }
-        }
-
-        /// <summary>
         /// Handles the inputs from the kinect
         /// </summary>
         /// <param name="sender"></param>
@@ -179,63 +127,30 @@ namespace MainScreenUI
             {
                 if (bodyFrame != null)
                 {
-                    if (this._bodies == null)
-                    {
-                        // creates an array of 6 bodies, which is the max number of bodies that Kinect can track simultaneously
-                        this._bodies = new Body[bodyFrame.BodyCount];
-                    }
-
+                    UICanvasOutput.Children.Clear();
+                    // creates an array of 6 bodies, which is the max number of bodies that Kinect can track simultaneously
+                    _bodies = new Body[bodyFrame.BodyCount];
                     // The first time GetAndRefreshBodyData is called, Kinect will allocate each Body in the array.
                     // As long as those body objects are not disposed and not set to null in the array,
                     // those body objects will be re-used.
-                    bodyFrame.GetAndRefreshBodyData(this._bodies);
+                    bodyFrame.GetAndRefreshBodyData(_bodies);
                     dataReceived = true;
                 }
             }
 
             if (dataReceived)
             {
-                // we may have lost/acquired bodies, so update the corresponding gesture detectors
-                if (_bodies != null)
+                foreach (Body _body in _bodies)
                 {
-                    // loop through all bodies to see if any of the gesture detectors need to be updated
-                    int maxBodies = _sensor.BodyFrameSource.BodyCount;
-                    for (int i = 0; i < maxBodies; ++i)
-                    {
-                        Body body = _bodies[i];
-                        ulong trackingId = body.TrackingId;
-
-                        // if the current body TrackingId changed, update the corresponding gesture detector with the new value
-                        if (trackingId != gestureDetectorList[i].TrackingId)
+                    if (_body != null)
+                        if (_body.IsTracked && _body.TrackingId != 0)
                         {
-                            //Console.WriteLine(String.Concat("gestureDetectionList ", Newtonsoft.Json.JsonConvert.SerializeObject(gestureDetectorList[0], Formatting.Indented)));
-                            gestureDetectorList[i].TrackingId = trackingId;
+                            ulong trackingId = _body.TrackingId;
+                            detector.TrackingId = trackingId;
+                            detector.IsPaused = trackingId == 0;
 
-                            // if the current body is tracked, unpause its detector to get VisualGestureBuilderFrameArrived events
-                            // if the current body is not tracked, pause its detector so we don't waste resources trying to get invalid gesture results
-                            gestureDetectorList[i].IsPaused = trackingId == 0;
-                        }
-                    }
-                }
-            }
-
-            //Draw ellipses correctly
-            using (var frame = reference.BodyFrameReference.AcquireFrame())
-            {
-                if (frame != null)
-                {
-                    UICanvasOutput.Children.Clear();
-
-                    _bodies = new Body[frame.BodyFrameSource.BodyCount];
-
-                    frame.GetAndRefreshBodyData(_bodies);
-
-                    foreach (var body in _bodies)
-                    {
-                        if (body.IsTracked)
-                        {
                             // COORDINATE MAPPING
-                            foreach (Joint joint in body.Joints.Values)
+                            foreach (Joint joint in _body.Joints.Values)
                             {
                                 if (joint.TrackingState == TrackingState.Tracked)
                                 {
@@ -264,7 +179,6 @@ namespace MainScreenUI
                                 }
                             }
                         }
-                    }
                 }
             }
         }
@@ -311,12 +225,14 @@ namespace MainScreenUI
                             selectedDb = _file.FullName;
             if (((Button)e.OriginalSource).Content != null && selectedDb != null)
             {
-                int maxBodies = _sensor.BodyFrameSource.BodyCount;
+                /*int maxBodies = _sensor.BodyFrameSource.BodyCount;
                 foreach (GestureDetector gs in gestureDetectorList)
                 {
                     gs.VGBPath = selectedDb;
                     gs.GestureName = ((Button)e.OriginalSource).Content.ToString();
-                }
+                }*/
+                detector.VGBPath = selectedDb;
+                detector.GestureName = ((Button)e.OriginalSource).Content.ToString();
             }
             //Console.WriteLine(String.Concat("DataContext ", Newtonsoft.Json.JsonConvert.SerializeObject(DataContext.ToString(), Formatting.Indented)));
 

@@ -8,6 +8,7 @@
       Background="White"
       d:DesignWidth="854" 
       d:DesignHeight="480"
+      
       Title="Exercise3" Loaded="Page_Loaded" Unloaded="Page_Unloaded">
 
     <Page.Resources>
@@ -120,13 +121,14 @@
 
             <!--Canvas-->
             <Viewbox Height="390" Margin="289,10,10,0" VerticalAlignment="Top">
-                <Grid Height="1352">
+                <Grid x:Name="KinectOutput" Height="1352">
                     <Image RenderOptions.BitmapScalingMode="HighQuality" x:Name="UICameraOutput" Stretch="Uniform" ClipToBounds="True" Height="auto" Width="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    <Canvas x:Name="UICanvasOutput" HorizontalAlignment="Stretch" Width="1920" Height="1080">
-                        <Canvas.LayoutTransform>
-                            <ScaleTransform ScaleX="{Binding ElementName=CanvasContainer, Path=ActualWidth}" ScaleY="{Binding ElementName=CanvasContainer, Path=ActualHeight}"/>
-                        </Canvas.LayoutTransform>
-                    </Canvas>
+                    <Canvas x:Name="UICanvasOutput" HorizontalAlignment="Stretch" Width="1920" Height="1080"/>
+                    <StackPanel>
+                        <TextBlock TextWrapping="Wrap" Text="{Binding UIDetected, StringFormat='Status: {0}'}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="200"/>
+                        <TextBlock TextWrapping="Wrap" Text="{Binding BodyIndex, StringFormat='Body Index: {0}'}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="200"/>
+                        <TextBlock TextWrapping="Wrap" Text="{Binding UIConfidence, StringFormat='Confidence Level: {0}'}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="200"/>
+                    </StackPanel>
                 </Grid>
             </Viewbox>
             <!--End of Canvas-->

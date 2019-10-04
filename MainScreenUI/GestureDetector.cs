@@ -203,9 +203,13 @@ namespace MainScreenUI
                                 //Console.WriteLine(String.Concat("discreteResult ", Newtonsoft.Json.JsonConvert.SerializeObject(discreteResults, Formatting.Indented)));
                                 //Console.WriteLine(String.Concat("Gesture ", Newtonsoft.Json.JsonConvert.SerializeObject(gesture, Formatting.Indented)));
                                 //Console.WriteLine(String.Concat("Result ", Newtonsoft.Json.JsonConvert.SerializeObject(result, Formatting.Indented)));
+                                //Console.WriteLine(String.Concat("Detection ", result.Detected));
                                 if (result != null)
                                     if (result.Confidence > 0.35f)
+                                    {
                                         GestureResultView.UpdateGestureResult(true, true, result.Confidence);
+                                        Console.WriteLine(String.Concat("Confidence ", result.Confidence));
+                                    }
                                     else
                                         GestureResultView.UpdateGestureResult(true, false, result.Confidence);
                                 //{
@@ -234,7 +238,7 @@ namespace MainScreenUI
         private void Source_TrackingIdLost(object sender, TrackingIdLostEventArgs e)
         {
             // update the GestureResultView object to show the 'Not Tracked' image in the UI
-            this.GestureResultView.UpdateGestureResult(false, false, 0.0f);
+            //this.GestureResultView.UpdateGestureResult(false, false, 0.0f);
             Console.WriteLine("Tracking ID is lost!");
         }
     }

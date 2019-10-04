@@ -6,6 +6,7 @@
 
 namespace MainScreenUI
 {
+    using System;
     using System.ComponentModel;
     using System.Runtime.CompilerServices;
 
@@ -190,6 +191,12 @@ namespace MainScreenUI
         /// <param name="propertyName">Name of property that has changed</param> 
         private void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
         {
+            if (UIConfidence > 0.35f)
+            {
+                Console.WriteLine(String.Concat("Body Index ", BodyIndex.ToString()));
+                Console.WriteLine(String.Concat("UI Detected ", UIDetected.ToString()));
+                Console.WriteLine(String.Concat("UI Confidence ", UIConfidence.ToString()));
+            }
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
     }

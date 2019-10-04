@@ -26,7 +26,7 @@
         GestureDetector                 detector = null;
         List<FileInfo>                  selectedFiles = new List<FileInfo>();
 
-        public string   gestureText = "";
+        public string   gestureText = "", detectionStatusText = "";
         private string  selectedGesture = "";
         private string  selectedDb = "";
 
@@ -160,6 +160,25 @@
 
                     // notify any bound elements that the text has changed
                     OnPropertyChanged("UIGesture");
+                }
+            }
+        }
+
+        public string UIDetected
+        {
+            get
+            {
+                return UIDetected;
+            }
+
+            set
+            {
+                if (detectionStatusText != value)
+                {
+                    detectionStatusText = value;
+
+                    // notify any bound elements that the text has changed
+                    OnPropertyChanged("UIDetected");
                 }
             }
         }
