@@ -37,14 +37,15 @@ namespace MainScreenUI
 
         private void Register_Click(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(RegUserName.Text) && string.IsNullOrWhiteSpace(RegPass.Text))
+            if (string.IsNullOrWhiteSpace(RegUserName.Text) && string.IsNullOrWhiteSpace(RegPass.Text) && string.IsNullOrWhiteSpace(RegFullName.Text) && string.IsNullOrWhiteSpace(RegAge.Text)
+                && string.IsNullOrWhiteSpace(RegHeight.Text) && string.IsNullOrWhiteSpace(RegWeight.Text))
             {
                 MessageBox.Show("Please Fill all the fields");
                 return;
             }
             else
             {
-                User newUser = new User(RegUserName.Text, RegPass.Text);
+                User newUser = new User(RegUserName.Text, RegPass.Text, RegFullName.Text, int.Parse(RegAge.Text), Double.Parse(RegHeight.Text), Double.Parse(RegWeight.Text));
 
                 SetResponse set = client.Set(@"Users/" + RegUserName.Text, newUser);
 

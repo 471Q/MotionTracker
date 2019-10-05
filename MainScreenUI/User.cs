@@ -8,7 +8,6 @@ namespace MainScreenUI
 {
     class User
     {
-        private static string error;
 
         public String Username { get; set; }
 
@@ -21,29 +20,21 @@ namespace MainScreenUI
         public Double Height { get; set; }
 
         public Double Weight { get; set; }
+
         public User(string user, string pass)
         {
             Username = user;
             Password = pass;
         }
 
-        public static bool Verify(User databaseUser, User localUSer)
+        public User(string user, string pass, string name, int age, double height, double weight)
         {
-            if (databaseUser == null || localUSer == null)
-            {
-                return false;
-            }
-            if (databaseUser.Username != localUSer.Username)
-            {
-                error = "Username does not exist";
-                return false;
-            }
-            else if (databaseUser.Password != localUSer.Password)
-            {
-                error = "Username and Password does not match!";
-                return false;
-            }
-            return true;
+            Username = user;
+            Password = pass;
+            Name = name;
+            Age = age;
+            Height = height;
+            Weight = weight;
         }
     }
 }

@@ -15,7 +15,7 @@ namespace MainScreenUI
 
            //PageArea.Content = new Exercise3();
 
-           PageArea.Content = new Exercise3();
+           PageArea.Content = new Login();
         }
 
         private void ButtonLogOut_Click(object sender, RoutedEventArgs e)

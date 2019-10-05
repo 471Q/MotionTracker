@@ -46,11 +46,11 @@ namespace MainScreenUI
             else
             {
                 FirebaseResponse res = client.Get(@"Users/" + userName.Text);
-                User resUser = res.ResultAs<User>(); //firebase result
+                LogUser resUser = res.ResultAs<LogUser>(); //firebase result
 
-                User currUser = new User(userName.Text, pass.Text);
+                LogUser currUser = new LogUser(userName.Text, pass.Text);
 
-                if (User.Verify(resUser, currUser))
+                if (LogUser.Verify(resUser, currUser))
                 {
                     MessageBox.Show("Logged in");
 
