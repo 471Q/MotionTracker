@@ -21,12 +21,6 @@ namespace MainScreenUI
 
         public Double Weight { get; set; }
 
-        public User(string user, string pass)
-        {
-            Username = user;
-            Password = pass;
-        }
-
         public User(string user, string pass, string name, int age, double height, double weight)
         {
             Username = user;
@@ -36,5 +30,6 @@ namespace MainScreenUI
             Height = height;
             Weight = weight;
         }
+
     }
 }

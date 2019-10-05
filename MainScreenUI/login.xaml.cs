@@ -34,7 +34,7 @@ namespace MainScreenUI
             BasePath = "https://motiontracker-dd816.firebaseio.com/"
         };
 
-        internal static string UserName = "";
+        internal static User userDetail;
 
         private void Login1_Click(object sender, RoutedEventArgs e)
         {
@@ -48,13 +48,12 @@ namespace MainScreenUI
                 FirebaseResponse res = client.Get(@"Users/" + userName.Text);
                 LogUser resUser = res.ResultAs<LogUser>(); //firebase result
 
+                userDetail = res.ResultAs<User>(); //all details
+
                 LogUser currUser = new LogUser(userName.Text, pass.Text);
 
                 if (LogUser.Verify(resUser, currUser))
                 {
-                    MessageBox.Show("Logged in");
-
-                    UserName = resUser.Username;
                     UserProfile userProfile = new UserProfile();
                     NavigationService.Navigate(userProfile);
                     ///rest of the application goes here 

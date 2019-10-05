@@ -78,9 +78,9 @@
                 <TextBlock HorizontalAlignment="Left" Margin="320,10,0,0" Grid.Row="0" TextWrapping="Wrap" Text="Height(cm)" VerticalAlignment="Top" Height="16" Width="65" FontSize="11"/>
                 <TextBlock HorizontalAlignment="Left" Margin="460,10,0,0" Grid.Row="0" TextWrapping="Wrap" Text="Weight(kg)" VerticalAlignment="Top" Height="16" Width="65" FontSize="11"/>
                 <TextBlock x:Name="userName" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Jesse McCree" VerticalAlignment="Top" Height="16" Width="166" FontSize="15" FontWeight="SemiBold"/>
-                <TextBlock HorizontalAlignment="Left" Margin="200,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="37" VerticalAlignment="Top" Height="16" Width="49" FontSize="15" FontWeight="SemiBold"/>
-                <TextBlock HorizontalAlignment="Left" Margin="320,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="178" VerticalAlignment="Top" Height="16" Width="49" FontSize="15" FontWeight="SemiBold"/>
-                <TextBlock HorizontalAlignment="Left" Margin="460,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="80" VerticalAlignment="Top" Height="16" Width="49" FontSize="15" FontWeight="SemiBold"/>
+                <TextBlock x:Name="age" HorizontalAlignment="Left" Margin="200,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="37" VerticalAlignment="Top" Height="16" Width="49" FontSize="15" FontWeight="SemiBold"/>
+                <TextBlock x:Name="height" HorizontalAlignment="Left" Margin="320,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="178" VerticalAlignment="Top" Height="16" Width="49" FontSize="15" FontWeight="SemiBold"/>
+                <TextBlock x:Name="weight" HorizontalAlignment="Left" Margin="460,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="80" VerticalAlignment="Top" Height="16" Width="49" FontSize="15" FontWeight="SemiBold"/>
             </Grid>
             <Ellipse HorizontalAlignment="Left" Height="70" Margin="190,27,0,0" Stroke="Transparent" VerticalAlignment="Top" Width="70">
                 <Ellipse.Fill>

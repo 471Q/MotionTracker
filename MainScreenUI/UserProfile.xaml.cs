@@ -31,7 +31,10 @@ namespace MainScreenUI
 
         public void Init()
         {
-            userName.Text = Login.UserName;
+            userName.Text = Login.userDetail.Name;
+            age.Text = Login.userDetail.Age.ToString();
+            height.Text = Login.userDetail.Height.ToString();
+            weight.Text = Login.userDetail.Weight.ToString();
         }
 
         private void GoToExercise(object sender, RoutedEventArgs e)

@@ -50,6 +50,9 @@ namespace MainScreenUI
                 SetResponse set = client.Set(@"Users/" + RegUserName.Text, newUser);
 
                 MessageBox.Show("Successfully Registered");
+
+                Login userLogin = new Login();
+                NavigationService.Navigate(userLogin);
             }
         }
 
