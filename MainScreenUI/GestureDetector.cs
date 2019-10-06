@@ -25,10 +25,11 @@ namespace MainScreenUI
         Thread thread1 = null, thread2 = null;
         CancellationTokenSource ts1 = new CancellationTokenSource(), ts2 = new CancellationTokenSource();
         float temp = 0f;
+        int currValue ,realtime;
         int i = 0, exerciseDone = 0;
         IFirebaseClient client;
-        DiscreteGestureResult result = null;
-        List<DiscreteGestureResult> results = new List<DiscreteGestureResult>();
+        ContinuousGestureResult result = null;
+        List<ContinuousGestureResult> results = new List<ContinuousGestureResult>();
         /// <summary> Name of the discrete gesture in the database that we want to track </summary>
         private string gestureName = "";
 
@@ -75,24 +76,27 @@ namespace MainScreenUI
                 {
                     temp = 0.0f;
                     results.Clear();
-                    System.Threading.Thread.Sleep(200);
-                    //Calculation();
-                    System.Threading.Thread.Sleep(50);
-                    for (i = 0; i < results.Count; i++)
-                        if (results[i].Confidence > 0.1f)
+                    i = 0;
+
+                    System.Threading.Thread.Sleep(500);
+                    Calculation();
+                    //System.Threading.Thread.Sleep(50);
+                    //for (i = 0; i < results.Count; i++)
+                        if ((temp / (float)i) > 0.82f)
                         {
                             exerciseDone++;
-                            GestureResultView.UpdateGestureResult(true, true, (temp / i));
-                            break;
-                            //Console.WriteLine(String.Concat("Confidence ", (temp / i)));
+                            GestureResultView.UpdateGestureResult(true, true, (temp / (float)i));
+                            //break;
+                            //Console.WriteLine(String.Concat("Confidence ", (temp / (float)i)));
                         }
                         else
-                            GestureResultView.UpdateGestureResult(true, false, (temp / i));
+                            GestureResultView.UpdateGestureResult(true, false, (temp / (float)i));
                 }
             });
 
             Task.Factory.StartNew(() =>
             {
+                int lastValue = 0;
                 thread2 = Thread.CurrentThread;
                 while (true)
                 {
@@ -109,9 +113,17 @@ namespace MainScreenUI
                     {
                         Console.WriteLine("No Internet or Connection Problem");
                     }
-                    System.Threading.Thread.Sleep(2000);
-                    Login.userDetail.Points++;
-                    SetResponse set = client.Set(@"Users/" + Login.userDetail.Username, Login.userDetail);
+                    System.Threading.Thread.Sleep(1000);
+                    if (exerciseDone > 0 && lastValue != exerciseDone)
+                    {
+                        Login.userDetail.Points += exerciseDone;
+                        SetResponse set = client.Set(@"Users/" + Login.userDetail.Username, Login.userDetail);
+                        lastValue = exerciseDone;
+                    }
+                    else
+                    {
+                        Console.WriteLine("No new value");
+                    }
                 }
             });
 
@@ -123,12 +135,12 @@ namespace MainScreenUI
         {
             for (i = 0; i < results.Count; i++)
             {
-                temp += results[i].Confidence;
+                temp += results[i].Progress;
             }
         }
 
-        /// <summary> Gets the GestureResultView object which stores the detector results for display in the UI </summary>
-        public GestureResultView GestureResultView { get; private set; }
+    /// <summary> Gets the GestureResultView object which stores the detector results for display in the UI </summary>
+    public GestureResultView GestureResultView { get; private set; }
 
         /// <summary>
         /// Gets or sets the body tracking ID associated with the current detector
@@ -273,12 +285,12 @@ namespace MainScreenUI
                 if (frame != null)
                 {
                     // get the discrete gesture results which arrived with the latest frame
-                    IReadOnlyDictionary<Gesture, DiscreteGestureResult> discreteResults = frame.DiscreteGestureResults;
+                    //IReadOnlyDictionary<Gesture, DiscreteGestureResult> discreteResults = frame.DiscreteGestureResults;
 
-                    //IReadOnlyDictionary<Gesture, ContinuousGestureResult> continuousResults = frame.ContinuousGestureResults;
+                    IReadOnlyDictionary<Gesture, ContinuousGestureResult> continuousResults = frame.ContinuousGestureResults;
 
                     //if (continuousResults != null)
-                    if (discreteResults != null)
+                    if (continuousResults != null)
                         // we only have one gesture in this source object, but you can get multiple gestures
                         foreach (Gesture gesture in vgbFrameSource.Gestures)
                             if (gesture.Name.Equals(GestureName))
@@ -286,7 +298,7 @@ namespace MainScreenUI
                               //ContinuousGestureResult result = null;
                                 result = null;
                                 //continuousResults.TryGetValue(gesture, out result);
-                                discreteResults.TryGetValue(gesture, out result);
+                                continuousResults.TryGetValue(gesture, out result);
                                 //For debugging
                                 //Console.WriteLine(String.Concat("Frame.discreteResult ", Newtonsoft.Json.JsonConvert.SerializeObject(frame.DiscreteGestureResults, Formatting.Indented)));
                                 //Console.WriteLine(String.Concat("continuosResult ", Newtonsoft.Json.JsonConvert.SerializeObject(continuousResults, Formatting.Indented)));
@@ -294,7 +306,7 @@ namespace MainScreenUI
                                 //Console.WriteLine(String.Concat("Gesture ", Newtonsoft.Json.JsonConvert.SerializeObject(gesture, Formatting.Indented)));
                                 //Console.WriteLine(String.Concat("Result ", Newtonsoft.Json.JsonConvert.SerializeObject(result, Formatting.Indented)));
                                 //Console.WriteLine(String.Concat("Detection ", result.Detected));
-                                Console.WriteLine(String.Concat("GestureDetectorClass => Confidence: ", result.Confidence));
+                                Console.WriteLine(String.Concat("GestureDetectorClass => Progress: ", result.Progress));
                                 results.Add(result);
                             }
                 }

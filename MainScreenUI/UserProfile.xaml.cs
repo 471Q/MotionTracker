@@ -43,6 +43,7 @@ namespace MainScreenUI
             User UserUpdatedPoint = res.ResultAs<User>(); //firebase result
 
             userName.Text = Login.userDetail.Name;
+            userNameNavPanel.Text = Login.userDetail.Name;
             age.Text = Login.userDetail.Age.ToString();
             height.Text = Login.userDetail.Height.ToString();
             weight.Text = Login.userDetail.Weight.ToString();
