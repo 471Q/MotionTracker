@@ -38,19 +38,7 @@
 
             <!--Password-->
             <Label Content="Password" Foreground="White" Margin="398,213,395,241" FontWeight="SemiBold" HorizontalAlignment="Center"/>
-            <TextBox x:Name="RegPass" HorizontalAlignment="Left" Height="23" Margin="312,244,0,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="230"/>
-            <TextBlock IsHitTestVisible="False" Text="Password" Margin="316,247,468,213"  Foreground="DarkGray">
-                <TextBlock.Style>
-                    <Style TargetType="{x:Type TextBlock}">
-                        <Setter Property="Visibility" Value="Collapsed"/>
-                        <Style.Triggers>
-                            <DataTrigger Binding="{Binding Text, ElementName=RegPass}" Value="">
-                                <Setter Property="Visibility" Value="Visible"/>
-                            </DataTrigger>
-                        </Style.Triggers>
-                    </Style>
-                </TextBlock.Style>
-            </TextBlock>
+            <PasswordBox x:Name="RegPass" HorizontalAlignment="Left" Height="23" Margin="312,244,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="230"/>
 
 
             <!--Full Name-->

@@ -103,7 +103,7 @@
                 </Border.Effect>
             </Border>
             <TextBlock HorizontalAlignment="Left" Margin="619,143,0,0" TextWrapping="Wrap" Text="Total Exercises Completed" VerticalAlignment="Top" FontSize="15"/>
-            <TextBlock HorizontalAlignment="Left" Margin="619,170,0,0" TextWrapping="Wrap" Text="50" VerticalAlignment="Top" FontSize="24" FontWeight="SemiBold"/>
+            <TextBlock x:Name="UIExerciseCompleted" HorizontalAlignment="Left" Margin="619,170,0,0" TextWrapping="Wrap" Text="50" VerticalAlignment="Top" FontSize="24" FontWeight="SemiBold"/>
 
 
             <Border BorderBrush="#82CAFA" CornerRadius="5" BorderThickness="1" Height="79" Margin="174,0,471,26" VerticalAlignment="Bottom">

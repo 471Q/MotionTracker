@@ -38,20 +38,7 @@
 
             <!--Password-->
             <Label Content="Password" Foreground="White" Margin="394,271,399,183" FontWeight="SemiBold"/>
-            <TextBox x:Name="pass" Margin="312,311,312,146" TextWrapping="Wrap" VerticalContentAlignment="Center"/>
-            <TextBlock IsHitTestVisible="False" Text="Password" Margin="316,314,468,146"  Foreground="DarkGray">
-                <TextBlock.Style>
-                    <Style TargetType="{x:Type TextBlock}">
-                        <Setter Property="Visibility" Value="Collapsed"/>
-                        <Style.Triggers>
-                            <DataTrigger Binding="{Binding Text, ElementName=pass}" Value="">
-                                <Setter Property="Visibility" Value="Visible"/>
-                            </DataTrigger>
-                        </Style.Triggers>
-                    </Style>
-                </TextBlock.Style>
-            </TextBlock>
-
+            <PasswordBox x:Name="pass" Margin="312,311,312,146" VerticalContentAlignment="Center"/>
 
             <!--Buttons-->
             <Button Foreground="White" Background="#82CAFA" BorderThickness="0" x:Name="login1" Content="Login" Margin="320,363,450,89" Click="Login1_Click" Loaded="Login1_Loaded">

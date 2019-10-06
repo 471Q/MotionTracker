@@ -194,15 +194,7 @@ namespace MainScreenUI
                 _reader.Dispose();
                 _reader = null;
             }
-            if (gestureDetectorList != null)
-            {
-                foreach (GestureDetector detector in this.gestureDetectorList)
-                {
-                    detector.Dispose();
-                }
-                gestureDetectorList.Clear();
-                gestureDetectorList = null;
-            }
+            detector.Dispose();
             if (_sensor != null)
             {
                 _sensor.Close();
@@ -242,10 +234,6 @@ namespace MainScreenUI
         private void GoToPoints(object sender, RoutedEventArgs e)
         {
             Points points = new Points();
-            if(countOfExerciseCompleted != 0)
-                points = new Points(countOfExerciseCompleted);
-            else
-                points = new Points();
             NavigationService.Navigate(points);
         }
 

@@ -13,6 +13,7 @@ namespace MainScreenUI
     using Microsoft.Kinect.VisualGestureBuilder;
     using System;
     using System.Collections.Generic;
+    using System.Threading;
     using System.Threading.Tasks;
 
     /// <summary>
@@ -21,6 +22,8 @@ namespace MainScreenUI
     /// </summary>
     public class GestureDetector : IDisposable
     {
+        Thread thread1 = null, thread2 = null;
+        CancellationTokenSource ts1 = new CancellationTokenSource(), ts2 = new CancellationTokenSource();
         float temp = 0f;
         int i = 0, exerciseDone = 0;
         IFirebaseClient client;
@@ -69,6 +72,7 @@ namespace MainScreenUI
             {
                 while (true)
                 {
+                    thread1 = Thread.CurrentThread;
                     temp = 0.0f;
                     results.Clear();
                     System.Threading.Thread.Sleep(500);
@@ -85,12 +89,11 @@ namespace MainScreenUI
                 }
             });
 
-            
-
             Task.Factory.StartNew(() =>
             {
                 while (true)
                 {
+                    thread2 = Thread.CurrentThread;
                     IFirebaseConfig ifc = new FirebaseConfig()
                     {
                         AuthSecret = "5JF2869ie6NEZOnxh2YPqEVnvoa9UdttEdaSeKAG",
@@ -109,6 +112,9 @@ namespace MainScreenUI
                     SetResponse set = client.Set(@"Users/" + Login.userDetail.Username, Login.userDetail);
                 }
             });
+
+            //Task.Factory.StartNew((RunCalculationEvery550ms));
+            //Task.Factory.StartNew((UpdatePointsToDB));
         }
 
         private void Calculation()
@@ -248,6 +254,9 @@ namespace MainScreenUI
                     vgbFrameSource = null;
                 }
             }
+            Console.WriteLine("GestureDectector Class Disposing.....");
+            thread1.Abort();
+            thread2.Abort();
         }
 
         /// <summary>

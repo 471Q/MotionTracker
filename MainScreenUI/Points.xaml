@@ -7,7 +7,7 @@
       mc:Ignorable="d"
       Background="White"
       d:DesignWidth="854" d:DesignHeight="480"
-      Title="Points">
+      Title="Points" Loaded="Page_Loaded" >
 
     <Viewbox>
         <Grid Width="854" Height="480">
@@ -64,7 +64,7 @@
                 <Border.Effect>
                     <DropShadowEffect Color="#82CAFA" />
                 </Border.Effect>
-                <ProgressBar x:Name="progressBar" Foreground="#82CAFA" BorderBrush="#82CAFA" HorizontalAlignment="Left" Height="15" VerticalAlignment="Top" Width="630" Margin="15,127,0,0" Value="25"/>
+                <ProgressBar x:Name="progressBar" Foreground="#82CAFA" BorderBrush="#82CAFA" HorizontalAlignment="Left" Height="15" VerticalAlignment="Top" Width="630" Margin="15,127,0,0"/>
             </Border>
             <Border BorderBrush="#82CAFA" CornerRadius="5" BorderThickness="1" Margin="174,249,10,10">
                 <Border.Effect>
@@ -73,7 +73,7 @@
             </Border>
             <TextBlock HorizontalAlignment="Left" Margin="189,27,0,0" TextWrapping="Wrap" Text="Get rewarded with great discounts and perks when you complete exercises" VerticalAlignment="Top" FontSize="18"/>
             <TextBlock HorizontalAlignment="Left" Margin="189,109,0,0" TextWrapping="Wrap" Text="Exercise completed this week" VerticalAlignment="Top" FontSize="14"/>
-            <TextBlock HorizontalAlignment="Left" Margin="473,165,0,0" TextWrapping="Wrap" Text="50/100" VerticalAlignment="Top" FontSize="14"/>
+            <TextBlock x:Name="progressText" HorizontalAlignment="Left" Margin="473,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"/>
         </Grid>
     </Viewbox>
 </Page>

@@ -35,10 +35,11 @@ namespace MainScreenUI
         };
 
         internal static User userDetail;
+        internal static FirebaseResponse res;
 
         private void Login1_Click(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(userName.Text) && string.IsNullOrWhiteSpace(pass.Text))
+            if (string.IsNullOrWhiteSpace(userName.Text) && string.IsNullOrWhiteSpace(pass.Password))
             {
                 MessageBox.Show("Please Fill all the fields");
                 return;
@@ -50,7 +51,7 @@ namespace MainScreenUI
 
                 userDetail = res.ResultAs<User>(); //all details
 
-                LogUser currUser = new LogUser(userName.Text, pass.Text);
+                LogUser currUser = new LogUser(userName.Text, pass.Password);
 
                 if (LogUser.Verify(resUser, currUser))
                 {

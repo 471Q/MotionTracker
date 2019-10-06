@@ -1,4 +1,7 @@
-﻿using System;
+﻿using FireSharp.Config;
+using FireSharp.Interfaces;
+using FireSharp.Response;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -31,10 +34,19 @@ namespace MainScreenUI
 
         public void Init()
         {
+            IFirebaseConfig ifc = new FirebaseConfig()
+            {
+                AuthSecret = "5JF2869ie6NEZOnxh2YPqEVnvoa9UdttEdaSeKAG",
+                BasePath = "https://motiontracker-dd816.firebaseio.com/"
+            };
+            FirebaseResponse res = new FireSharp.FirebaseClient(ifc).Get(@"Users/" + Login.userDetail.Username);
+            User UserUpdatedPoint = res.ResultAs<User>(); //firebase result
+
             userName.Text = Login.userDetail.Name;
             age.Text = Login.userDetail.Age.ToString();
             height.Text = Login.userDetail.Height.ToString();
             weight.Text = Login.userDetail.Weight.ToString();
+            UIExerciseCompleted.Text = UserUpdatedPoint.Points.ToString();
         }
 
         private void GoToExercise(object sender, RoutedEventArgs e)
