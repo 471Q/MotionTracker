@@ -70,30 +70,32 @@ namespace MainScreenUI
             //Update the GestureResultView, and in turn update the XAML UI
             Task.Factory.StartNew(() =>
             {
+                thread1 = Thread.CurrentThread;
                 while (true)
                 {
-                    thread1 = Thread.CurrentThread;
                     temp = 0.0f;
                     results.Clear();
-                    System.Threading.Thread.Sleep(500);
-                    Calculation();
+                    System.Threading.Thread.Sleep(200);
+                    //Calculation();
                     System.Threading.Thread.Sleep(50);
-                    if ((temp / i) > 0.35f)
-                    {
-                        exerciseDone++;
-                        GestureResultView.UpdateGestureResult(true, true, (temp / i));
-                        //Console.WriteLine(String.Concat("Confidence ", (temp / i)));
-                    }
-                    else
-                        GestureResultView.UpdateGestureResult(true, false, (temp / i));
+                    for (i = 0; i < results.Count; i++)
+                        if (results[i].Confidence > 0.1f)
+                        {
+                            exerciseDone++;
+                            GestureResultView.UpdateGestureResult(true, true, (temp / i));
+                            break;
+                            //Console.WriteLine(String.Concat("Confidence ", (temp / i)));
+                        }
+                        else
+                            GestureResultView.UpdateGestureResult(true, false, (temp / i));
                 }
             });
 
             Task.Factory.StartNew(() =>
             {
+                thread2 = Thread.CurrentThread;
                 while (true)
                 {
-                    thread2 = Thread.CurrentThread;
                     IFirebaseConfig ifc = new FirebaseConfig()
                     {
                         AuthSecret = "5JF2869ie6NEZOnxh2YPqEVnvoa9UdttEdaSeKAG",
@@ -292,7 +294,7 @@ namespace MainScreenUI
                                 //Console.WriteLine(String.Concat("Gesture ", Newtonsoft.Json.JsonConvert.SerializeObject(gesture, Formatting.Indented)));
                                 //Console.WriteLine(String.Concat("Result ", Newtonsoft.Json.JsonConvert.SerializeObject(result, Formatting.Indented)));
                                 //Console.WriteLine(String.Concat("Detection ", result.Detected));
-                                //Console.WriteLine(String.Concat("Confidence ", result.Confidence));
+                                Console.WriteLine(String.Concat("GestureDetectorClass => Confidence: ", result.Confidence));
                                 results.Add(result);
                             }
                 }

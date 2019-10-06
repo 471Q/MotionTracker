@@ -141,9 +141,10 @@ namespace MainScreenUI
                         if (_body != null)
                             if (_body.IsTracked && _body.TrackingId != 0)
                             {
+                                detector.IsPaused = false;
                                 ulong trackingId = _body.TrackingId;
                                 detector.TrackingId = trackingId;
-                                detector.IsPaused = trackingId == 0;
+                                //detector.IsPaused = trackingId == 0;
 
                                 // COORDINATE MAPPING
                                 foreach (Joint joint in _body.Joints.Values)
