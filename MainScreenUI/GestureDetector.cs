@@ -6,6 +6,9 @@
 
 namespace MainScreenUI
 {
+    using FireSharp.Config;
+    using FireSharp.Interfaces;
+    using FireSharp.Response;
     using Microsoft.Kinect;
     using Microsoft.Kinect.VisualGestureBuilder;
     using System;
@@ -19,7 +22,8 @@ namespace MainScreenUI
     public class GestureDetector : IDisposable
     {
         float temp = 0f;
-        int i = 0;
+        int i = 0, exerciseDone = 0;
+        IFirebaseClient client;
         DiscreteGestureResult result = null;
         List<DiscreteGestureResult> results = new List<DiscreteGestureResult>();
         /// <summary> Name of the discrete gesture in the database that we want to track </summary>
@@ -72,11 +76,37 @@ namespace MainScreenUI
                     System.Threading.Thread.Sleep(50);
                     if ((temp / i) > 0.35f)
                     {
+                        exerciseDone++;
                         GestureResultView.UpdateGestureResult(true, true, (temp / i));
-                        Console.WriteLine(String.Concat("Confidence ", (temp / i)));
+                        //Console.WriteLine(String.Concat("Confidence ", (temp / i)));
                     }
                     else
                         GestureResultView.UpdateGestureResult(true, false, (temp / i));
+                }
+            });
+
+            
+
+            Task.Factory.StartNew(() =>
+            {
+                while (true)
+                {
+                    IFirebaseConfig ifc = new FirebaseConfig()
+                    {
+                        AuthSecret = "5JF2869ie6NEZOnxh2YPqEVnvoa9UdttEdaSeKAG",
+                        BasePath = "https://motiontracker-dd816.firebaseio.com/"
+                    };
+                    try
+                    {
+                        client = new FireSharp.FirebaseClient(ifc);
+                    }
+                    catch
+                    {
+                        Console.WriteLine("No Internet or Connection Problem");
+                    }
+                    System.Threading.Thread.Sleep(2000);
+                    Login.userDetail.Points++;
+                    SetResponse set = client.Set(@"Users/" + Login.userDetail.Username, Login.userDetail);
                 }
             });
         }
@@ -170,6 +200,20 @@ namespace MainScreenUI
             {
                 if (vgbFrameReader.IsPaused != value)
                     vgbFrameReader.IsPaused = value;
+            }
+        }
+
+        public int ExerciseDone
+        {
+            get
+            {
+                return exerciseDone;
+            }
+
+            set
+            {
+                if (exerciseDone != value)
+                    exerciseDone = value;
             }
         }
 

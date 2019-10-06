@@ -21,7 +21,9 @@ namespace MainScreenUI
 
         public Double Weight { get; set; }
 
-        public User(string user, string pass, string name, int age, double height, double weight)
+        public int Points { get; set; }
+
+        public User(string user, string pass, string name, int age, double height, double weight, int points)
         {
             Username = user;
             Password = pass;
@@ -29,6 +31,7 @@ namespace MainScreenUI
             Age = age;
             Height = height;
             Weight = weight;
+            Points = points;
         }
 
     }

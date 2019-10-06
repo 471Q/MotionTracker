@@ -45,7 +45,7 @@ namespace MainScreenUI
             }
             else
             {
-                User newUser = new User(RegUserName.Text, RegPass.Text, RegFullName.Text, int.Parse(RegAge.Text), Double.Parse(RegHeight.Text), Double.Parse(RegWeight.Text));
+                User newUser = new User(RegUserName.Text, RegPass.Text, RegFullName.Text, int.Parse(RegAge.Text), Double.Parse(RegHeight.Text), Double.Parse(RegWeight.Text), 0);
 
                 SetResponse set = client.Set(@"Users/" + RegUserName.Text, newUser);
 

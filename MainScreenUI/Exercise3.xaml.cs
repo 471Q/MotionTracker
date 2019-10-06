@@ -25,6 +25,7 @@ namespace MainScreenUI
         GestureDetector detector = null;
         List<FileInfo> selectedFiles = new List<FileInfo>();
         GestureResultView result = new GestureResultView(0, false, false, 0.0f);
+        int countOfExerciseCompleted = 0;
 
         public string gestureText = "";
         private string selectedDb = "";
@@ -134,6 +135,7 @@ namespace MainScreenUI
                     // those body objects will be re-used.
                     bodyFrame.GetAndRefreshBodyData(_bodies);
                     //dataReceived = true;
+                    countOfExerciseCompleted++;
                     foreach (Body _body in _bodies)
                     {
                         if (_body != null)
@@ -240,6 +242,10 @@ namespace MainScreenUI
         private void GoToPoints(object sender, RoutedEventArgs e)
         {
             Points points = new Points();
+            if(countOfExerciseCompleted != 0)
+                points = new Points(countOfExerciseCompleted);
+            else
+                points = new Points();
             NavigationService.Navigate(points);
         }
 
