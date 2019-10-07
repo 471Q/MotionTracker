@@ -56,7 +56,7 @@
                     <TextBlock Text="Profile" Foreground="White"/>
                 </StackPanel>
             </Button>
-            <TextBlock x:Name="userNameNavPanel" HorizontalAlignment="Left" TextAlignment="Center" Margin="28,143,0,0" TextWrapping="Wrap" Text="Jesse McCree" VerticalAlignment="Top" Height="26" Width="100"/>
+            <TextBlock x:Name="userNameNavPanel" HorizontalAlignment="Left" TextAlignment="Center" Margin="28,143,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="26" Width="100"/>
             <!--End of Navigation Panel-->
 
 
@@ -113,6 +113,8 @@
             </Border>
             <TextBlock HorizontalAlignment="Left" Margin="190,386,0,0" TextWrapping="Wrap" Text="Your Membership Status" VerticalAlignment="Top" FontSize="15"/>
             <TextBlock HorizontalAlignment="Left" Margin="190,419,0,0" TextWrapping="Wrap" Text="Active" VerticalAlignment="Top" FontSize="20" Foreground="#7CFC00" FontWeight="SemiBold"/>
+            <TextBlock HorizontalAlignment="Left" Margin="190,143,0,0" TextWrapping="Wrap" Text="Cindy says:" VerticalAlignment="Top" FontSize="12"/>
+            <TextBlock HorizontalAlignment="Left" Margin="190,164,0,0" TextWrapping="Wrap" Text="Wow you're doing an amazing work this week. Keep up the good work, and make sure you drink a lot of water to keep yourself hydrated. Hit 100 exercises this week and you'll be entitled for a free therapy session." VerticalAlignment="Top" FontSize="12" Height="171" Width="374"/>
         </Grid>
     </Viewbox>
 </Page>
