@@ -23,16 +23,21 @@ namespace MainScreenUI
     /// </summary>
     public partial class Login : Page
     {
+        FireS fib = new FireS();
         public Login()
         {
             InitializeComponent();
+            fib.SetIFC();
         }
+        
 
-        IFirebaseConfig ifc = new FirebaseConfig()
+     /*   IFirebaseConfig ifc = new FirebaseConfig()
         {
             AuthSecret = "5JF2869ie6NEZOnxh2YPqEVnvoa9UdttEdaSeKAG",
             BasePath = "https://motiontracker-dd816.firebaseio.com/"
         };
+*/
+    
 
         internal static User userDetail;
         internal static FirebaseResponse res;
@@ -46,7 +51,7 @@ namespace MainScreenUI
             }
             else
             {
-                FirebaseResponse res = client.Get(@"Users/" + userName.Text);
+                FirebaseResponse res = fib.client.Get(@"Users/" + userName.Text);
                 LogUser resUser = res.ResultAs<LogUser>(); //firebase result
 
                 userDetail = res.ResultAs<User>(); //all details
@@ -73,12 +78,11 @@ namespace MainScreenUI
         }
 
 
-        IFirebaseClient client;
         private void Login1_Loaded(object sender, RoutedEventArgs e)
         {
             try
             {
-                client = new FireSharp.FirebaseClient(ifc);
+                fib.SetClient();
             }
             catch
             {

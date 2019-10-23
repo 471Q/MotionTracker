@@ -25,21 +25,18 @@ namespace MainScreenUI
     /// </summary>
     public partial class UserProfile : Page
     {
+        FireS fib = new FireS();
         public UserProfile()
         {
             InitializeComponent();
-
             Init();
         }
 
         public void Init()
         {
-            IFirebaseConfig ifc = new FirebaseConfig()
-            {
-                AuthSecret = "5JF2869ie6NEZOnxh2YPqEVnvoa9UdttEdaSeKAG",
-                BasePath = "https://motiontracker-dd816.firebaseio.com/"
-            };
-            FirebaseResponse res = new FireSharp.FirebaseClient(ifc).Get(@"Users/" + Login.userDetail.Username);
+            fib.SetIFC();
+
+            FirebaseResponse res = new FireSharp.FirebaseClient(fib.ifc).Get(@"Users/" + Login.userDetail.Username);
             User UserUpdatedPoint = res.ResultAs<User>(); //firebase result
 
             userName.Text = Login.userDetail.Name;

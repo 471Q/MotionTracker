@@ -160,6 +160,7 @@
     <Compile Include="Exercise2.xaml.cs">
       <DependentUpon>Exercise2.xaml</DependentUpon>
     </Compile>
+    <Compile Include="FireS.cs" />
     <Compile Include="GestureDetector.cs" />
     <Compile Include="GestureResultView.cs" />
     <Compile Include="Login.xaml.cs">

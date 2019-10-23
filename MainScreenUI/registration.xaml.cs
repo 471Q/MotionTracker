@@ -21,20 +21,15 @@ namespace MainScreenUI
     /// <summary>
     /// Interaction logic for registration.xaml
     /// </summary>
+
     public partial class Registration : Page
     {
+        FireS fib = new FireS();
         public Registration()
         {
             InitializeComponent();
+            fib.SetIFC();
         }
-
-        IFirebaseConfig ifc = new FirebaseConfig()
-        {
-            AuthSecret = "5JF2869ie6NEZOnxh2YPqEVnvoa9UdttEdaSeKAG",
-            BasePath = "https://motiontracker-dd816.firebaseio.com/"
-        };
-
-
         private void Register_Click(object sender, RoutedEventArgs e)
         {
             if (string.IsNullOrWhiteSpace(RegUserName.Text) && string.IsNullOrWhiteSpace(RegPass.Password) && string.IsNullOrWhiteSpace(RegFullName.Text) && string.IsNullOrWhiteSpace(RegAge.Text)
@@ -47,7 +42,7 @@ namespace MainScreenUI
             {
                 User newUser = new User(RegUserName.Text, RegPass.Password, RegFullName.Text, int.Parse(RegAge.Text), Double.Parse(RegHeight.Text), Double.Parse(RegWeight.Text), 0);
 
-                SetResponse set = client.Set(@"Users/" + RegUserName.Text, newUser);
+                SetResponse set = fib.client.Set(@"Users/" + RegUserName.Text, newUser);
 
                 MessageBox.Show("Successfully Registered");
 
@@ -55,14 +50,11 @@ namespace MainScreenUI
                 NavigationService.Navigate(userLogin);
             }
         }
-
-        IFirebaseClient client;
-     
         private void RegForm_Loaded(object sender, RoutedEventArgs e)
         {
             try
             {
-                client = new FireSharp.FirebaseClient(ifc);
+                fib.SetClient();
             }
             catch
             {
