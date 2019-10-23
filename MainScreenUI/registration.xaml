@@ -110,7 +110,14 @@
 
 
             <!--Buttons-->
-            <Button Foreground="White" Background="#82CAFA" BorderThickness="0" x:Name="Register" Content="Sign Up"  Margin="383,430,383,22" Click="Register_Click">
+            <Button Foreground="White" Background="#82CAFA" BorderThickness="0" x:Name="Register" Content="Sign Up"  Margin="329,430,437,22" Click="Register_Click">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button Foreground="White" Background="#82CAFA" BorderThickness="0" Content="Sign Up"  Margin="439,430,327,22" Click="BacktoLogin">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="5"/>

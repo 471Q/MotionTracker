@@ -69,5 +69,11 @@ namespace MainScreenUI
                 MessageBox.Show("No Internet or Connection Problem");
             }
         }
+
+        private void BacktoLogin(object sender, RoutedEventArgs e)
+        {
+            Login userLogin = new Login();
+            NavigationService.Navigate(userLogin);
+        }
     }
 }

@@ -89,17 +89,24 @@ namespace MainScreenUI
 
         private void UICategoryButtonClick(object sender, RoutedEventArgs e)
         {
+            UIExercises.Children.RemoveRange(1, UIExercises.Children.Count - 1);
             foreach (FileInfo _file in selectedFiles)
                 if (_file.Name.Equals(((Button)e.OriginalSource).Content))
                     using (VisualGestureBuilderDatabase database = new VisualGestureBuilderDatabase(_file.FullName))
                     {
                         foreach (Gesture gesture in database.AvailableGestures)
                         {
-                            Button newExerciseButton = new System.Windows.Controls.Button();
-                            newExerciseButton.Style = Resources["RoundedBlueButtonRow1Column0ColumnSpan2"] as Style;
-                            newExerciseButton.Content = gesture.Name;
-                            UIExercises.Children.RemoveRange(1, UIExercises.Children.Count - 1);
-                            UIExercises.Children.Add(newExerciseButton);
+                            if (gesture.Name.Contains("Progress"))
+                            {
+                                Button newExerciseButton = new System.Windows.Controls.Button();
+                                newExerciseButton.Style = Resources["RoundedBlueButtonRow1Column0ColumnSpan2"] as Style;
+                                newExerciseButton.Content = gesture.Name;
+                                Console.WriteLine(gesture.Name);
+                                UIExercises.Children.Add(newExerciseButton);
+                            }
+                            else {
+                                Console.WriteLine("No files found!");
+                            }
                         }
                     }
         }
@@ -141,9 +148,10 @@ namespace MainScreenUI
                         if (_body != null)
                             if (_body.IsTracked && _body.TrackingId != 0)
                             {
+                                detector.IsPaused = false;
                                 ulong trackingId = _body.TrackingId;
                                 detector.TrackingId = trackingId;
-                                detector.IsPaused = trackingId == 0;
+                                //detector.IsPaused = trackingId == 0;
 
                                 // COORDINATE MAPPING
                                 foreach (Joint joint in _body.Joints.Values)
