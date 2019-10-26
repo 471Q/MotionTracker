@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 using FireSharp.Config;
 using FireSharp.Response;
 using FireSharp.Interfaces;
+using System.Security.Cryptography;
 
 namespace MainScreenUI
 {
@@ -40,7 +41,9 @@ namespace MainScreenUI
             }
             else
             {
-                User newUser = new User(RegUserName.Text, RegPass.Password, RegFullName.Text, int.Parse(RegAge.Text), Double.Parse(RegHeight.Text), Double.Parse(RegWeight.Text), 0);
+                String passw = Encypt(RegPass.Password);
+
+                User newUser = new User(RegUserName.Text, passw, RegFullName.Text, int.Parse(RegAge.Text), Double.Parse(RegHeight.Text), Double.Parse(RegWeight.Text), 0);
 
                 SetResponse set = fib.client.Set(@"Users/" + RegUserName.Text, newUser);
 
@@ -48,6 +51,16 @@ namespace MainScreenUI
 
                 Login userLogin = new Login();
                 NavigationService.Navigate(userLogin);
+            }
+        }
+
+        private string Encypt(string pass)
+        {
+            using (MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider())
+            {
+                UTF8Encoding utf8 = new UTF8Encoding();
+                byte[] data = md5.ComputeHash(utf8.GetBytes(pass));
+                return Convert.ToBase64String(data);
             }
         }
         private void RegForm_Loaded(object sender, RoutedEventArgs e)

@@ -117,7 +117,7 @@
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button Foreground="White" Background="#82CAFA" BorderThickness="0" Content="Sign Up"  Margin="439,430,327,22" Click="BacktoLogin">
+            <Button Foreground="White" Background="#82CAFA" BorderThickness="0" Content="Back"  Margin="439,430,327,22" Click="BacktoLogin">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="5"/>

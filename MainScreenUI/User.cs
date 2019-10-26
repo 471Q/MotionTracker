@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Security.Cryptography;
 
 namespace MainScreenUI
 {
     class User
     {
-
         public String Username { get; set; }
 
         public String Password { get; set; }
@@ -33,6 +33,5 @@ namespace MainScreenUI
             Weight = weight;
             Points = points;
         }
-
     }
 }

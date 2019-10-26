@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 using FireSharp.Config;
 using FireSharp.Response;
 using FireSharp.Interfaces;
+using System.Security.Cryptography;
 
 namespace MainScreenUI
 {
@@ -30,17 +31,7 @@ namespace MainScreenUI
             fib.SetIFC();
         }
         
-
-     /*   IFirebaseConfig ifc = new FirebaseConfig()
-        {
-            AuthSecret = "5JF2869ie6NEZOnxh2YPqEVnvoa9UdttEdaSeKAG",
-            BasePath = "https://motiontracker-dd816.firebaseio.com/"
-        };
-*/
-    
-
         internal static User userDetail;
-        internal static FirebaseResponse res;
 
         private void Login1_Click(object sender, RoutedEventArgs e)
         {
@@ -54,9 +45,11 @@ namespace MainScreenUI
                 FirebaseResponse res = fib.client.Get(@"Users/" + userName.Text);
                 LogUser resUser = res.ResultAs<LogUser>(); //firebase result
 
+                String passw = Encypt(pass.Password);
+
                 userDetail = res.ResultAs<User>(); //all details
 
-                LogUser currUser = new LogUser(userName.Text, pass.Password);
+                LogUser currUser = new LogUser(userName.Text, passw);
 
                 if (LogUser.Verify(resUser, currUser))
                 {
@@ -68,6 +61,16 @@ namespace MainScreenUI
                 {
                     MessageBox.Show("Wrong");
                 }
+            }
+        }
+
+        private string Encypt(string pass)
+        {
+            using (MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider())
+            {
+                UTF8Encoding utf8 = new UTF8Encoding();
+                byte[] data = md5.ComputeHash(utf8.GetBytes(pass));
+                return Convert.ToBase64String(data);
             }
         }
 
