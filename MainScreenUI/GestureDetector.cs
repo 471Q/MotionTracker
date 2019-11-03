@@ -23,9 +23,7 @@ namespace MainScreenUI
     public class GestureDetector : IDisposable
     {
         Thread thread1 = null, thread2 = null;
-        CancellationTokenSource ts1 = new CancellationTokenSource(), ts2 = new CancellationTokenSource();
         float temp = 0f;
-        int currValue ,realtime;
         int i = 0, exerciseDone = 0;
         IFirebaseClient client;
         ContinuousGestureResult result = null;
@@ -80,9 +78,8 @@ namespace MainScreenUI
 
                     System.Threading.Thread.Sleep(500);
                     Calculation();
-                    //System.Threading.Thread.Sleep(50);
                     //for (i = 0; i < results.Count; i++)
-                        if ((temp / (float)i) > 0.82f)
+                    if ((temp / (float)i) > 0.80f)
                         {
                             exerciseDone++;
                             GestureResultView.UpdateGestureResult(true, true, (temp / (float)i));
@@ -322,7 +319,7 @@ namespace MainScreenUI
         {
             // update the GestureResultView object to show the 'Not Tracked' image in the UI
             //this.GestureResultView.UpdateGestureResult(false, false, 0.0f);
-            Console.WriteLine("Tracking ID is lost!");
+            //Console.WriteLine("Tracking ID is lost!");
         }
     }
 }

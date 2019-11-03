@@ -1,4 +1,5 @@
-﻿using KinectCoordinateMapping;
+﻿using FireSharp.Response;
+using KinectCoordinateMapping;
 using Microsoft.Kinect;
 using Microsoft.Kinect.VisualGestureBuilder;
 using System;
@@ -20,12 +21,11 @@ namespace MainScreenUI
         KinectSensor _sensor = null;
         MultiSourceFrameReader _reader = null;
         IList<Body> _bodies = null;
-        List<GestureDetector> gestureDetectorList = new List<GestureDetector>();
         VisualGestureBuilderDatabase database = null;
         GestureDetector detector = null;
         List<FileInfo> selectedFiles = new List<FileInfo>();
         GestureResultView result = new GestureResultView(0, false, false, 0.0f);
-        int countOfExerciseCompleted = 0;
+        FireS fib = new FireS();
 
         public string gestureText = "";
         private string selectedDb = "";
@@ -37,24 +37,55 @@ namespace MainScreenUI
         }
 
         /// <summary>
-        /// On Exercise page load, we try to open the kinect sensor
+        /// On Exercise page load, we try to open the kinect sensor and
+        /// Fetch user profile icon and name.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            _sensor = KinectSensor.GetDefault();
-
-            _sensor.Open();
-
-            if (_sensor != null)
-            {
-                _reader = _sensor.OpenMultiSourceFrameReader(FrameSourceTypes.Color | FrameSourceTypes.Body);
-                _reader.MultiSourceFrameArrived -= Reader_MultiSourceFrameArrived;
-            }
-            if (_sensor == null)
-                Console.WriteLine("Can't find kinect sensor!");
+            Connect_Kinnect(false);
             detector = new GestureDetector(_sensor, result);
+
+            fib.SetIFC();
+
+            FirebaseResponse res = new FireSharp.FirebaseClient(fib.ifc).Get(@"Users/" + Login.userDetail.Username);
+            User UserUpdatedPoint = res.ResultAs<User>(); //firebase result
+
+            userName.Text = Login.userDetail.Name;
+        }
+
+        /// <summary>
+        /// Search and try to connect to available Kinect Sensor
+        /// </summary>
+        /// <param name="attachEvent">Boolean value whether to activate or deativate Kinect's Reader Event to optimize resources usage</param>
+        private void Connect_Kinnect(bool attachEvent)
+        {
+            try
+            {
+                _sensor = KinectSensor.GetDefault();
+
+                _sensor.Open();
+
+                if (_sensor != null && _reader != null) {
+                    _reader.MultiSourceFrameArrived -= Reader_MultiSourceFrameArrived;
+                    _reader.Dispose();
+                    _reader = null;
+                    //_reader = _sensor.OpenMultiSourceFrameReader(FrameSourceTypes.Color | FrameSourceTypes.Body);
+                    //_reader.MultiSourceFrameArrived += Reader_MultiSourceFrameArrived;
+                }
+
+                _reader = _sensor.OpenMultiSourceFrameReader(FrameSourceTypes.Color | FrameSourceTypes.Body);
+
+                if(attachEvent)
+                    _reader.MultiSourceFrameArrived += Reader_MultiSourceFrameArrived;
+                else
+                    _reader.MultiSourceFrameArrived -= Reader_MultiSourceFrameArrived;
+            }
+            catch
+            {
+                Console.WriteLine("Communication error connecting to Kinect Sensor!");
+            }
         }
 
         /// <summary>
@@ -78,8 +109,13 @@ namespace MainScreenUI
 
                         //Add Category
                         Button newCategoryButton = new System.Windows.Controls.Button();
+                        TextBlock newTextBlock = new System.Windows.Controls.TextBlock();
+
+                        newTextBlock.Style = Resources["WrappedTextBlock"] as Style;
                         newCategoryButton.Style = Resources["RoundedBlueButtonRow0Column0"] as Style;
-                        newCategoryButton.Content = _file.Name;
+                        newTextBlock.Text = _file.Name.Remove(_file.Name.Length-4);
+                        newCategoryButton.Content = newTextBlock;
+                        //newCategoryButton.Content = _file.Name;
                         UICategory.Children.Insert(UICategory.Children.Count - 1, newCategoryButton);
                     }
                 }
@@ -87,25 +123,39 @@ namespace MainScreenUI
             catch { }
         }
 
+        /// <summary>
+        /// List all of the gestures available in selected gesture database;
+        /// Add buttons with the gesture name available in the selected gesture database respectively
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void UICategoryButtonClick(object sender, RoutedEventArgs e)
         {
             UIExercises.Children.RemoveRange(1, UIExercises.Children.Count - 1);
             foreach (FileInfo _file in selectedFiles)
-                if (_file.Name.Equals(((Button)e.OriginalSource).Content))
+                //var textBlockInButton = ((Button)e.OriginalSource).Content as TextBlock;
+                if (_file.Name.Equals(((TextBlock)((Button)e.OriginalSource).Content).Text + ".gbd"))
                     using (VisualGestureBuilderDatabase database = new VisualGestureBuilderDatabase(_file.FullName))
                     {
                         foreach (Gesture gesture in database.AvailableGestures)
                         {
-                            if (gesture.Name.Contains("Progress"))
+                            if (!gesture.Equals(null))
                             {
                                 Button newExerciseButton = new System.Windows.Controls.Button();
+                                TextBlock newTextBlock = new System.Windows.Controls.TextBlock();
+
+                                newTextBlock.Style = Resources["WrappedTextBlock"] as Style;
                                 newExerciseButton.Style = Resources["RoundedBlueButtonRow1Column0ColumnSpan2"] as Style;
-                                newExerciseButton.Content = gesture.Name;
+
+                                newTextBlock.Text = gesture.Name.Replace("_", " ");
+                                newExerciseButton.Content = newTextBlock;
+                                //newExerciseButton.Content = gesture.Name;
                                 Console.WriteLine(gesture.Name);
                                 UIExercises.Children.Add(newExerciseButton);
                             }
-                            else {
-                                Console.WriteLine("No files found!");
+                            else
+                            {
+                                Console.WriteLine("No gesture found!");
                             }
                         }
                     }
@@ -142,16 +192,15 @@ namespace MainScreenUI
                     // those body objects will be re-used.
                     bodyFrame.GetAndRefreshBodyData(_bodies);
                     //dataReceived = true;
-                    countOfExerciseCompleted++;
                     foreach (Body _body in _bodies)
                     {
                         if (_body != null)
                             if (_body.IsTracked && _body.TrackingId != 0)
                             {
-                                detector.IsPaused = false;
+                                //detector.IsPaused = false;
                                 ulong trackingId = _body.TrackingId;
                                 detector.TrackingId = trackingId;
-                                //detector.IsPaused = trackingId == 0;
+                                detector.IsPaused = trackingId == 0;
 
                                 // COORDINATE MAPPING
                                 foreach (Joint joint in _body.Joints.Values)
@@ -214,29 +263,23 @@ namespace MainScreenUI
         {
             //((System.Windows.Controls.Button)sender).Content;
             //selectedGesture = ((ListBox)sender).SelectedItem.ToString();
-            Console.WriteLine(String.Concat("Clicked item is ", ((Button)e.OriginalSource).Content));
+            Console.WriteLine(String.Concat("Clicked item is ", ((TextBlock)((Button)e.OriginalSource).Content).Text));
             foreach (FileInfo _file in selectedFiles)
                 using (database = new VisualGestureBuilderDatabase(_file.FullName))
                     foreach (Gesture gesture in database.AvailableGestures)
-                        if (gesture.Name.Equals(((Button)e.OriginalSource).Content))
+                        if (gesture.Name.Equals(((TextBlock)((Button)e.OriginalSource).Content).Text.Replace(" ", "_").ToString()))
                             selectedDb = _file.FullName;
-            if (((Button)e.OriginalSource).Content != null && selectedDb != null)
+            if (((TextBlock)((Button)e.OriginalSource).Content).Text != null && selectedDb != null)
             {
                 detector.VGBPath = selectedDb;
-                detector.GestureName = ((Button)e.OriginalSource).Content.ToString();
+                detector.GestureName = ((TextBlock)((Button)e.OriginalSource).Content).Text.Replace(" ", "_").ToString();
+                //Console.WriteLine(String.Concat("detector.GestureName is ", ((TextBlock)((Button)e.OriginalSource).Content).Text.Replace(" ", "_").ToString()));
+                //Console.WriteLine(String.Concat("detector.GestureName is ", detector.GestureName));
             }
             //Console.WriteLine(String.Concat("DataContext ", Newtonsoft.Json.JsonConvert.SerializeObject(DataContext.ToString(), Formatting.Indented)));
 
             //UIGesture = Convert.ToString(UIListBox.SelectedItem);
-            try
-            {
-                _reader.MultiSourceFrameArrived -= Reader_MultiSourceFrameArrived;
-                _reader.MultiSourceFrameArrived += Reader_MultiSourceFrameArrived;
-            }
-            catch
-            {
-                Console.WriteLine("Error in handling _reader");
-            }
+            Connect_Kinnect(true);
         }
 
         private void GoToPoints(object sender, RoutedEventArgs e)

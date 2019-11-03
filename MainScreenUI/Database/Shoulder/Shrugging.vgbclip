@@ -1,0 +1,4893 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GestureBuilderFile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ClipFile>
+		<Header>
+			<Date>2019-11-04</Date>
+			<Time>00:48:20.8902343+08:00</Time>
+			<Version>1</Version>
+			<Type>XefClip</Type>
+			<Clip>Shrugging.xef</Clip>
+			<StartFrame>1359</StartFrame>
+			<EndFrame>3923</EndFrame>
+			<ID>990652c3-21bf-49a2-9958-46a0fb714660</ID>
+		</Header>
+		<UI_State>
+			<CurrentFrameStart>2957</CurrentFrameStart>
+			<CurrentFrameEnd>2958</CurrentFrameEnd>
+			<AttributeInterpolations>
+				<Items>
+					<Description Name="Shrugging" Type="FLOAT" />
+					<Start>1371</Start>
+					<End>2958</End>
+					<Method>Bezier</Method>
+				</Items>
+			</AttributeInterpolations>
+			<AttributeKeys>
+				<Items Frame="1371">
+					<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0" />
+				</Items>
+				<Items Frame="1396">
+					<Items xsi:type="FloatAttribute" Name="Shrugging" Value="1" />
+				</Items>
+				<Items Frame="1424">
+					<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0" />
+				</Items>
+				<Items Frame="1471">
+					<Items xsi:type="FloatAttribute" Name="Shrugging" Value="1" />
+				</Items>
+				<Items Frame="1540">
+					<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0" />
+				</Items>
+				<Items Frame="1595">
+					<Items xsi:type="FloatAttribute" Name="Shrugging" Value="1" />
+				</Items>
+				<Items Frame="1640">
+					<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0" />
+				</Items>
+				<Items Frame="1686">
+					<Items xsi:type="FloatAttribute" Name="Shrugging" Value="1" />
+				</Items>
+				<Items Frame="1733">
+					<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0" />
+				</Items>
+				<Items Frame="1779">
+					<Items xsi:type="FloatAttribute" Name="Shrugging" Value="1" />
+				</Items>
+				<Items Frame="1840">
+					<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0" />
+				</Items>
+				<Items Frame="1885">
+					<Items xsi:type="FloatAttribute" Name="Shrugging" Value="1" />
+				</Items>
+				<Items Frame="1935">
+					<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0" />
+				</Items>
+				<Items Frame="1988">
+					<Items xsi:type="FloatAttribute" Name="Shrugging" Value="1" />
+				</Items>
+				<Items Frame="2055">
+					<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0" />
+				</Items>
+				<Items Frame="2100">
+					<Items xsi:type="FloatAttribute" Name="Shrugging" Value="1" />
+				</Items>
+				<Items Frame="2154">
+					<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0" />
+				</Items>
+				<Items Frame="2210">
+					<Items xsi:type="FloatAttribute" Name="Shrugging" Value="1" />
+				</Items>
+				<Items Frame="2266">
+					<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0" />
+				</Items>
+				<Items Frame="2315">
+					<Items xsi:type="FloatAttribute" Name="Shrugging" Value="1" />
+				</Items>
+				<Items Frame="2364">
+					<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0" />
+				</Items>
+				<Items Frame="2419">
+					<Items xsi:type="FloatAttribute" Name="Shrugging" Value="1" />
+				</Items>
+				<Items Frame="2485">
+					<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0" />
+				</Items>
+				<Items Frame="2542">
+					<Items xsi:type="FloatAttribute" Name="Shrugging" Value="1" />
+				</Items>
+				<Items Frame="2605">
+					<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0" />
+				</Items>
+				<Items Frame="2659">
+					<Items xsi:type="FloatAttribute" Name="Shrugging" Value="1" />
+				</Items>
+				<Items Frame="2718">
+					<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0" />
+				</Items>
+				<Items Frame="2778">
+					<Items xsi:type="FloatAttribute" Name="Shrugging" Value="1" />
+				</Items>
+				<Items Frame="2830">
+					<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0" />
+				</Items>
+				<Items Frame="2898">
+					<Items xsi:type="FloatAttribute" Name="Shrugging" Value="1" />
+				</Items>
+				<Items Frame="2957">
+					<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0" />
+				</Items>
+			</AttributeKeys>
+		</UI_State>
+		<AutoTagged />
+		<Attributes>
+			<Items xsi:type="StringAttribute" Name="Name" Value="" />
+			<Items xsi:type="IntAttribute" Name="Age" Value="0" />
+			<Items xsi:type="FloatAttribute" Name="Weight" Value="0" />
+			<Items xsi:type="FloatAttribute" Name="Height" Value="0" />
+			<Items xsi:type="StringAttribute" Name="Handedness" Value="Right" />
+		</Attributes>
+		<ClipAttributes>
+			<Items Frame="1371">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0" />
+			</Items>
+			<Items Frame="1372">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.059968" />
+			</Items>
+			<Items Frame="1373">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.119744" />
+			</Items>
+			<Items Frame="1374">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.179136" />
+			</Items>
+			<Items Frame="1375">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.237952" />
+			</Items>
+			<Items Frame="1376">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.296" />
+			</Items>
+			<Items Frame="1377">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.353088" />
+			</Items>
+			<Items Frame="1378">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.409024" />
+			</Items>
+			<Items Frame="1379">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.463616" />
+			</Items>
+			<Items Frame="1380">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.516672" />
+			</Items>
+			<Items Frame="1381">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.568" />
+			</Items>
+			<Items Frame="1382">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.617408" />
+			</Items>
+			<Items Frame="1383">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.664704" />
+			</Items>
+			<Items Frame="1384">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.709696" />
+			</Items>
+			<Items Frame="1385">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.752192" />
+			</Items>
+			<Items Frame="1386">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.792" />
+			</Items>
+			<Items Frame="1387">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.828928" />
+			</Items>
+			<Items Frame="1388">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.862784" />
+			</Items>
+			<Items Frame="1389">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.893376" />
+			</Items>
+			<Items Frame="1390">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.920512" />
+			</Items>
+			<Items Frame="1391">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.944" />
+			</Items>
+			<Items Frame="1392">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.963648" />
+			</Items>
+			<Items Frame="1393">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.979264" />
+			</Items>
+			<Items Frame="1394">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.990656" />
+			</Items>
+			<Items Frame="1395">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.997632" />
+			</Items>
+			<Items Frame="1396">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="1" />
+			</Items>
+			<Items Frame="1397">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9962646" />
+			</Items>
+			<Items Frame="1398">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.98542273" />
+			</Items>
+			<Items Frame="1399">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.968021154" />
+			</Items>
+			<Items Frame="1400">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9446064" />
+			</Items>
+			<Items Frame="1401">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.915725231" />
+			</Items>
+			<Items Frame="1402">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8819242" />
+			</Items>
+			<Items Frame="1403">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.84375" />
+			</Items>
+			<Items Frame="1404">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8017493" />
+			</Items>
+			<Items Frame="1405">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.756468654" />
+			</Items>
+			<Items Frame="1406">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7084548" />
+			</Items>
+			<Items Frame="1407">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6582544" />
+			</Items>
+			<Items Frame="1408">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.606414" />
+			</Items>
+			<Items Frame="1409">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5534803" />
+			</Items>
+			<Items Frame="1410">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5" />
+			</Items>
+			<Items Frame="1411">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.446519673" />
+			</Items>
+			<Items Frame="1412">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.393586" />
+			</Items>
+			<Items Frame="1413">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.341745615" />
+			</Items>
+			<Items Frame="1414">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.291545182" />
+			</Items>
+			<Items Frame="1415">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.243531346" />
+			</Items>
+			<Items Frame="1416">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.198250726" />
+			</Items>
+			<Items Frame="1417">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.15625" />
+			</Items>
+			<Items Frame="1418">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.1180758" />
+			</Items>
+			<Items Frame="1419">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0842747837" />
+			</Items>
+			<Items Frame="1420">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0553935878" />
+			</Items>
+			<Items Frame="1421">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0319788642" />
+			</Items>
+			<Items Frame="1422">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0145772593" />
+			</Items>
+			<Items Frame="1423">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.00373542286" />
+			</Items>
+			<Items Frame="1424">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0" />
+			</Items>
+			<Items Frame="1425">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.00133881706" />
+			</Items>
+			<Items Frame="1426">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.005278214" />
+			</Items>
+			<Items Frame="1427">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0117026092" />
+			</Items>
+			<Items Frame="1428">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0204964224" />
+			</Items>
+			<Items Frame="1429">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.03154407" />
+			</Items>
+			<Items Frame="1430">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0447299741" />
+			</Items>
+			<Items Frame="1431">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.05993855" />
+			</Items>
+			<Items Frame="1432">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.07705422" />
+			</Items>
+			<Items Frame="1433">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0959614" />
+			</Items>
+			<Items Frame="1434">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.1165445" />
+			</Items>
+			<Items Frame="1435">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.138687953" />
+			</Items>
+			<Items Frame="1436">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.162276179" />
+			</Items>
+			<Items Frame="1437">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.187193587" />
+			</Items>
+			<Items Frame="1438">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.2133246" />
+			</Items>
+			<Items Frame="1439">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.240553632" />
+			</Items>
+			<Items Frame="1440">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.268765122" />
+			</Items>
+			<Items Frame="1441">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.297843456" />
+			</Items>
+			<Items Frame="1442">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.327673048" />
+			</Items>
+			<Items Frame="1443">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.358138382" />
+			</Items>
+			<Items Frame="1444">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.3891238" />
+			</Items>
+			<Items Frame="1445">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.420513749" />
+			</Items>
+			<Items Frame="1446">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.452192664" />
+			</Items>
+			<Items Frame="1447">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.484044969" />
+			</Items>
+			<Items Frame="1448">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.515955031" />
+			</Items>
+			<Items Frame="1449">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.547807336" />
+			</Items>
+			<Items Frame="1450">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.579486251" />
+			</Items>
+			<Items Frame="1451">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6108762" />
+			</Items>
+			<Items Frame="1452">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6418616" />
+			</Items>
+			<Items Frame="1453">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6723269" />
+			</Items>
+			<Items Frame="1454">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.702156544" />
+			</Items>
+			<Items Frame="1455">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7312349" />
+			</Items>
+			<Items Frame="1456">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7594464" />
+			</Items>
+			<Items Frame="1457">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7866754" />
+			</Items>
+			<Items Frame="1458">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8128064" />
+			</Items>
+			<Items Frame="1459">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8377238" />
+			</Items>
+			<Items Frame="1460">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.861312032" />
+			</Items>
+			<Items Frame="1461">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8834555" />
+			</Items>
+			<Items Frame="1462">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9040386" />
+			</Items>
+			<Items Frame="1463">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9229458" />
+			</Items>
+			<Items Frame="1464">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.94006145" />
+			</Items>
+			<Items Frame="1465">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.955270052" />
+			</Items>
+			<Items Frame="1466">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9684559" />
+			</Items>
+			<Items Frame="1467">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9795036" />
+			</Items>
+			<Items Frame="1468">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9882974" />
+			</Items>
+			<Items Frame="1469">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9947218" />
+			</Items>
+			<Items Frame="1470">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.99866116" />
+			</Items>
+			<Items Frame="1471">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="1" />
+			</Items>
+			<Items Frame="1472">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.999375939" />
+			</Items>
+			<Items Frame="1473">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.997528255" />
+			</Items>
+			<Items Frame="1474">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9944933" />
+			</Items>
+			<Items Frame="1475">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.990307748" />
+			</Items>
+			<Items Frame="1476">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.985008" />
+			</Items>
+			<Items Frame="1477">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9786307" />
+			</Items>
+			<Items Frame="1478">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9712123" />
+			</Items>
+			<Items Frame="1479">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9627895" />
+			</Items>
+			<Items Frame="1480">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9533985" />
+			</Items>
+			<Items Frame="1481">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.943076134" />
+			</Items>
+			<Items Frame="1482">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9318588" />
+			</Items>
+			<Items Frame="1483">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.919783" />
+			</Items>
+			<Items Frame="1484">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9068853" />
+			</Items>
+			<Items Frame="1485">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8932023" />
+			</Items>
+			<Items Frame="1486">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8787705" />
+			</Items>
+			<Items Frame="1487">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.863626242" />
+			</Items>
+			<Items Frame="1488">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8478063" />
+			</Items>
+			<Items Frame="1489">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8313471" />
+			</Items>
+			<Items Frame="1490">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.814285159" />
+			</Items>
+			<Items Frame="1491">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.796657" />
+			</Items>
+			<Items Frame="1492">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.778499246" />
+			</Items>
+			<Items Frame="1493">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7598483" />
+			</Items>
+			<Items Frame="1494">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7407407" />
+			</Items>
+			<Items Frame="1495">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7212131" />
+			</Items>
+			<Items Frame="1496">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.701301932" />
+			</Items>
+			<Items Frame="1497">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.681043744" />
+			</Items>
+			<Items Frame="1498">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6604751" />
+			</Items>
+			<Items Frame="1499">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6396324" />
+			</Items>
+			<Items Frame="1500">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6185523" />
+			</Items>
+			<Items Frame="1501">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5972713" />
+			</Items>
+			<Items Frame="1502">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5758259" />
+			</Items>
+			<Items Frame="1503">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5542527" />
+			</Items>
+			<Items Frame="1504">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5325881" />
+			</Items>
+			<Items Frame="1505">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5108688" />
+			</Items>
+			<Items Frame="1506">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.489131182" />
+			</Items>
+			<Items Frame="1507">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.467411846" />
+			</Items>
+			<Items Frame="1508">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.4457473" />
+			</Items>
+			<Items Frame="1509">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.42417407" />
+			</Items>
+			<Items Frame="1510">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.4027287" />
+			</Items>
+			<Items Frame="1511">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.3814477" />
+			</Items>
+			<Items Frame="1512">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.3603676" />
+			</Items>
+			<Items Frame="1513">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.339524955" />
+			</Items>
+			<Items Frame="1514">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.318956256" />
+			</Items>
+			<Items Frame="1515">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.298698068" />
+			</Items>
+			<Items Frame="1516">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.278786868" />
+			</Items>
+			<Items Frame="1517">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.259259254" />
+			</Items>
+			<Items Frame="1518">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.240151718" />
+			</Items>
+			<Items Frame="1519">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.221500784" />
+			</Items>
+			<Items Frame="1520">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.203342989" />
+			</Items>
+			<Items Frame="1521">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.185714856" />
+			</Items>
+			<Items Frame="1522">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.1686529" />
+			</Items>
+			<Items Frame="1523">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.1521937" />
+			</Items>
+			<Items Frame="1524">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.136373743" />
+			</Items>
+			<Items Frame="1525">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.121229552" />
+			</Items>
+			<Items Frame="1526">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.10679768" />
+			</Items>
+			<Items Frame="1527">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.09311465" />
+			</Items>
+			<Items Frame="1528">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.08021698" />
+			</Items>
+			<Items Frame="1529">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.06814121" />
+			</Items>
+			<Items Frame="1530">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.05692386" />
+			</Items>
+			<Items Frame="1531">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0466014631" />
+			</Items>
+			<Items Frame="1532">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0372105464" />
+			</Items>
+			<Items Frame="1533">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0287876427" />
+			</Items>
+			<Items Frame="1534">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0213692784" />
+			</Items>
+			<Items Frame="1535">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0149919791" />
+			</Items>
+			<Items Frame="1536">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.009692276" />
+			</Items>
+			<Items Frame="1537">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.00550669851" />
+			</Items>
+			<Items Frame="1538">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.002471774" />
+			</Items>
+			<Items Frame="1539">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0006240316" />
+			</Items>
+			<Items Frame="1540">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0" />
+			</Items>
+			<Items Frame="1541">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0009797144" />
+			</Items>
+			<Items Frame="1542">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.00387077383" />
+			</Items>
+			<Items Frame="1543">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.008601052" />
+			</Items>
+			<Items Frame="1544">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0150984218" />
+			</Items>
+			<Items Frame="1545">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.023290759" />
+			</Items>
+			<Items Frame="1546">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0331059359" />
+			</Items>
+			<Items Frame="1547">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0444718264" />
+			</Items>
+			<Items Frame="1548">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0573163033" />
+			</Items>
+			<Items Frame="1549">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0715672448" />
+			</Items>
+			<Items Frame="1550">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.08715252" />
+			</Items>
+			<Items Frame="1551">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.104" />
+			</Items>
+			<Items Frame="1552">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.122037567" />
+			</Items>
+			<Items Frame="1553">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.141193092" />
+			</Items>
+			<Items Frame="1554">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.161394447" />
+			</Items>
+			<Items Frame="1555">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.1825695" />
+			</Items>
+			<Items Frame="1556">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.204646125" />
+			</Items>
+			<Items Frame="1557">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.22755222" />
+			</Items>
+			<Items Frame="1558">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.251215637" />
+			</Items>
+			<Items Frame="1559">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.275564224" />
+			</Items>
+			<Items Frame="1560">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.300525934" />
+			</Items>
+			<Items Frame="1561">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.326028556" />
+			</Items>
+			<Items Frame="1562">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.352" />
+			</Items>
+			<Items Frame="1563">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.378368139" />
+			</Items>
+			<Items Frame="1564">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.405060858" />
+			</Items>
+			<Items Frame="1565">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.432006" />
+			</Items>
+			<Items Frame="1566">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.459131479" />
+			</Items>
+			<Items Frame="1567">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.486365139" />
+			</Items>
+			<Items Frame="1568">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.513634861" />
+			</Items>
+			<Items Frame="1569">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5408685" />
+			</Items>
+			<Items Frame="1570">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.567994" />
+			</Items>
+			<Items Frame="1571">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5949392" />
+			</Items>
+			<Items Frame="1572">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.621631861" />
+			</Items>
+			<Items Frame="1573">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.648" />
+			</Items>
+			<Items Frame="1574">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6739715" />
+			</Items>
+			<Items Frame="1575">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6994741" />
+			</Items>
+			<Items Frame="1576">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.724435747" />
+			</Items>
+			<Items Frame="1577">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.748784363" />
+			</Items>
+			<Items Frame="1578">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.772447765" />
+			</Items>
+			<Items Frame="1579">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7953539" />
+			</Items>
+			<Items Frame="1580">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8174305" />
+			</Items>
+			<Items Frame="1581">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8386056" />
+			</Items>
+			<Items Frame="1582">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8588069" />
+			</Items>
+			<Items Frame="1583">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8779624" />
+			</Items>
+			<Items Frame="1584">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.896" />
+			</Items>
+			<Items Frame="1585">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.912847459" />
+			</Items>
+			<Items Frame="1586">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.928432763" />
+			</Items>
+			<Items Frame="1587">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9426837" />
+			</Items>
+			<Items Frame="1588">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9555282" />
+			</Items>
+			<Items Frame="1589">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9668941" />
+			</Items>
+			<Items Frame="1590">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.976709247" />
+			</Items>
+			<Items Frame="1591">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9849016" />
+			</Items>
+			<Items Frame="1592">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.991398931" />
+			</Items>
+			<Items Frame="1593">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9961292" />
+			</Items>
+			<Items Frame="1594">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9990203" />
+			</Items>
+			<Items Frame="1595">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="1" />
+			</Items>
+			<Items Frame="1596">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.998540461" />
+			</Items>
+			<Items Frame="1597">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.994249642" />
+			</Items>
+			<Items Frame="1598">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.987259269" />
+			</Items>
+			<Items Frame="1599">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.977700949" />
+			</Items>
+			<Items Frame="1600">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.965706468" />
+			</Items>
+			<Items Frame="1601">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.951407433" />
+			</Items>
+			<Items Frame="1602">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9349355" />
+			</Items>
+			<Items Frame="1603">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9164225" />
+			</Items>
+			<Items Frame="1604">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.896" />
+			</Items>
+			<Items Frame="1605">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.873799741" />
+			</Items>
+			<Items Frame="1606">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.849953353" />
+			</Items>
+			<Items Frame="1607">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8245926" />
+			</Items>
+			<Items Frame="1608">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7978491" />
+			</Items>
+			<Items Frame="1609">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7698546" />
+			</Items>
+			<Items Frame="1610">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7407407" />
+			</Items>
+			<Items Frame="1611">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.710639238" />
+			</Items>
+			<Items Frame="1612">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6796818" />
+			</Items>
+			<Items Frame="1613">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.648" />
+			</Items>
+			<Items Frame="1614">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.615725636" />
+			</Items>
+			<Items Frame="1615">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5829904" />
+			</Items>
+			<Items Frame="1616">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5499259" />
+			</Items>
+			<Items Frame="1617">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5166639" />
+			</Items>
+			<Items Frame="1618">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.4833361" />
+			</Items>
+			<Items Frame="1619">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.450074077" />
+			</Items>
+			<Items Frame="1620">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.4170096" />
+			</Items>
+			<Items Frame="1621">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.384274334" />
+			</Items>
+			<Items Frame="1622">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.352" />
+			</Items>
+			<Items Frame="1623">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.320318252" />
+			</Items>
+			<Items Frame="1624">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.289360762" />
+			</Items>
+			<Items Frame="1625">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.259259254" />
+			</Items>
+			<Items Frame="1626">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.23014541" />
+			</Items>
+			<Items Frame="1627">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.2021509" />
+			</Items>
+			<Items Frame="1628">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.17540741" />
+			</Items>
+			<Items Frame="1629">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.150046647" />
+			</Items>
+			<Items Frame="1630">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.126200274" />
+			</Items>
+			<Items Frame="1631">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.104" />
+			</Items>
+			<Items Frame="1632">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0835775062" />
+			</Items>
+			<Items Frame="1633">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0650644749" />
+			</Items>
+			<Items Frame="1634">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0485925935" />
+			</Items>
+			<Items Frame="1635">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.03429355" />
+			</Items>
+			<Items Frame="1636">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.02229904" />
+			</Items>
+			<Items Frame="1637">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0127407406" />
+			</Items>
+			<Items Frame="1638">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.00575034274" />
+			</Items>
+			<Items Frame="1639">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.00145953358" />
+			</Items>
+			<Items Frame="1640">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0" />
+			</Items>
+			<Items Frame="1641">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.001397222" />
+			</Items>
+			<Items Frame="1642">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.00550669851" />
+			</Items>
+			<Items Frame="1643">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0122051453" />
+			</Items>
+			<Items Frame="1644">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0213692784" />
+			</Items>
+			<Items Frame="1645">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.03287581" />
+			</Items>
+			<Items Frame="1646">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0466014631" />
+			</Items>
+			<Items Frame="1647">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0624229461" />
+			</Items>
+			<Items Frame="1648">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.08021698" />
+			</Items>
+			<Items Frame="1649">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.09986028" />
+			</Items>
+			<Items Frame="1650">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.121229552" />
+			</Items>
+			<Items Frame="1651">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.144201532" />
+			</Items>
+			<Items Frame="1652">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.1686529" />
+			</Items>
+			<Items Frame="1653">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.194460422" />
+			</Items>
+			<Items Frame="1654">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.221500784" />
+			</Items>
+			<Items Frame="1655">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.2496507" />
+			</Items>
+			<Items Frame="1656">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.278786868" />
+			</Items>
+			<Items Frame="1657">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.308786064" />
+			</Items>
+			<Items Frame="1658">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.339524955" />
+			</Items>
+			<Items Frame="1659">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.370880246" />
+			</Items>
+			<Items Frame="1660">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.4027287" />
+			</Items>
+			<Items Frame="1661">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.434946984" />
+			</Items>
+			<Items Frame="1662">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.467411846" />
+			</Items>
+			<Items Frame="1663">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5" />
+			</Items>
+			<Items Frame="1664">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5325881" />
+			</Items>
+			<Items Frame="1665">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.565053" />
+			</Items>
+			<Items Frame="1666">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5972713" />
+			</Items>
+			<Items Frame="1667">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.629119754" />
+			</Items>
+			<Items Frame="1668">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6604751" />
+			</Items>
+			<Items Frame="1669">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.691213965" />
+			</Items>
+			<Items Frame="1670">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7212131" />
+			</Items>
+			<Items Frame="1671">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7503493" />
+			</Items>
+			<Items Frame="1672">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.778499246" />
+			</Items>
+			<Items Frame="1673">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.805539548" />
+			</Items>
+			<Items Frame="1674">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8313471" />
+			</Items>
+			<Items Frame="1675">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8557985" />
+			</Items>
+			<Items Frame="1676">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8787705" />
+			</Items>
+			<Items Frame="1677">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.900139749" />
+			</Items>
+			<Items Frame="1678">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.919783" />
+			</Items>
+			<Items Frame="1679">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.937577069" />
+			</Items>
+			<Items Frame="1680">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9533985" />
+			</Items>
+			<Items Frame="1681">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.967124164" />
+			</Items>
+			<Items Frame="1682">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9786307" />
+			</Items>
+			<Items Frame="1683">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9877949" />
+			</Items>
+			<Items Frame="1684">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9944933" />
+			</Items>
+			<Items Frame="1685">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9986028" />
+			</Items>
+			<Items Frame="1686">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="1" />
+			</Items>
+			<Items Frame="1687">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.99866116" />
+			</Items>
+			<Items Frame="1688">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9947218" />
+			</Items>
+			<Items Frame="1689">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9882974" />
+			</Items>
+			<Items Frame="1690">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9795036" />
+			</Items>
+			<Items Frame="1691">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9684559" />
+			</Items>
+			<Items Frame="1692">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.955270052" />
+			</Items>
+			<Items Frame="1693">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.94006145" />
+			</Items>
+			<Items Frame="1694">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9229458" />
+			</Items>
+			<Items Frame="1695">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9040386" />
+			</Items>
+			<Items Frame="1696">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8834555" />
+			</Items>
+			<Items Frame="1697">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.861312032" />
+			</Items>
+			<Items Frame="1698">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8377238" />
+			</Items>
+			<Items Frame="1699">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8128064" />
+			</Items>
+			<Items Frame="1700">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7866754" />
+			</Items>
+			<Items Frame="1701">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7594464" />
+			</Items>
+			<Items Frame="1702">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7312349" />
+			</Items>
+			<Items Frame="1703">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.702156544" />
+			</Items>
+			<Items Frame="1704">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6723269" />
+			</Items>
+			<Items Frame="1705">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6418616" />
+			</Items>
+			<Items Frame="1706">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6108762" />
+			</Items>
+			<Items Frame="1707">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.579486251" />
+			</Items>
+			<Items Frame="1708">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.547807336" />
+			</Items>
+			<Items Frame="1709">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.515955031" />
+			</Items>
+			<Items Frame="1710">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.484044969" />
+			</Items>
+			<Items Frame="1711">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.452192664" />
+			</Items>
+			<Items Frame="1712">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.420513749" />
+			</Items>
+			<Items Frame="1713">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.3891238" />
+			</Items>
+			<Items Frame="1714">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.358138382" />
+			</Items>
+			<Items Frame="1715">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.327673048" />
+			</Items>
+			<Items Frame="1716">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.297843456" />
+			</Items>
+			<Items Frame="1717">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.268765122" />
+			</Items>
+			<Items Frame="1718">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.240553632" />
+			</Items>
+			<Items Frame="1719">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.2133246" />
+			</Items>
+			<Items Frame="1720">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.187193587" />
+			</Items>
+			<Items Frame="1721">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.162276179" />
+			</Items>
+			<Items Frame="1722">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.138687953" />
+			</Items>
+			<Items Frame="1723">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.1165445" />
+			</Items>
+			<Items Frame="1724">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0959614" />
+			</Items>
+			<Items Frame="1725">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.07705422" />
+			</Items>
+			<Items Frame="1726">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.05993855" />
+			</Items>
+			<Items Frame="1727">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0447299741" />
+			</Items>
+			<Items Frame="1728">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.03154407" />
+			</Items>
+			<Items Frame="1729">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0204964224" />
+			</Items>
+			<Items Frame="1730">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0117026092" />
+			</Items>
+			<Items Frame="1731">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.005278214" />
+			</Items>
+			<Items Frame="1732">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.00133881706" />
+			</Items>
+			<Items Frame="1733">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0" />
+			</Items>
+			<Items Frame="1734">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.001397222" />
+			</Items>
+			<Items Frame="1735">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.00550669851" />
+			</Items>
+			<Items Frame="1736">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0122051453" />
+			</Items>
+			<Items Frame="1737">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0213692784" />
+			</Items>
+			<Items Frame="1738">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.03287581" />
+			</Items>
+			<Items Frame="1739">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0466014631" />
+			</Items>
+			<Items Frame="1740">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0624229461" />
+			</Items>
+			<Items Frame="1741">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.08021698" />
+			</Items>
+			<Items Frame="1742">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.09986028" />
+			</Items>
+			<Items Frame="1743">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.121229552" />
+			</Items>
+			<Items Frame="1744">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.144201532" />
+			</Items>
+			<Items Frame="1745">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.1686529" />
+			</Items>
+			<Items Frame="1746">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.194460422" />
+			</Items>
+			<Items Frame="1747">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.221500784" />
+			</Items>
+			<Items Frame="1748">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.2496507" />
+			</Items>
+			<Items Frame="1749">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.278786868" />
+			</Items>
+			<Items Frame="1750">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.308786064" />
+			</Items>
+			<Items Frame="1751">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.339524955" />
+			</Items>
+			<Items Frame="1752">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.370880246" />
+			</Items>
+			<Items Frame="1753">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.4027287" />
+			</Items>
+			<Items Frame="1754">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.434946984" />
+			</Items>
+			<Items Frame="1755">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.467411846" />
+			</Items>
+			<Items Frame="1756">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5" />
+			</Items>
+			<Items Frame="1757">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5325881" />
+			</Items>
+			<Items Frame="1758">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.565053" />
+			</Items>
+			<Items Frame="1759">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5972713" />
+			</Items>
+			<Items Frame="1760">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.629119754" />
+			</Items>
+			<Items Frame="1761">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6604751" />
+			</Items>
+			<Items Frame="1762">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.691213965" />
+			</Items>
+			<Items Frame="1763">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7212131" />
+			</Items>
+			<Items Frame="1764">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7503493" />
+			</Items>
+			<Items Frame="1765">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.778499246" />
+			</Items>
+			<Items Frame="1766">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.805539548" />
+			</Items>
+			<Items Frame="1767">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8313471" />
+			</Items>
+			<Items Frame="1768">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8557985" />
+			</Items>
+			<Items Frame="1769">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8787705" />
+			</Items>
+			<Items Frame="1770">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.900139749" />
+			</Items>
+			<Items Frame="1771">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.919783" />
+			</Items>
+			<Items Frame="1772">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.937577069" />
+			</Items>
+			<Items Frame="1773">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9533985" />
+			</Items>
+			<Items Frame="1774">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.967124164" />
+			</Items>
+			<Items Frame="1775">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9786307" />
+			</Items>
+			<Items Frame="1776">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9877949" />
+			</Items>
+			<Items Frame="1777">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9944933" />
+			</Items>
+			<Items Frame="1778">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9986028" />
+			</Items>
+			<Items Frame="1779">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="1" />
+			</Items>
+			<Items Frame="1780">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.999202549" />
+			</Items>
+			<Items Frame="1781">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.996845543" />
+			</Items>
+			<Items Frame="1782">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9929818" />
+			</Items>
+			<Items Frame="1783">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.987664163" />
+			</Items>
+			<Items Frame="1784">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9809455" />
+			</Items>
+			<Items Frame="1785">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9728788" />
+			</Items>
+			<Items Frame="1786">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9635168" />
+			</Items>
+			<Items Frame="1787">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.952912331" />
+			</Items>
+			<Items Frame="1788">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9411184" />
+			</Items>
+			<Items Frame="1789">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.928187847" />
+			</Items>
+			<Items Frame="1790">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9141734" />
+			</Items>
+			<Items Frame="1791">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.899128139" />
+			</Items>
+			<Items Frame="1792">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.883104742" />
+			</Items>
+			<Items Frame="1793">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8661562" />
+			</Items>
+			<Items Frame="1794">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8483353" />
+			</Items>
+			<Items Frame="1795">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.829695" />
+			</Items>
+			<Items Frame="1796">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8102881" />
+			</Items>
+			<Items Frame="1797">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.790167451" />
+			</Items>
+			<Items Frame="1798">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.769386" />
+			</Items>
+			<Items Frame="1799">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7479965" />
+			</Items>
+			<Items Frame="1800">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.726052" />
+			</Items>
+			<Items Frame="1801">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7036052" />
+			</Items>
+			<Items Frame="1802">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.680708945" />
+			</Items>
+			<Items Frame="1803">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6574163" />
+			</Items>
+			<Items Frame="1804">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.633779943" />
+			</Items>
+			<Items Frame="1805">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6098528" />
+			</Items>
+			<Items Frame="1806">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5856878" />
+			</Items>
+			<Items Frame="1807">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5613377" />
+			</Items>
+			<Items Frame="1808">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5368555" />
+			</Items>
+			<Items Frame="1809">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.512294" />
+			</Items>
+			<Items Frame="1810">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.487706" />
+			</Items>
+			<Items Frame="1811">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.463144481" />
+			</Items>
+			<Items Frame="1812">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.438662261" />
+			</Items>
+			<Items Frame="1813">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.4143122" />
+			</Items>
+			<Items Frame="1814">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.390147179" />
+			</Items>
+			<Items Frame="1815">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.3662201" />
+			</Items>
+			<Items Frame="1816">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.342583746" />
+			</Items>
+			<Items Frame="1817">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.319291055" />
+			</Items>
+			<Items Frame="1818">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.296394855" />
+			</Items>
+			<Items Frame="1819">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.273948044" />
+			</Items>
+			<Items Frame="1820">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.252003461" />
+			</Items>
+			<Items Frame="1821">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.230614021" />
+			</Items>
+			<Items Frame="1822">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.209832534" />
+			</Items>
+			<Items Frame="1823">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.189711913" />
+			</Items>
+			<Items Frame="1824">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.170305" />
+			</Items>
+			<Items Frame="1825">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.151664674" />
+			</Items>
+			<Items Frame="1826">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.1338438" />
+			</Items>
+			<Items Frame="1827">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.116895244" />
+			</Items>
+			<Items Frame="1828">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.100871876" />
+			</Items>
+			<Items Frame="1829">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.08582657" />
+			</Items>
+			<Items Frame="1830">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0718121752" />
+			</Items>
+			<Items Frame="1831">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.05888158" />
+			</Items>
+			<Items Frame="1832">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0470876433" />
+			</Items>
+			<Items Frame="1833">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.03648323" />
+			</Items>
+			<Items Frame="1834">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0271212123" />
+			</Items>
+			<Items Frame="1835">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0190544575" />
+			</Items>
+			<Items Frame="1836">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0123358341" />
+			</Items>
+			<Items Frame="1837">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0070182085" />
+			</Items>
+			<Items Frame="1838">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.00315444916" />
+			</Items>
+			<Items Frame="1839">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0007974236" />
+			</Items>
+			<Items Frame="1840">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0" />
+			</Items>
+			<Items Frame="1841">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.00145953358" />
+			</Items>
+			<Items Frame="1842">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.00575034274" />
+			</Items>
+			<Items Frame="1843">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0127407406" />
+			</Items>
+			<Items Frame="1844">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.02229904" />
+			</Items>
+			<Items Frame="1845">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.03429355" />
+			</Items>
+			<Items Frame="1846">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0485925935" />
+			</Items>
+			<Items Frame="1847">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0650644749" />
+			</Items>
+			<Items Frame="1848">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0835775062" />
+			</Items>
+			<Items Frame="1849">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.104" />
+			</Items>
+			<Items Frame="1850">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.126200274" />
+			</Items>
+			<Items Frame="1851">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.150046647" />
+			</Items>
+			<Items Frame="1852">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.17540741" />
+			</Items>
+			<Items Frame="1853">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.2021509" />
+			</Items>
+			<Items Frame="1854">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.23014541" />
+			</Items>
+			<Items Frame="1855">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.259259254" />
+			</Items>
+			<Items Frame="1856">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.289360762" />
+			</Items>
+			<Items Frame="1857">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.320318252" />
+			</Items>
+			<Items Frame="1858">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.352" />
+			</Items>
+			<Items Frame="1859">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.384274334" />
+			</Items>
+			<Items Frame="1860">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.4170096" />
+			</Items>
+			<Items Frame="1861">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.450074077" />
+			</Items>
+			<Items Frame="1862">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.4833361" />
+			</Items>
+			<Items Frame="1863">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5166639" />
+			</Items>
+			<Items Frame="1864">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5499259" />
+			</Items>
+			<Items Frame="1865">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5829904" />
+			</Items>
+			<Items Frame="1866">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.615725636" />
+			</Items>
+			<Items Frame="1867">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.648" />
+			</Items>
+			<Items Frame="1868">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6796818" />
+			</Items>
+			<Items Frame="1869">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.710639238" />
+			</Items>
+			<Items Frame="1870">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7407407" />
+			</Items>
+			<Items Frame="1871">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7698546" />
+			</Items>
+			<Items Frame="1872">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7978491" />
+			</Items>
+			<Items Frame="1873">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8245926" />
+			</Items>
+			<Items Frame="1874">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.849953353" />
+			</Items>
+			<Items Frame="1875">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.873799741" />
+			</Items>
+			<Items Frame="1876">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.896" />
+			</Items>
+			<Items Frame="1877">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9164225" />
+			</Items>
+			<Items Frame="1878">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9349355" />
+			</Items>
+			<Items Frame="1879">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.951407433" />
+			</Items>
+			<Items Frame="1880">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.965706468" />
+			</Items>
+			<Items Frame="1881">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.977700949" />
+			</Items>
+			<Items Frame="1882">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.987259269" />
+			</Items>
+			<Items Frame="1883">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.994249642" />
+			</Items>
+			<Items Frame="1884">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.998540461" />
+			</Items>
+			<Items Frame="1885">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="1" />
+			</Items>
+			<Items Frame="1886">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.998816" />
+			</Items>
+			<Items Frame="1887">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.995328" />
+			</Items>
+			<Items Frame="1888">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.989632" />
+			</Items>
+			<Items Frame="1889">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.981824" />
+			</Items>
+			<Items Frame="1890">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.972" />
+			</Items>
+			<Items Frame="1891">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.960256" />
+			</Items>
+			<Items Frame="1892">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.946688" />
+			</Items>
+			<Items Frame="1893">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.931392" />
+			</Items>
+			<Items Frame="1894">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.914464" />
+			</Items>
+			<Items Frame="1895">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.896" />
+			</Items>
+			<Items Frame="1896">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.876096" />
+			</Items>
+			<Items Frame="1897">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.854848" />
+			</Items>
+			<Items Frame="1898">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.832352" />
+			</Items>
+			<Items Frame="1899">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.808704" />
+			</Items>
+			<Items Frame="1900">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.784" />
+			</Items>
+			<Items Frame="1901">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.758336" />
+			</Items>
+			<Items Frame="1902">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.731808" />
+			</Items>
+			<Items Frame="1903">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.704512" />
+			</Items>
+			<Items Frame="1904">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.676544" />
+			</Items>
+			<Items Frame="1905">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.648" />
+			</Items>
+			<Items Frame="1906">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.618976" />
+			</Items>
+			<Items Frame="1907">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.589568" />
+			</Items>
+			<Items Frame="1908">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.559872" />
+			</Items>
+			<Items Frame="1909">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.529984" />
+			</Items>
+			<Items Frame="1910">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5" />
+			</Items>
+			<Items Frame="1911">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.470016" />
+			</Items>
+			<Items Frame="1912">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.440128" />
+			</Items>
+			<Items Frame="1913">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.410432" />
+			</Items>
+			<Items Frame="1914">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.381024" />
+			</Items>
+			<Items Frame="1915">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.352" />
+			</Items>
+			<Items Frame="1916">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.323456" />
+			</Items>
+			<Items Frame="1917">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.295488" />
+			</Items>
+			<Items Frame="1918">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.268192" />
+			</Items>
+			<Items Frame="1919">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.241664" />
+			</Items>
+			<Items Frame="1920">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.216" />
+			</Items>
+			<Items Frame="1921">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.191296" />
+			</Items>
+			<Items Frame="1922">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.167648" />
+			</Items>
+			<Items Frame="1923">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.145152" />
+			</Items>
+			<Items Frame="1924">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.123904" />
+			</Items>
+			<Items Frame="1925">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.104" />
+			</Items>
+			<Items Frame="1926">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.085536" />
+			</Items>
+			<Items Frame="1927">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.068608" />
+			</Items>
+			<Items Frame="1928">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.053312" />
+			</Items>
+			<Items Frame="1929">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.039744" />
+			</Items>
+			<Items Frame="1930">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.028" />
+			</Items>
+			<Items Frame="1931">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.018176" />
+			</Items>
+			<Items Frame="1932">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.010368" />
+			</Items>
+			<Items Frame="1933">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.004672" />
+			</Items>
+			<Items Frame="1934">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.001184" />
+			</Items>
+			<Items Frame="1935">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0" />
+			</Items>
+			<Items Frame="1936">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.00105456181" />
+			</Items>
+			<Items Frame="1937">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.004164512" />
+			</Items>
+			<Items Frame="1938">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.009249246" />
+			</Items>
+			<Items Frame="1939">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0162281618" />
+			</Items>
+			<Items Frame="1940">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0250206552" />
+			</Items>
+			<Items Frame="1941">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.03554612" />
+			</Items>
+			<Items Frame="1942">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.04772396" />
+			</Items>
+			<Items Frame="1943">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.061473567" />
+			</Items>
+			<Items Frame="1944">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.07671434" />
+			</Items>
+			<Items Frame="1945">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.09336566" />
+			</Items>
+			<Items Frame="1946">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.111346953" />
+			</Items>
+			<Items Frame="1947">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.1305776" />
+			</Items>
+			<Items Frame="1948">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.150976986" />
+			</Items>
+			<Items Frame="1949">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.17246452" />
+			</Items>
+			<Items Frame="1950">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.1949596" />
+			</Items>
+			<Items Frame="1951">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.218381613" />
+			</Items>
+			<Items Frame="1952">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.242649972" />
+			</Items>
+			<Items Frame="1953">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.267684072" />
+			</Items>
+			<Items Frame="1954">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.293403268" />
+			</Items>
+			<Items Frame="1955">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.319727033" />
+			</Items>
+			<Items Frame="1956">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.3465747" />
+			</Items>
+			<Items Frame="1957">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.373865664" />
+			</Items>
+			<Items Frame="1958">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.4015194" />
+			</Items>
+			<Items Frame="1959">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.4294552" />
+			</Items>
+			<Items Frame="1960">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.457592517" />
+			</Items>
+			<Items Frame="1961">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.485850722" />
+			</Items>
+			<Items Frame="1962">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.514149249" />
+			</Items>
+			<Items Frame="1963">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5424075" />
+			</Items>
+			<Items Frame="1964">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.570544839" />
+			</Items>
+			<Items Frame="1965">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.598480642" />
+			</Items>
+			<Items Frame="1966">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.626134336" />
+			</Items>
+			<Items Frame="1967">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.653425336" />
+			</Items>
+			<Items Frame="1968">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.680273" />
+			</Items>
+			<Items Frame="1969">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.706596732" />
+			</Items>
+			<Items Frame="1970">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.732315958" />
+			</Items>
+			<Items Frame="1971">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.75735" />
+			</Items>
+			<Items Frame="1972">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.781618357" />
+			</Items>
+			<Items Frame="1973">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8050404" />
+			</Items>
+			<Items Frame="1974">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8275355" />
+			</Items>
+			<Items Frame="1975">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.849023044" />
+			</Items>
+			<Items Frame="1976">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.869422436" />
+			</Items>
+			<Items Frame="1977">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.88865304" />
+			</Items>
+			<Items Frame="1978">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.906634331" />
+			</Items>
+			<Items Frame="1979">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.923285663" />
+			</Items>
+			<Items Frame="1980">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.938526452" />
+			</Items>
+			<Items Frame="1981">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.952276051" />
+			</Items>
+			<Items Frame="1982">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9644539" />
+			</Items>
+			<Items Frame="1983">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.974979341" />
+			</Items>
+			<Items Frame="1984">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.983771861" />
+			</Items>
+			<Items Frame="1985">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.99075073" />
+			</Items>
+			<Items Frame="1986">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9958355" />
+			</Items>
+			<Items Frame="1987">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9989454" />
+			</Items>
+			<Items Frame="1988">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="1" />
+			</Items>
+			<Items Frame="1989">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9993383" />
+			</Items>
+			<Items Frame="1990">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.99738" />
+			</Items>
+			<Items Frame="1991">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9941648" />
+			</Items>
+			<Items Frame="1992">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9897328" />
+			</Items>
+			<Items Frame="1993">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9841237" />
+			</Items>
+			<Items Frame="1994">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.977377534" />
+			</Items>
+			<Items Frame="1995">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.969534159" />
+			</Items>
+			<Items Frame="1996">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.960633457" />
+			</Items>
+			<Items Frame="1997">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.950715363" />
+			</Items>
+			<Items Frame="1998">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.939819753" />
+			</Items>
+			<Items Frame="1999">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9279865" />
+			</Items>
+			<Items Frame="2000">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.915255547" />
+			</Items>
+			<Items Frame="2001">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.90166676" />
+			</Items>
+			<Items Frame="2002">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8872601" />
+			</Items>
+			<Items Frame="2003">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8720754" />
+			</Items>
+			<Items Frame="2004">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.856152534" />
+			</Items>
+			<Items Frame="2005">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8395315" />
+			</Items>
+			<Items Frame="2006">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8222521" />
+			</Items>
+			<Items Frame="2007">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.80435425" />
+			</Items>
+			<Items Frame="2008">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.785877943" />
+			</Items>
+			<Items Frame="2009">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7668629" />
+			</Items>
+			<Items Frame="2010">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.747349262" />
+			</Items>
+			<Items Frame="2011">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7273767" />
+			</Items>
+			<Items Frame="2012">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.706985235" />
+			</Items>
+			<Items Frame="2013">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.686214745" />
+			</Items>
+			<Items Frame="2014">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6651051" />
+			</Items>
+			<Items Frame="2015">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6436962" />
+			</Items>
+			<Items Frame="2016">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.622028" />
+			</Items>
+			<Items Frame="2017">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.600140333" />
+			</Items>
+			<Items Frame="2018">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5780731" />
+			</Items>
+			<Items Frame="2019">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.555866241" />
+			</Items>
+			<Items Frame="2020">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5335596" />
+			</Items>
+			<Items Frame="2021">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5111932" />
+			</Items>
+			<Items Frame="2022">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.4888068" />
+			</Items>
+			<Items Frame="2023">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.46644035" />
+			</Items>
+			<Items Frame="2024">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.444133759" />
+			</Items>
+			<Items Frame="2025">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.4219269" />
+			</Items>
+			<Items Frame="2026">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.3998597" />
+			</Items>
+			<Items Frame="2027">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.377972037" />
+			</Items>
+			<Items Frame="2028">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.3563038" />
+			</Items>
+			<Items Frame="2029">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.334894925" />
+			</Items>
+			<Items Frame="2030">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.313785285" />
+			</Items>
+			<Items Frame="2031">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.293014765" />
+			</Items>
+			<Items Frame="2032">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.2726233" />
+			</Items>
+			<Items Frame="2033">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.252650768" />
+			</Items>
+			<Items Frame="2034">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.233137056" />
+			</Items>
+			<Items Frame="2035">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.214122087" />
+			</Items>
+			<Items Frame="2036">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.195645735" />
+			</Items>
+			<Items Frame="2037">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.177747935" />
+			</Items>
+			<Items Frame="2038">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.160468549" />
+			</Items>
+			<Items Frame="2039">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.14384748" />
+			</Items>
+			<Items Frame="2040">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.127924651" />
+			</Items>
+			<Items Frame="2041">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.112739928" />
+			</Items>
+			<Items Frame="2042">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.09833324" />
+			</Items>
+			<Items Frame="2043">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.08474447" />
+			</Items>
+			<Items Frame="2044">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.07201351" />
+			</Items>
+			<Items Frame="2045">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0601802766" />
+			</Items>
+			<Items Frame="2046">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0492846519" />
+			</Items>
+			<Items Frame="2047">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0393665433" />
+			</Items>
+			<Items Frame="2048">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0304658487" />
+			</Items>
+			<Items Frame="2049">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0226224642" />
+			</Items>
+			<Items Frame="2050">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0158762876" />
+			</Items>
+			<Items Frame="2051">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.01026722" />
+			</Items>
+			<Items Frame="2052">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.005835159" />
+			</Items>
+			<Items Frame="2053">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.00262000319" />
+			</Items>
+			<Items Frame="2054">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.000661650556" />
+			</Items>
+			<Items Frame="2055">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0" />
+			</Items>
+			<Items Frame="2056">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.00145953358" />
+			</Items>
+			<Items Frame="2057">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.00575034274" />
+			</Items>
+			<Items Frame="2058">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0127407406" />
+			</Items>
+			<Items Frame="2059">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.02229904" />
+			</Items>
+			<Items Frame="2060">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.03429355" />
+			</Items>
+			<Items Frame="2061">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0485925935" />
+			</Items>
+			<Items Frame="2062">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0650644749" />
+			</Items>
+			<Items Frame="2063">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0835775062" />
+			</Items>
+			<Items Frame="2064">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.104" />
+			</Items>
+			<Items Frame="2065">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.126200274" />
+			</Items>
+			<Items Frame="2066">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.150046647" />
+			</Items>
+			<Items Frame="2067">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.17540741" />
+			</Items>
+			<Items Frame="2068">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.2021509" />
+			</Items>
+			<Items Frame="2069">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.23014541" />
+			</Items>
+			<Items Frame="2070">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.259259254" />
+			</Items>
+			<Items Frame="2071">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.289360762" />
+			</Items>
+			<Items Frame="2072">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.320318252" />
+			</Items>
+			<Items Frame="2073">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.352" />
+			</Items>
+			<Items Frame="2074">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.384274334" />
+			</Items>
+			<Items Frame="2075">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.4170096" />
+			</Items>
+			<Items Frame="2076">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.450074077" />
+			</Items>
+			<Items Frame="2077">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.4833361" />
+			</Items>
+			<Items Frame="2078">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5166639" />
+			</Items>
+			<Items Frame="2079">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5499259" />
+			</Items>
+			<Items Frame="2080">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5829904" />
+			</Items>
+			<Items Frame="2081">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.615725636" />
+			</Items>
+			<Items Frame="2082">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.648" />
+			</Items>
+			<Items Frame="2083">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6796818" />
+			</Items>
+			<Items Frame="2084">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.710639238" />
+			</Items>
+			<Items Frame="2085">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7407407" />
+			</Items>
+			<Items Frame="2086">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7698546" />
+			</Items>
+			<Items Frame="2087">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7978491" />
+			</Items>
+			<Items Frame="2088">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8245926" />
+			</Items>
+			<Items Frame="2089">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.849953353" />
+			</Items>
+			<Items Frame="2090">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.873799741" />
+			</Items>
+			<Items Frame="2091">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.896" />
+			</Items>
+			<Items Frame="2092">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9164225" />
+			</Items>
+			<Items Frame="2093">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9349355" />
+			</Items>
+			<Items Frame="2094">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.951407433" />
+			</Items>
+			<Items Frame="2095">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.965706468" />
+			</Items>
+			<Items Frame="2096">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.977700949" />
+			</Items>
+			<Items Frame="2097">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.987259269" />
+			</Items>
+			<Items Frame="2098">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.994249642" />
+			</Items>
+			<Items Frame="2099">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.998540461" />
+			</Items>
+			<Items Frame="2100">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="1" />
+			</Items>
+			<Items Frame="2101">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9989839" />
+			</Items>
+			<Items Frame="2102">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9959864" />
+			</Items>
+			<Items Frame="2103">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9910837" />
+			</Items>
+			<Items Frame="2104">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.984352" />
+			</Items>
+			<Items Frame="2105">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9758675" />
+			</Items>
+			<Items Frame="2106">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.965706468" />
+			</Items>
+			<Items Frame="2107">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.953945041" />
+			</Items>
+			<Items Frame="2108">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.940659463" />
+			</Items>
+			<Items Frame="2109">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9259259" />
+			</Items>
+			<Items Frame="2110">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9098207" />
+			</Items>
+			<Items Frame="2111">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8924199" />
+			</Items>
+			<Items Frame="2112">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.873799741" />
+			</Items>
+			<Items Frame="2113">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.85403645" />
+			</Items>
+			<Items Frame="2114">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8332063" />
+			</Items>
+			<Items Frame="2115">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.811385453" />
+			</Items>
+			<Items Frame="2116">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7886501" />
+			</Items>
+			<Items Frame="2117">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.765076458" />
+			</Items>
+			<Items Frame="2118">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7407407" />
+			</Items>
+			<Items Frame="2119">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.715719163" />
+			</Items>
+			<Items Frame="2120">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6900879" />
+			</Items>
+			<Items Frame="2121">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6639232" />
+			</Items>
+			<Items Frame="2122">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6373012" />
+			</Items>
+			<Items Frame="2123">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6102982" />
+			</Items>
+			<Items Frame="2124">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5829904" />
+			</Items>
+			<Items Frame="2125">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.555453956" />
+			</Items>
+			<Items Frame="2126">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5277651" />
+			</Items>
+			<Items Frame="2127">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5" />
+			</Items>
+			<Items Frame="2128">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.472234935" />
+			</Items>
+			<Items Frame="2129">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.444546044" />
+			</Items>
+			<Items Frame="2130">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.4170096" />
+			</Items>
+			<Items Frame="2131">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.389701784" />
+			</Items>
+			<Items Frame="2132">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.362698764" />
+			</Items>
+			<Items Frame="2133">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.336076826" />
+			</Items>
+			<Items Frame="2134">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.309912115" />
+			</Items>
+			<Items Frame="2135">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.284280866" />
+			</Items>
+			<Items Frame="2136">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.259259254" />
+			</Items>
+			<Items Frame="2137">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.234923542" />
+			</Items>
+			<Items Frame="2138">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.21134989" />
+			</Items>
+			<Items Frame="2139">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.188614547" />
+			</Items>
+			<Items Frame="2140">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.166793674" />
+			</Items>
+			<Items Frame="2141">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.14596352" />
+			</Items>
+			<Items Frame="2142">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.126200274" />
+			</Items>
+			<Items Frame="2143">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.107580148" />
+			</Items>
+			<Items Frame="2144">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.09017934" />
+			</Items>
+			<Items Frame="2145">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0740740746" />
+			</Items>
+			<Items Frame="2146">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0593405478" />
+			</Items>
+			<Items Frame="2147">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.04605497" />
+			</Items>
+			<Items Frame="2148">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.03429355" />
+			</Items>
+			<Items Frame="2149">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0241325" />
+			</Items>
+			<Items Frame="2150">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.01564802" />
+			</Items>
+			<Items Frame="2151">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.008916324" />
+			</Items>
+			<Items Frame="2152">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.00401361566" />
+			</Items>
+			<Items Frame="2153">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.00101610529" />
+			</Items>
+			<Items Frame="2154">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0" />
+			</Items>
+			<Items Frame="2155">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.000945244159" />
+			</Items>
+			<Items Frame="2156">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.00373542286" />
+			</Items>
+			<Items Frame="2157">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.008302205" />
+			</Items>
+			<Items Frame="2158">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0145772593" />
+			</Items>
+			<Items Frame="2159">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.022492256" />
+			</Items>
+			<Items Frame="2160">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0319788642" />
+			</Items>
+			<Items Frame="2161">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.04296875" />
+			</Items>
+			<Items Frame="2162">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0553935878" />
+			</Items>
+			<Items Frame="2163">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.06918504" />
+			</Items>
+			<Items Frame="2164">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0842747837" />
+			</Items>
+			<Items Frame="2165">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.100594476" />
+			</Items>
+			<Items Frame="2166">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.1180758" />
+			</Items>
+			<Items Frame="2167">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.136650413" />
+			</Items>
+			<Items Frame="2168">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.15625" />
+			</Items>
+			<Items Frame="2169">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.176806211" />
+			</Items>
+			<Items Frame="2170">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.198250726" />
+			</Items>
+			<Items Frame="2171">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.220515221" />
+			</Items>
+			<Items Frame="2172">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.243531346" />
+			</Items>
+			<Items Frame="2173">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.267230779" />
+			</Items>
+			<Items Frame="2174">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.291545182" />
+			</Items>
+			<Items Frame="2175">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.31640625" />
+			</Items>
+			<Items Frame="2176">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.341745615" />
+			</Items>
+			<Items Frame="2177">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.367495" />
+			</Items>
+			<Items Frame="2178">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.393586" />
+			</Items>
+			<Items Frame="2179">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.419950336" />
+			</Items>
+			<Items Frame="2180">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.446519673" />
+			</Items>
+			<Items Frame="2181">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.473225683" />
+			</Items>
+			<Items Frame="2182">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5" />
+			</Items>
+			<Items Frame="2183">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.526774347" />
+			</Items>
+			<Items Frame="2184">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5534803" />
+			</Items>
+			<Items Frame="2185">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.580049634" />
+			</Items>
+			<Items Frame="2186">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.606414" />
+			</Items>
+			<Items Frame="2187">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.632505" />
+			</Items>
+			<Items Frame="2188">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6582544" />
+			</Items>
+			<Items Frame="2189">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.68359375" />
+			</Items>
+			<Items Frame="2190">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7084548" />
+			</Items>
+			<Items Frame="2191">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.732769251" />
+			</Items>
+			<Items Frame="2192">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.756468654" />
+			</Items>
+			<Items Frame="2193">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7794848" />
+			</Items>
+			<Items Frame="2194">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8017493" />
+			</Items>
+			<Items Frame="2195">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8231938" />
+			</Items>
+			<Items Frame="2196">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.84375" />
+			</Items>
+			<Items Frame="2197">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.863349557" />
+			</Items>
+			<Items Frame="2198">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8819242" />
+			</Items>
+			<Items Frame="2199">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.899405539" />
+			</Items>
+			<Items Frame="2200">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.915725231" />
+			</Items>
+			<Items Frame="2201">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.930815" />
+			</Items>
+			<Items Frame="2202">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9446064" />
+			</Items>
+			<Items Frame="2203">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.95703125" />
+			</Items>
+			<Items Frame="2204">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.968021154" />
+			</Items>
+			<Items Frame="2205">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.97750777" />
+			</Items>
+			<Items Frame="2206">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.98542273" />
+			</Items>
+			<Items Frame="2207">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9916978" />
+			</Items>
+			<Items Frame="2208">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9962646" />
+			</Items>
+			<Items Frame="2209">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.99905473" />
+			</Items>
+			<Items Frame="2210">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="1" />
+			</Items>
+			<Items Frame="2211">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.99905473" />
+			</Items>
+			<Items Frame="2212">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9962646" />
+			</Items>
+			<Items Frame="2213">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9916978" />
+			</Items>
+			<Items Frame="2214">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.98542273" />
+			</Items>
+			<Items Frame="2215">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.97750777" />
+			</Items>
+			<Items Frame="2216">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.968021154" />
+			</Items>
+			<Items Frame="2217">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.95703125" />
+			</Items>
+			<Items Frame="2218">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9446064" />
+			</Items>
+			<Items Frame="2219">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.930815" />
+			</Items>
+			<Items Frame="2220">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.915725231" />
+			</Items>
+			<Items Frame="2221">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.899405539" />
+			</Items>
+			<Items Frame="2222">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8819242" />
+			</Items>
+			<Items Frame="2223">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.863349557" />
+			</Items>
+			<Items Frame="2224">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.84375" />
+			</Items>
+			<Items Frame="2225">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8231938" />
+			</Items>
+			<Items Frame="2226">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8017493" />
+			</Items>
+			<Items Frame="2227">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7794848" />
+			</Items>
+			<Items Frame="2228">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.756468654" />
+			</Items>
+			<Items Frame="2229">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.732769251" />
+			</Items>
+			<Items Frame="2230">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7084548" />
+			</Items>
+			<Items Frame="2231">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.68359375" />
+			</Items>
+			<Items Frame="2232">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6582544" />
+			</Items>
+			<Items Frame="2233">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.632505" />
+			</Items>
+			<Items Frame="2234">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.606414" />
+			</Items>
+			<Items Frame="2235">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.580049634" />
+			</Items>
+			<Items Frame="2236">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5534803" />
+			</Items>
+			<Items Frame="2237">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.526774347" />
+			</Items>
+			<Items Frame="2238">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5" />
+			</Items>
+			<Items Frame="2239">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.473225683" />
+			</Items>
+			<Items Frame="2240">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.446519673" />
+			</Items>
+			<Items Frame="2241">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.419950336" />
+			</Items>
+			<Items Frame="2242">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.393586" />
+			</Items>
+			<Items Frame="2243">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.367495" />
+			</Items>
+			<Items Frame="2244">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.341745615" />
+			</Items>
+			<Items Frame="2245">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.31640625" />
+			</Items>
+			<Items Frame="2246">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.291545182" />
+			</Items>
+			<Items Frame="2247">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.267230779" />
+			</Items>
+			<Items Frame="2248">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.243531346" />
+			</Items>
+			<Items Frame="2249">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.220515221" />
+			</Items>
+			<Items Frame="2250">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.198250726" />
+			</Items>
+			<Items Frame="2251">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.176806211" />
+			</Items>
+			<Items Frame="2252">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.15625" />
+			</Items>
+			<Items Frame="2253">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.136650413" />
+			</Items>
+			<Items Frame="2254">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.1180758" />
+			</Items>
+			<Items Frame="2255">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.100594476" />
+			</Items>
+			<Items Frame="2256">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0842747837" />
+			</Items>
+			<Items Frame="2257">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.06918504" />
+			</Items>
+			<Items Frame="2258">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0553935878" />
+			</Items>
+			<Items Frame="2259">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.04296875" />
+			</Items>
+			<Items Frame="2260">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0319788642" />
+			</Items>
+			<Items Frame="2261">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.022492256" />
+			</Items>
+			<Items Frame="2262">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0145772593" />
+			</Items>
+			<Items Frame="2263">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.008302205" />
+			</Items>
+			<Items Frame="2264">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.00373542286" />
+			</Items>
+			<Items Frame="2265">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.000945244159" />
+			</Items>
+			<Items Frame="2266">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0" />
+			</Items>
+			<Items Frame="2267">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0012324797" />
+			</Items>
+			<Items Frame="2268">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.00486191968" />
+			</Items>
+			<Items Frame="2269">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0107863219" />
+			</Items>
+			<Items Frame="2270">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0189036876" />
+			</Items>
+			<Items Frame="2271">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.02911202" />
+			</Items>
+			<Items Frame="2272">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.04130932" />
+			</Items>
+			<Items Frame="2273">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0553935878" />
+			</Items>
+			<Items Frame="2274">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.07126282" />
+			</Items>
+			<Items Frame="2275">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.08881503" />
+			</Items>
+			<Items Frame="2276">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.107948221" />
+			</Items>
+			<Items Frame="2277">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.128560379" />
+			</Items>
+			<Items Frame="2278">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.150549516" />
+			</Items>
+			<Items Frame="2279">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.173813626" />
+			</Items>
+			<Items Frame="2280">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.198250726" />
+			</Items>
+			<Items Frame="2281">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.2237588" />
+			</Items>
+			<Items Frame="2282">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.2502359" />
+			</Items>
+			<Items Frame="2283">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.277579933" />
+			</Items>
+			<Items Frame="2284">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.305688947" />
+			</Items>
+			<Items Frame="2285">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.334460974" />
+			</Items>
+			<Items Frame="2286">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.363794" />
+			</Items>
+			<Items Frame="2287">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.393586" />
+			</Items>
+			<Items Frame="2288">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.423735023" />
+			</Items>
+			<Items Frame="2289">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.454139" />
+			</Items>
+			<Items Frame="2290">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.484696" />
+			</Items>
+			<Items Frame="2291">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.515303969" />
+			</Items>
+			<Items Frame="2292">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.545861" />
+			</Items>
+			<Items Frame="2293">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.576265" />
+			</Items>
+			<Items Frame="2294">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.606414" />
+			</Items>
+			<Items Frame="2295">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.636206031" />
+			</Items>
+			<Items Frame="2296">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.665539" />
+			</Items>
+			<Items Frame="2297">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.694311" />
+			</Items>
+			<Items Frame="2298">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7224201" />
+			</Items>
+			<Items Frame="2299">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.749764144" />
+			</Items>
+			<Items Frame="2300">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7762412" />
+			</Items>
+			<Items Frame="2301">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8017493" />
+			</Items>
+			<Items Frame="2302">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.826186359" />
+			</Items>
+			<Items Frame="2303">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.849450469" />
+			</Items>
+			<Items Frame="2304">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.871439636" />
+			</Items>
+			<Items Frame="2305">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.892051756" />
+			</Items>
+			<Items Frame="2306">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.911184967" />
+			</Items>
+			<Items Frame="2307">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.928737164" />
+			</Items>
+			<Items Frame="2308">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9446064" />
+			</Items>
+			<Items Frame="2309">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9586907" />
+			</Items>
+			<Items Frame="2310">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.970887959" />
+			</Items>
+			<Items Frame="2311">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9810963" />
+			</Items>
+			<Items Frame="2312">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9892137" />
+			</Items>
+			<Items Frame="2313">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9951381" />
+			</Items>
+			<Items Frame="2314">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9987675" />
+			</Items>
+			<Items Frame="2315">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="1" />
+			</Items>
+			<Items Frame="2316">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9987675" />
+			</Items>
+			<Items Frame="2317">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9951381" />
+			</Items>
+			<Items Frame="2318">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9892137" />
+			</Items>
+			<Items Frame="2319">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9810963" />
+			</Items>
+			<Items Frame="2320">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.970887959" />
+			</Items>
+			<Items Frame="2321">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9586907" />
+			</Items>
+			<Items Frame="2322">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9446064" />
+			</Items>
+			<Items Frame="2323">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.928737164" />
+			</Items>
+			<Items Frame="2324">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.911184967" />
+			</Items>
+			<Items Frame="2325">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.892051756" />
+			</Items>
+			<Items Frame="2326">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.871439636" />
+			</Items>
+			<Items Frame="2327">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.849450469" />
+			</Items>
+			<Items Frame="2328">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.826186359" />
+			</Items>
+			<Items Frame="2329">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8017493" />
+			</Items>
+			<Items Frame="2330">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7762412" />
+			</Items>
+			<Items Frame="2331">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.749764144" />
+			</Items>
+			<Items Frame="2332">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7224201" />
+			</Items>
+			<Items Frame="2333">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.694311" />
+			</Items>
+			<Items Frame="2334">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.665539" />
+			</Items>
+			<Items Frame="2335">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.636206031" />
+			</Items>
+			<Items Frame="2336">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.606414" />
+			</Items>
+			<Items Frame="2337">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.576265" />
+			</Items>
+			<Items Frame="2338">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.545861" />
+			</Items>
+			<Items Frame="2339">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.515303969" />
+			</Items>
+			<Items Frame="2340">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.484696" />
+			</Items>
+			<Items Frame="2341">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.454139" />
+			</Items>
+			<Items Frame="2342">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.423735023" />
+			</Items>
+			<Items Frame="2343">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.393586" />
+			</Items>
+			<Items Frame="2344">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.363794" />
+			</Items>
+			<Items Frame="2345">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.334460974" />
+			</Items>
+			<Items Frame="2346">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.305688947" />
+			</Items>
+			<Items Frame="2347">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.277579933" />
+			</Items>
+			<Items Frame="2348">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.2502359" />
+			</Items>
+			<Items Frame="2349">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.2237588" />
+			</Items>
+			<Items Frame="2350">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.198250726" />
+			</Items>
+			<Items Frame="2351">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.173813626" />
+			</Items>
+			<Items Frame="2352">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.150549516" />
+			</Items>
+			<Items Frame="2353">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.128560379" />
+			</Items>
+			<Items Frame="2354">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.107948221" />
+			</Items>
+			<Items Frame="2355">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.08881503" />
+			</Items>
+			<Items Frame="2356">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.07126282" />
+			</Items>
+			<Items Frame="2357">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0553935878" />
+			</Items>
+			<Items Frame="2358">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.04130932" />
+			</Items>
+			<Items Frame="2359">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.02911202" />
+			</Items>
+			<Items Frame="2360">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0189036876" />
+			</Items>
+			<Items Frame="2361">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0107863219" />
+			</Items>
+			<Items Frame="2362">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.00486191968" />
+			</Items>
+			<Items Frame="2363">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0012324797" />
+			</Items>
+			<Items Frame="2364">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0" />
+			</Items>
+			<Items Frame="2365">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0009797144" />
+			</Items>
+			<Items Frame="2366">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.00387077383" />
+			</Items>
+			<Items Frame="2367">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.008601052" />
+			</Items>
+			<Items Frame="2368">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0150984218" />
+			</Items>
+			<Items Frame="2369">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.023290759" />
+			</Items>
+			<Items Frame="2370">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0331059359" />
+			</Items>
+			<Items Frame="2371">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0444718264" />
+			</Items>
+			<Items Frame="2372">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0573163033" />
+			</Items>
+			<Items Frame="2373">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0715672448" />
+			</Items>
+			<Items Frame="2374">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.08715252" />
+			</Items>
+			<Items Frame="2375">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.104" />
+			</Items>
+			<Items Frame="2376">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.122037567" />
+			</Items>
+			<Items Frame="2377">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.141193092" />
+			</Items>
+			<Items Frame="2378">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.161394447" />
+			</Items>
+			<Items Frame="2379">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.1825695" />
+			</Items>
+			<Items Frame="2380">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.204646125" />
+			</Items>
+			<Items Frame="2381">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.22755222" />
+			</Items>
+			<Items Frame="2382">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.251215637" />
+			</Items>
+			<Items Frame="2383">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.275564224" />
+			</Items>
+			<Items Frame="2384">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.300525934" />
+			</Items>
+			<Items Frame="2385">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.326028556" />
+			</Items>
+			<Items Frame="2386">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.352" />
+			</Items>
+			<Items Frame="2387">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.378368139" />
+			</Items>
+			<Items Frame="2388">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.405060858" />
+			</Items>
+			<Items Frame="2389">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.432006" />
+			</Items>
+			<Items Frame="2390">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.459131479" />
+			</Items>
+			<Items Frame="2391">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.486365139" />
+			</Items>
+			<Items Frame="2392">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.513634861" />
+			</Items>
+			<Items Frame="2393">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5408685" />
+			</Items>
+			<Items Frame="2394">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.567994" />
+			</Items>
+			<Items Frame="2395">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5949392" />
+			</Items>
+			<Items Frame="2396">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.621631861" />
+			</Items>
+			<Items Frame="2397">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.648" />
+			</Items>
+			<Items Frame="2398">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6739715" />
+			</Items>
+			<Items Frame="2399">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6994741" />
+			</Items>
+			<Items Frame="2400">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.724435747" />
+			</Items>
+			<Items Frame="2401">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.748784363" />
+			</Items>
+			<Items Frame="2402">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.772447765" />
+			</Items>
+			<Items Frame="2403">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7953539" />
+			</Items>
+			<Items Frame="2404">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8174305" />
+			</Items>
+			<Items Frame="2405">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8386056" />
+			</Items>
+			<Items Frame="2406">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8588069" />
+			</Items>
+			<Items Frame="2407">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8779624" />
+			</Items>
+			<Items Frame="2408">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.896" />
+			</Items>
+			<Items Frame="2409">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.912847459" />
+			</Items>
+			<Items Frame="2410">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.928432763" />
+			</Items>
+			<Items Frame="2411">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9426837" />
+			</Items>
+			<Items Frame="2412">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9555282" />
+			</Items>
+			<Items Frame="2413">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9668941" />
+			</Items>
+			<Items Frame="2414">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.976709247" />
+			</Items>
+			<Items Frame="2415">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9849016" />
+			</Items>
+			<Items Frame="2416">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.991398931" />
+			</Items>
+			<Items Frame="2417">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9961292" />
+			</Items>
+			<Items Frame="2418">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9990203" />
+			</Items>
+			<Items Frame="2419">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="1" />
+			</Items>
+			<Items Frame="2420">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.999318242" />
+			</Items>
+			<Items Frame="2421">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9973008" />
+			</Items>
+			<Items Frame="2422">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.993989468" />
+			</Items>
+			<Items Frame="2423">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.989425957" />
+			</Items>
+			<Items Frame="2424">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.983651936" />
+			</Items>
+			<Items Frame="2425">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.976709247" />
+			</Items>
+			<Items Frame="2426">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.968639553" />
+			</Items>
+			<Items Frame="2427">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.959484637" />
+			</Items>
+			<Items Frame="2428">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9492862" />
+			</Items>
+			<Items Frame="2429">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9380861" />
+			</Items>
+			<Items Frame="2430">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9259259" />
+			</Items>
+			<Items Frame="2431">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.912847459" />
+			</Items>
+			<Items Frame="2432">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8988925" />
+			</Items>
+			<Items Frame="2433">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.884102762" />
+			</Items>
+			<Items Frame="2434">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8685199" />
+			</Items>
+			<Items Frame="2435">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8521858" />
+			</Items>
+			<Items Frame="2436">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8351421" />
+			</Items>
+			<Items Frame="2437">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8174305" />
+			</Items>
+			<Items Frame="2438">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7990928" />
+			</Items>
+			<Items Frame="2439">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.780170858" />
+			</Items>
+			<Items Frame="2440">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.760706246" />
+			</Items>
+			<Items Frame="2441">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7407407" />
+			</Items>
+			<Items Frame="2442">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7203161" />
+			</Items>
+			<Items Frame="2443">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6994741" />
+			</Items>
+			<Items Frame="2444">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6782564" />
+			</Items>
+			<Items Frame="2445">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6567048" />
+			</Items>
+			<Items Frame="2446">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.634861" />
+			</Items>
+			<Items Frame="2447">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6127668" />
+			</Items>
+			<Items Frame="2448">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5904639" />
+			</Items>
+			<Items Frame="2449">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.567994" />
+			</Items>
+			<Items Frame="2450">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5453989" />
+			</Items>
+			<Items Frame="2451">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.522720337" />
+			</Items>
+			<Items Frame="2452">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5" />
+			</Items>
+			<Items Frame="2453">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.4772797" />
+			</Items>
+			<Items Frame="2454">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.4546011" />
+			</Items>
+			<Items Frame="2455">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.432006" />
+			</Items>
+			<Items Frame="2456">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.409536123" />
+			</Items>
+			<Items Frame="2457">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.387233227" />
+			</Items>
+			<Items Frame="2458">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.365139" />
+			</Items>
+			<Items Frame="2459">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.343295217" />
+			</Items>
+			<Items Frame="2460">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.3217436" />
+			</Items>
+			<Items Frame="2461">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.300525934" />
+			</Items>
+			<Items Frame="2462">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.2796839" />
+			</Items>
+			<Items Frame="2463">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.259259254" />
+			</Items>
+			<Items Frame="2464">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.239293769" />
+			</Items>
+			<Items Frame="2465">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.219829142" />
+			</Items>
+			<Items Frame="2466">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.200907141" />
+			</Items>
+			<Items Frame="2467">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.1825695" />
+			</Items>
+			<Items Frame="2468">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.164857939" />
+			</Items>
+			<Items Frame="2469">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.147814229" />
+			</Items>
+			<Items Frame="2470">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.131480083" />
+			</Items>
+			<Items Frame="2471">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.115897268" />
+			</Items>
+			<Items Frame="2472">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.101107493" />
+			</Items>
+			<Items Frame="2473">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.08715252" />
+			</Items>
+			<Items Frame="2474">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0740740746" />
+			</Items>
+			<Items Frame="2475">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0619139038" />
+			</Items>
+			<Items Frame="2476">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0507137477" />
+			</Items>
+			<Items Frame="2477">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0405153446" />
+			</Items>
+			<Items Frame="2478">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0313604362" />
+			</Items>
+			<Items Frame="2479">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.023290759" />
+			</Items>
+			<Items Frame="2480">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0163480528" />
+			</Items>
+			<Items Frame="2481">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0105740605" />
+			</Items>
+			<Items Frame="2482">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.00601051841" />
+			</Items>
+			<Items Frame="2483">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.002699168" />
+			</Items>
+			<Items Frame="2484">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0006817486" />
+			</Items>
+			<Items Frame="2485">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0" />
+			</Items>
+			<Items Frame="2486">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0009125615" />
+			</Items>
+			<Items Frame="2487">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.00360704772" />
+			</Items>
+			<Items Frame="2488">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.008018661" />
+			</Items>
+			<Items Frame="2489">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.014082606" />
+			</Items>
+			<Items Frame="2490">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0217340831" />
+			</Items>
+			<Items Frame="2491">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0309082959" />
+			</Items>
+			<Items Frame="2492">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0415404476" />
+			</Items>
+			<Items Frame="2493">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.05356574" />
+			</Items>
+			<Items Frame="2494">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.06691938" />
+			</Items>
+			<Items Frame="2495">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.08153656" />
+			</Items>
+			<Items Frame="2496">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.09735249" />
+			</Items>
+			<Items Frame="2497">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.114302374" />
+			</Items>
+			<Items Frame="2498">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.132321417" />
+			</Items>
+			<Items Frame="2499">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.1513448" />
+			</Items>
+			<Items Frame="2500">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.171307772" />
+			</Items>
+			<Items Frame="2501">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.1921455" />
+			</Items>
+			<Items Frame="2502">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.213793173" />
+			</Items>
+			<Items Frame="2503">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.236186028" />
+			</Items>
+			<Items Frame="2504">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.259259254" />
+			</Items>
+			<Items Frame="2505">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.282948047" />
+			</Items>
+			<Items Frame="2506">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.307187647" />
+			</Items>
+			<Items Frame="2507">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.3319132" />
+			</Items>
+			<Items Frame="2508">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.357059926" />
+			</Items>
+			<Items Frame="2509">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.382563055" />
+			</Items>
+			<Items Frame="2510">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.408357769" />
+			</Items>
+			<Items Frame="2511">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.43437928" />
+			</Items>
+			<Items Frame="2512">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.460562766" />
+			</Items>
+			<Items Frame="2513">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.486843467" />
+			</Items>
+			<Items Frame="2514">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.513156533" />
+			</Items>
+			<Items Frame="2515">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.539437234" />
+			</Items>
+			<Items Frame="2516">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5656207" />
+			</Items>
+			<Items Frame="2517">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.591642261" />
+			</Items>
+			<Items Frame="2518">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.617436945" />
+			</Items>
+			<Items Frame="2519">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.642940044" />
+			</Items>
+			<Items Frame="2520">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6680868" />
+			</Items>
+			<Items Frame="2521">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6928124" />
+			</Items>
+			<Items Frame="2522">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7170519" />
+			</Items>
+			<Items Frame="2523">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7407407" />
+			</Items>
+			<Items Frame="2524">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.763814" />
+			</Items>
+			<Items Frame="2525">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.786206841" />
+			</Items>
+			<Items Frame="2526">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.807854533" />
+			</Items>
+			<Items Frame="2527">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.828692257" />
+			</Items>
+			<Items Frame="2528">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.848655164" />
+			</Items>
+			<Items Frame="2529">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8676786" />
+			</Items>
+			<Items Frame="2530">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8856976" />
+			</Items>
+			<Items Frame="2531">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9026475" />
+			</Items>
+			<Items Frame="2532">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.918463469" />
+			</Items>
+			<Items Frame="2533">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9330806" />
+			</Items>
+			<Items Frame="2534">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.946434259" />
+			</Items>
+			<Items Frame="2535">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.958459556" />
+			</Items>
+			<Items Frame="2536">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9690917" />
+			</Items>
+			<Items Frame="2537">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.978265941" />
+			</Items>
+			<Items Frame="2538">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9859174" />
+			</Items>
+			<Items Frame="2539">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9919813" />
+			</Items>
+			<Items Frame="2540">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.996392965" />
+			</Items>
+			<Items Frame="2541">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.999087453" />
+			</Items>
+			<Items Frame="2542">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="1" />
+			</Items>
+			<Items Frame="2543">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.999252141" />
+			</Items>
+			<Items Frame="2544">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.99704057" />
+			</Items>
+			<Items Frame="2545">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9934132" />
+			</Items>
+			<Items Frame="2546">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.988418162" />
+			</Items>
+			<Items Frame="2547">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.982103348" />
+			</Items>
+			<Items Frame="2548">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9745168" />
+			</Items>
+			<Items Frame="2549">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.965706468" />
+			</Items>
+			<Items Frame="2550">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9557203" />
+			</Items>
+			<Items Frame="2551">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9446064" />
+			</Items>
+			<Items Frame="2552">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9324127" />
+			</Items>
+			<Items Frame="2553">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9191872" />
+			</Items>
+			<Items Frame="2554">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.904977858" />
+			</Items>
+			<Items Frame="2555">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.889832735" />
+			</Items>
+			<Items Frame="2556">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.873799741" />
+			</Items>
+			<Items Frame="2557">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8569269" />
+			</Items>
+			<Items Frame="2558">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.839262247" />
+			</Items>
+			<Items Frame="2559">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.820853651" />
+			</Items>
+			<Items Frame="2560">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8017493" />
+			</Items>
+			<Items Frame="2561">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.781996965" />
+			</Items>
+			<Items Frame="2562">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.76164484" />
+			</Items>
+			<Items Frame="2563">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7407407" />
+			</Items>
+			<Items Frame="2564">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.719332755" />
+			</Items>
+			<Items Frame="2565">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6974689" />
+			</Items>
+			<Items Frame="2566">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.675197065" />
+			</Items>
+			<Items Frame="2567">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6525653" />
+			</Items>
+			<Items Frame="2568">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6296216" />
+			</Items>
+			<Items Frame="2569">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.606414" />
+			</Items>
+			<Items Frame="2570">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5829904" />
+			</Items>
+			<Items Frame="2571">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.55939883" />
+			</Items>
+			<Items Frame="2572">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.535687268" />
+			</Items>
+			<Items Frame="2573">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.511903763" />
+			</Items>
+			<Items Frame="2574">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.488096237" />
+			</Items>
+			<Items Frame="2575">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.4643127" />
+			</Items>
+			<Items Frame="2576">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.44060117" />
+			</Items>
+			<Items Frame="2577">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.4170096" />
+			</Items>
+			<Items Frame="2578">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.393586" />
+			</Items>
+			<Items Frame="2579">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.370378375" />
+			</Items>
+			<Items Frame="2580">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.34743467" />
+			</Items>
+			<Items Frame="2581">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.324802935" />
+			</Items>
+			<Items Frame="2582">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.302531123" />
+			</Items>
+			<Items Frame="2583">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.280667245" />
+			</Items>
+			<Items Frame="2584">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.259259254" />
+			</Items>
+			<Items Frame="2585">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.23835519" />
+			</Items>
+			<Items Frame="2586">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.21800302" />
+			</Items>
+			<Items Frame="2587">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.198250726" />
+			</Items>
+			<Items Frame="2588">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.17914632" />
+			</Items>
+			<Items Frame="2589">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.160737783" />
+			</Items>
+			<Items Frame="2590">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.1430731" />
+			</Items>
+			<Items Frame="2591">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.126200274" />
+			</Items>
+			<Items Frame="2592">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.110167287" />
+			</Items>
+			<Items Frame="2593">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0950221345" />
+			</Items>
+			<Items Frame="2594">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0808128044" />
+			</Items>
+			<Items Frame="2595">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.06758729" />
+			</Items>
+			<Items Frame="2596">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0553935878" />
+			</Items>
+			<Items Frame="2597">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0442796759" />
+			</Items>
+			<Items Frame="2598">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.03429355" />
+			</Items>
+			<Items Frame="2599">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.02548321" />
+			</Items>
+			<Items Frame="2600">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0178966355" />
+			</Items>
+			<Items Frame="2601">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0115818223" />
+			</Items>
+			<Items Frame="2602">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.00658676168" />
+			</Items>
+			<Items Frame="2603">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.00295944372" />
+			</Items>
+			<Items Frame="2604">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0007478594" />
+			</Items>
+			<Items Frame="2605">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0" />
+			</Items>
+			<Items Frame="2606">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.00101610529" />
+			</Items>
+			<Items Frame="2607">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.00401361566" />
+			</Items>
+			<Items Frame="2608">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.008916324" />
+			</Items>
+			<Items Frame="2609">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.01564802" />
+			</Items>
+			<Items Frame="2610">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0241325" />
+			</Items>
+			<Items Frame="2611">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.03429355" />
+			</Items>
+			<Items Frame="2612">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.04605497" />
+			</Items>
+			<Items Frame="2613">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0593405478" />
+			</Items>
+			<Items Frame="2614">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0740740746" />
+			</Items>
+			<Items Frame="2615">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.09017934" />
+			</Items>
+			<Items Frame="2616">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.107580148" />
+			</Items>
+			<Items Frame="2617">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.126200274" />
+			</Items>
+			<Items Frame="2618">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.14596352" />
+			</Items>
+			<Items Frame="2619">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.166793674" />
+			</Items>
+			<Items Frame="2620">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.188614547" />
+			</Items>
+			<Items Frame="2621">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.21134989" />
+			</Items>
+			<Items Frame="2622">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.234923542" />
+			</Items>
+			<Items Frame="2623">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.259259254" />
+			</Items>
+			<Items Frame="2624">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.284280866" />
+			</Items>
+			<Items Frame="2625">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.309912115" />
+			</Items>
+			<Items Frame="2626">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.336076826" />
+			</Items>
+			<Items Frame="2627">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.362698764" />
+			</Items>
+			<Items Frame="2628">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.389701784" />
+			</Items>
+			<Items Frame="2629">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.4170096" />
+			</Items>
+			<Items Frame="2630">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.444546044" />
+			</Items>
+			<Items Frame="2631">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.472234935" />
+			</Items>
+			<Items Frame="2632">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5" />
+			</Items>
+			<Items Frame="2633">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5277651" />
+			</Items>
+			<Items Frame="2634">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.555453956" />
+			</Items>
+			<Items Frame="2635">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5829904" />
+			</Items>
+			<Items Frame="2636">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6102982" />
+			</Items>
+			<Items Frame="2637">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6373012" />
+			</Items>
+			<Items Frame="2638">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6639232" />
+			</Items>
+			<Items Frame="2639">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6900879" />
+			</Items>
+			<Items Frame="2640">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.715719163" />
+			</Items>
+			<Items Frame="2641">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7407407" />
+			</Items>
+			<Items Frame="2642">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.765076458" />
+			</Items>
+			<Items Frame="2643">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7886501" />
+			</Items>
+			<Items Frame="2644">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.811385453" />
+			</Items>
+			<Items Frame="2645">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8332063" />
+			</Items>
+			<Items Frame="2646">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.85403645" />
+			</Items>
+			<Items Frame="2647">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.873799741" />
+			</Items>
+			<Items Frame="2648">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8924199" />
+			</Items>
+			<Items Frame="2649">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9098207" />
+			</Items>
+			<Items Frame="2650">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9259259" />
+			</Items>
+			<Items Frame="2651">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.940659463" />
+			</Items>
+			<Items Frame="2652">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.953945041" />
+			</Items>
+			<Items Frame="2653">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.965706468" />
+			</Items>
+			<Items Frame="2654">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9758675" />
+			</Items>
+			<Items Frame="2655">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.984352" />
+			</Items>
+			<Items Frame="2656">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9910837" />
+			</Items>
+			<Items Frame="2657">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9959864" />
+			</Items>
+			<Items Frame="2658">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9989839" />
+			</Items>
+			<Items Frame="2659">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="1" />
+			</Items>
+			<Items Frame="2660">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9991479" />
+			</Items>
+			<Items Frame="2661">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9966306" />
+			</Items>
+			<Items Frame="2662">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.992506564" />
+			</Items>
+			<Items Frame="2663">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9868341" />
+			</Items>
+			<Items Frame="2664">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9796717" />
+			</Items>
+			<Items Frame="2665">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.971077859" />
+			</Items>
+			<Items Frame="2666">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.96111095" />
+			</Items>
+			<Items Frame="2667">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.94982934" />
+			</Items>
+			<Items Frame="2668">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.937291563" />
+			</Items>
+			<Items Frame="2669">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.92355597" />
+			</Items>
+			<Items Frame="2670">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.908681035" />
+			</Items>
+			<Items Frame="2671">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.89272517" />
+			</Items>
+			<Items Frame="2672">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8757468" />
+			</Items>
+			<Items Frame="2673">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.857804358" />
+			</Items>
+			<Items Frame="2674">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8389563" />
+			</Items>
+			<Items Frame="2675">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.819260955" />
+			</Items>
+			<Items Frame="2676">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7987769" />
+			</Items>
+			<Items Frame="2677">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.777562439" />
+			</Items>
+			<Items Frame="2678">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7556761" />
+			</Items>
+			<Items Frame="2679">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.733176231" />
+			</Items>
+			<Items Frame="2680">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7101213" />
+			</Items>
+			<Items Frame="2681">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6865697" />
+			</Items>
+			<Items Frame="2682">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6625799" />
+			</Items>
+			<Items Frame="2683">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.638210356" />
+			</Items>
+			<Items Frame="2684">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6135194" />
+			</Items>
+			<Items Frame="2685">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5885655" />
+			</Items>
+			<Items Frame="2686">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5634072" />
+			</Items>
+			<Items Frame="2687">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.538102746" />
+			</Items>
+			<Items Frame="2688">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.512710631" />
+			</Items>
+			<Items Frame="2689">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.487289339" />
+			</Items>
+			<Items Frame="2690">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.461897284" />
+			</Items>
+			<Items Frame="2691">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.436592847" />
+			</Items>
+			<Items Frame="2692">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.411434472" />
+			</Items>
+			<Items Frame="2693">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.3864806" />
+			</Items>
+			<Items Frame="2694">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.361789674" />
+			</Items>
+			<Items Frame="2695">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.337420076" />
+			</Items>
+			<Items Frame="2696">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.313430279" />
+			</Items>
+			<Items Frame="2697">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.289878726" />
+			</Items>
+			<Items Frame="2698">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.266823769" />
+			</Items>
+			<Items Frame="2699">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.244323909" />
+			</Items>
+			<Items Frame="2700">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.222437546" />
+			</Items>
+			<Items Frame="2701">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.2012231" />
+			</Items>
+			<Items Frame="2702">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.18073903" />
+			</Items>
+			<Items Frame="2703">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.161043733" />
+			</Items>
+			<Items Frame="2704">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.142195642" />
+			</Items>
+			<Items Frame="2705">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.124253213" />
+			</Items>
+			<Items Frame="2706">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.107274845" />
+			</Items>
+			<Items Frame="2707">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.09131898" />
+			</Items>
+			<Items Frame="2708">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.07644404" />
+			</Items>
+			<Items Frame="2709">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.06270846" />
+			</Items>
+			<Items Frame="2710">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.05017066" />
+			</Items>
+			<Items Frame="2711">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0388890766" />
+			</Items>
+			<Items Frame="2712">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0289221387" />
+			</Items>
+			<Items Frame="2713">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.02032827" />
+			</Items>
+			<Items Frame="2714">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0131659033" />
+			</Items>
+			<Items Frame="2715">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.00749346334" />
+			</Items>
+			<Items Frame="2716">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.00336938049" />
+			</Items>
+			<Items Frame="2717">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0008520832" />
+			</Items>
+			<Items Frame="2718">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0" />
+			</Items>
+			<Items Frame="2719">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0008240741" />
+			</Items>
+			<Items Frame="2720">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.00325925928" />
+			</Items>
+			<Items Frame="2721">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.00725" />
+			</Items>
+			<Items Frame="2722">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0127407406" />
+			</Items>
+			<Items Frame="2723">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0196759254" />
+			</Items>
+			<Items Frame="2724">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.028" />
+			</Items>
+			<Items Frame="2725">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0376574062" />
+			</Items>
+			<Items Frame="2726">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0485925935" />
+			</Items>
+			<Items Frame="2727">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.06075" />
+			</Items>
+			<Items Frame="2728">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0740740746" />
+			</Items>
+			<Items Frame="2729">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.08850926" />
+			</Items>
+			<Items Frame="2730">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.104" />
+			</Items>
+			<Items Frame="2731">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.120490737" />
+			</Items>
+			<Items Frame="2732">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.137925923" />
+			</Items>
+			<Items Frame="2733">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.15625" />
+			</Items>
+			<Items Frame="2734">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.17540741" />
+			</Items>
+			<Items Frame="2735">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.195342585" />
+			</Items>
+			<Items Frame="2736">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.216" />
+			</Items>
+			<Items Frame="2737">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.237324074" />
+			</Items>
+			<Items Frame="2738">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.259259254" />
+			</Items>
+			<Items Frame="2739">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.28175" />
+			</Items>
+			<Items Frame="2740">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.304740727" />
+			</Items>
+			<Items Frame="2741">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.328175932" />
+			</Items>
+			<Items Frame="2742">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.352" />
+			</Items>
+			<Items Frame="2743">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.3761574" />
+			</Items>
+			<Items Frame="2744">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.4005926" />
+			</Items>
+			<Items Frame="2745">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.42525" />
+			</Items>
+			<Items Frame="2746">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.450074077" />
+			</Items>
+			<Items Frame="2747">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.475009263" />
+			</Items>
+			<Items Frame="2748">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5" />
+			</Items>
+			<Items Frame="2749">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.524990737" />
+			</Items>
+			<Items Frame="2750">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5499259" />
+			</Items>
+			<Items Frame="2751">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.57475" />
+			</Items>
+			<Items Frame="2752">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.599407434" />
+			</Items>
+			<Items Frame="2753">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6238426" />
+			</Items>
+			<Items Frame="2754">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.648" />
+			</Items>
+			<Items Frame="2755">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6718241" />
+			</Items>
+			<Items Frame="2756">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6952593" />
+			</Items>
+			<Items Frame="2757">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.71825" />
+			</Items>
+			<Items Frame="2758">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7407407" />
+			</Items>
+			<Items Frame="2759">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.762675941" />
+			</Items>
+			<Items Frame="2760">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.784" />
+			</Items>
+			<Items Frame="2761">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8046574" />
+			</Items>
+			<Items Frame="2762">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8245926" />
+			</Items>
+			<Items Frame="2763">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.84375" />
+			</Items>
+			<Items Frame="2764">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8620741" />
+			</Items>
+			<Items Frame="2765">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.87950927" />
+			</Items>
+			<Items Frame="2766">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.896" />
+			</Items>
+			<Items Frame="2767">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.911490738" />
+			</Items>
+			<Items Frame="2768">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9259259" />
+			</Items>
+			<Items Frame="2769">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.93925" />
+			</Items>
+			<Items Frame="2770">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.951407433" />
+			</Items>
+			<Items Frame="2771">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9623426" />
+			</Items>
+			<Items Frame="2772">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.972" />
+			</Items>
+			<Items Frame="2773">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9803241" />
+			</Items>
+			<Items Frame="2774">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.987259269" />
+			</Items>
+			<Items Frame="2775">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.99275" />
+			</Items>
+			<Items Frame="2776">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.996740758" />
+			</Items>
+			<Items Frame="2777">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9991759" />
+			</Items>
+			<Items Frame="2778">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="1" />
+			</Items>
+			<Items Frame="2779">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.998904765" />
+			</Items>
+			<Items Frame="2780">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9956759" />
+			</Items>
+			<Items Frame="2781">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9903988" />
+			</Items>
+			<Items Frame="2782">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9831588" />
+			</Items>
+			<Items Frame="2783">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9740413" />
+			</Items>
+			<Items Frame="2784">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.963131547" />
+			</Items>
+			<Items Frame="2785">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9505149" />
+			</Items>
+			<Items Frame="2786">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.936276734" />
+			</Items>
+			<Items Frame="2787">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.920502365" />
+			</Items>
+			<Items Frame="2788">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9032772" />
+			</Items>
+			<Items Frame="2789">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8846865" />
+			</Items>
+			<Items Frame="2790">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.864815652" />
+			</Items>
+			<Items Frame="2791">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.84375" />
+			</Items>
+			<Items Frame="2792">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.821574867" />
+			</Items>
+			<Items Frame="2793">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7983756" />
+			</Items>
+			<Items Frame="2794">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7742376" />
+			</Items>
+			<Items Frame="2795">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7492461" />
+			</Items>
+			<Items Frame="2796">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7234866" />
+			</Items>
+			<Items Frame="2797">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.697044253" />
+			</Items>
+			<Items Frame="2798">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.670004547" />
+			</Items>
+			<Items Frame="2799">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6424528" />
+			</Items>
+			<Items Frame="2800">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6144743" />
+			</Items>
+			<Items Frame="2801">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5861544" />
+			</Items>
+			<Items Frame="2802">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5575785" />
+			</Items>
+			<Items Frame="2803">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.528831959" />
+			</Items>
+			<Items Frame="2804">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5" />
+			</Items>
+			<Items Frame="2805">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.471168071" />
+			</Items>
+			<Items Frame="2806">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.4424215" />
+			</Items>
+			<Items Frame="2807">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.4138456" />
+			</Items>
+			<Items Frame="2808">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.3855257" />
+			</Items>
+			<Items Frame="2809">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.357547224" />
+			</Items>
+			<Items Frame="2810">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.329995453" />
+			</Items>
+			<Items Frame="2811">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.302955747" />
+			</Items>
+			<Items Frame="2812">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.276513427" />
+			</Items>
+			<Items Frame="2813">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.25075388" />
+			</Items>
+			<Items Frame="2814">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.2257624" />
+			</Items>
+			<Items Frame="2815">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.201624379" />
+			</Items>
+			<Items Frame="2816">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.178425118" />
+			</Items>
+			<Items Frame="2817">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.15625" />
+			</Items>
+			<Items Frame="2818">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.135184348" />
+			</Items>
+			<Items Frame="2819">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.115313493" />
+			</Items>
+			<Items Frame="2820">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.096722804" />
+			</Items>
+			<Items Frame="2821">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.07949761" />
+			</Items>
+			<Items Frame="2822">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.06372326" />
+			</Items>
+			<Items Frame="2823">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0494850948" />
+			</Items>
+			<Items Frame="2824">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0368684568" />
+			</Items>
+			<Items Frame="2825">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0259586945" />
+			</Items>
+			<Items Frame="2826">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0168411471" />
+			</Items>
+			<Items Frame="2827">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.009601161" />
+			</Items>
+			<Items Frame="2828">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.004324078" />
+			</Items>
+			<Items Frame="2829">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0010952435" />
+			</Items>
+			<Items Frame="2830">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0" />
+			</Items>
+			<Items Frame="2831">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.000642428233" />
+			</Items>
+			<Items Frame="2832">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.00254427036" />
+			</Items>
+			<Items Frame="2833">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.005667362" />
+			</Items>
+			<Items Frame="2834">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.00997354" />
+			</Items>
+			<Items Frame="2835">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.015424639" />
+			</Items>
+			<Items Frame="2836">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0219824947" />
+			</Items>
+			<Items Frame="2837">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0296089463" />
+			</Items>
+			<Items Frame="2838">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0382658243" />
+			</Items>
+			<Items Frame="2839">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.04791497" />
+			</Items>
+			<Items Frame="2840">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.058518216" />
+			</Items>
+			<Items Frame="2841">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0700374" />
+			</Items>
+			<Items Frame="2842">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0824343562" />
+			</Items>
+			<Items Frame="2843">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.09567092" />
+			</Items>
+			<Items Frame="2844">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.109708935" />
+			</Items>
+			<Items Frame="2845">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.124510229" />
+			</Items>
+			<Items Frame="2846">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.140036643" />
+			</Items>
+			<Items Frame="2847">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.15625" />
+			</Items>
+			<Items Frame="2848">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.173112154" />
+			</Items>
+			<Items Frame="2849">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.190584928" />
+			</Items>
+			<Items Frame="2850">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.208630159" />
+			</Items>
+			<Items Frame="2851">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.2272097" />
+			</Items>
+			<Items Frame="2852">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.246285364" />
+			</Items>
+			<Items Frame="2853">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.265819" />
+			</Items>
+			<Items Frame="2854">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.285772443" />
+			</Items>
+			<Items Frame="2855">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.306107521" />
+			</Items>
+			<Items Frame="2856">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.326786071" />
+			</Items>
+			<Items Frame="2857">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.347769946" />
+			</Items>
+			<Items Frame="2858">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.369020969" />
+			</Items>
+			<Items Frame="2859">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.390500963" />
+			</Items>
+			<Items Frame="2860">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.412171781" />
+			</Items>
+			<Items Frame="2861">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.433995277" />
+			</Items>
+			<Items Frame="2862">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.455933243" />
+			</Items>
+			<Items Frame="2863">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.477947533" />
+			</Items>
+			<Items Frame="2864">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5" />
+			</Items>
+			<Items Frame="2865">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.522052467" />
+			</Items>
+			<Items Frame="2866">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5440668" />
+			</Items>
+			<Items Frame="2867">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.566004753" />
+			</Items>
+			<Items Frame="2868">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5878282" />
+			</Items>
+			<Items Frame="2869">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.609499037" />
+			</Items>
+			<Items Frame="2870">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.630979061" />
+			</Items>
+			<Items Frame="2871">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.65223" />
+			</Items>
+			<Items Frame="2872">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6732139" />
+			</Items>
+			<Items Frame="2873">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6938925" />
+			</Items>
+			<Items Frame="2874">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.714227557" />
+			</Items>
+			<Items Frame="2875">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.734181" />
+			</Items>
+			<Items Frame="2876">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7537146" />
+			</Items>
+			<Items Frame="2877">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7727903" />
+			</Items>
+			<Items Frame="2878">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.791369855" />
+			</Items>
+			<Items Frame="2879">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8094151" />
+			</Items>
+			<Items Frame="2880">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.826887846" />
+			</Items>
+			<Items Frame="2881">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.84375" />
+			</Items>
+			<Items Frame="2882">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.859963357" />
+			</Items>
+			<Items Frame="2883">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8754898" />
+			</Items>
+			<Items Frame="2884">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.890291035" />
+			</Items>
+			<Items Frame="2885">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.904329062" />
+			</Items>
+			<Items Frame="2886">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.917565644" />
+			</Items>
+			<Items Frame="2887">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9299626" />
+			</Items>
+			<Items Frame="2888">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.941481769" />
+			</Items>
+			<Items Frame="2889">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.952085" />
+			</Items>
+			<Items Frame="2890">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9617342" />
+			</Items>
+			<Items Frame="2891">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.970391035" />
+			</Items>
+			<Items Frame="2892">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9780175" />
+			</Items>
+			<Items Frame="2893">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9845754" />
+			</Items>
+			<Items Frame="2894">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9900265" />
+			</Items>
+			<Items Frame="2895">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9943326" />
+			</Items>
+			<Items Frame="2896">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9974557" />
+			</Items>
+			<Items Frame="2897">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9993576" />
+			</Items>
+			<Items Frame="2898">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="1" />
+			</Items>
+			<Items Frame="2899">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9995715" />
+			</Items>
+			<Items Frame="2900">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.998295844" />
+			</Items>
+			<Items Frame="2901">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9961875" />
+			</Items>
+			<Items Frame="2902">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9932612" />
+			</Items>
+			<Items Frame="2903">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9895316" />
+			</Items>
+			<Items Frame="2904">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.985013068" />
+			</Items>
+			<Items Frame="2905">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9797204" />
+			</Items>
+			<Items Frame="2906">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9736682" />
+			</Items>
+			<Items Frame="2907">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.966871" />
+			</Items>
+			<Items Frame="2908">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.959343433" />
+			</Items>
+			<Items Frame="2909">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9511002" />
+			</Items>
+			<Items Frame="2910">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9421557" />
+			</Items>
+			<Items Frame="2911">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.932524741" />
+			</Items>
+			<Items Frame="2912">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.922221839" />
+			</Items>
+			<Items Frame="2913">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.9112616" />
+			</Items>
+			<Items Frame="2914">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8996587" />
+			</Items>
+			<Items Frame="2915">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8874276" />
+			</Items>
+			<Items Frame="2916">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.874583066" />
+			</Items>
+			<Items Frame="2917">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.861139655" />
+			</Items>
+			<Items Frame="2918">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.84711194" />
+			</Items>
+			<Items Frame="2919">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8325145" />
+			</Items>
+			<Items Frame="2920">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.81736207" />
+			</Items>
+			<Items Frame="2921">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.8016691" />
+			</Items>
+			<Items Frame="2922">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.785450339" />
+			</Items>
+			<Items Frame="2923">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.768720269" />
+			</Items>
+			<Items Frame="2924">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7514936" />
+			</Items>
+			<Items Frame="2925">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.733784854" />
+			</Items>
+			<Items Frame="2926">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.7156087" />
+			</Items>
+			<Items Frame="2927">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6969797" />
+			</Items>
+			<Items Frame="2928">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.677912533" />
+			</Items>
+			<Items Frame="2929">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.658421755" />
+			</Items>
+			<Items Frame="2930">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.638521969" />
+			</Items>
+			<Items Frame="2931">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.6182278" />
+			</Items>
+			<Items Frame="2932">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5975538" />
+			</Items>
+			<Items Frame="2933">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.576514661" />
+			</Items>
+			<Items Frame="2934">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.555124938" />
+			</Items>
+			<Items Frame="2935">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5333992" />
+			</Items>
+			<Items Frame="2936">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.5113522" />
+			</Items>
+			<Items Frame="2937">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.488998383" />
+			</Items>
+			<Items Frame="2938">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.466352463" />
+			</Items>
+			<Items Frame="2939">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.443428963" />
+			</Items>
+			<Items Frame="2940">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.420242578" />
+			</Items>
+			<Items Frame="2941">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.396807849" />
+			</Items>
+			<Items Frame="2942">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.3731394" />
+			</Items>
+			<Items Frame="2943">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.349251866" />
+			</Items>
+			<Items Frame="2944">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.325159818" />
+			</Items>
+			<Items Frame="2945">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.3008779" />
+			</Items>
+			<Items Frame="2946">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.276420653" />
+			</Items>
+			<Items Frame="2947">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.251802772" />
+			</Items>
+			<Items Frame="2948">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.227038786" />
+			</Items>
+			<Items Frame="2949">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.202143356" />
+			</Items>
+			<Items Frame="2950">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.177131057" />
+			</Items>
+			<Items Frame="2951">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.152016521" />
+			</Items>
+			<Items Frame="2952">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.126814336" />
+			</Items>
+			<Items Frame="2953">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.101539105" />
+			</Items>
+			<Items Frame="2954">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0762054548" />
+			</Items>
+			<Items Frame="2955">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.05082798" />
+			</Items>
+			<Items Frame="2956">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0.0254212935" />
+			</Items>
+			<Items Frame="2957">
+				<Items xsi:type="FloatAttribute" Name="Shrugging" Value="0" />
+			</Items>
+		</ClipAttributes>
+	</ClipFile>
+</GestureBuilderFile>

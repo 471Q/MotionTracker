@@ -338,3 +338,9 @@ ASALocalRun/
 
 # BeatPulse healthcheck temp database
 healthchecksdb
+/MainScreenUI/Database/Arm Lifting/Front Arm Raised.xef
+/MainScreenUI/Database/Bend Knee/Bend Knee.xef
+/MainScreenUI/Database/Elbow Raise/Elbow Raised.xef
+/MainScreenUI/Database/Hip/Raised Leg Front.xef
+/MainScreenUI/Database/Neck/Nodding.xef
+/MainScreenUI/Database/Shrugging/Shrugging.xef
