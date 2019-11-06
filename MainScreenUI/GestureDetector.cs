@@ -24,7 +24,7 @@ namespace MainScreenUI
     {
         FireS fib = new FireS();
         Thread thread1 = null, thread2 = null;
-        bool repetitionFlag = false, matched = false, notmatched = false;
+        bool matched = false, notmatched = false;
         float temp = 0f;
         int i = 0, exerciseDone = 0;
         IFirebaseClient client;

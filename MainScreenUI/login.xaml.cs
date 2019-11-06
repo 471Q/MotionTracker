@@ -35,6 +35,7 @@ namespace MainScreenUI
 
         private void Login1_Click(object sender, RoutedEventArgs e)
         {
+            FirebaseResponse res = null;
             if (string.IsNullOrWhiteSpace(userName.Text) && string.IsNullOrWhiteSpace(pass.Password))
             {
                 MessageBox.Show("Please Fill all the fields");
@@ -42,7 +43,16 @@ namespace MainScreenUI
             }
             else
             {
-                FirebaseResponse res = fib.client.Get(@"Users/" + userName.Text);
+                try
+                {
+                    res = fib.client.Get(@"Users/" + userName.Text);
+                }
+                catch
+                {
+                    Console.WriteLine("No Internet or Connection Problem");
+                    MessageBox.Show("Please check your internet connection");
+                    return;
+                }
                 LogUser resUser = res.ResultAs<LogUser>(); //firebase result
 
                 String passw = Encypt(pass.Password);
