@@ -125,10 +125,10 @@ namespace MainScreenUI
                             lastValue = exerciseDone;
                             exerciseDone = 0;
                         }
-                    else
-                    {
-                        Console.WriteLine("No new value");
-                    }
+                        else
+                        {
+                            Console.WriteLine("No new value");
+                        }
                     else
                     {
                         Console.WriteLine("Max Point Reached");
