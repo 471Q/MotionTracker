@@ -120,9 +120,9 @@
                 </Border.Effect>
                 <StackPanel x:Name="UICategory" Orientation="Vertical" HorizontalAlignment="Left" Height="365" Margin="10" VerticalAlignment="Top" Width="90">
                     <TextBlock HorizontalAlignment="Center" TextWrapping="WrapWithOverflow" Text="Select Category" TextAlignment="Center" VerticalAlignment="Top" Width="82" Margin="4,0" Height="48"/>
-                    <Button Style="{StaticResource RoundedBlueButtonRow0Column0}" Click="Add_file">
+                    <!-- <Button Style="{StaticResource RoundedBlueButtonRow0Column0}" Click="Add_file">
                         <TextBlock Style="{StaticResource WrappedTextBlock}" Text="+"/>
-                    </Button>
+                    </Button> -->
                 </StackPanel>
             </Border>
             <!--End of Category Selection-->

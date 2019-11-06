@@ -56,7 +56,7 @@
                     <TextBlock Text="Profile" Foreground="White"/>
                 </StackPanel>
             </Button>
-            <TextBlock HorizontalAlignment="Left" TextAlignment="Center" Margin="28,143,0,0" TextWrapping="Wrap" Text="Jesse McCree" VerticalAlignment="Top" Height="26" Width="100"/>
+            <TextBlock x:Name="userName" HorizontalAlignment="Left" TextAlignment="Center" Margin="28,143,0,0" TextWrapping="Wrap" Text="Jesse McCree" VerticalAlignment="Top" Height="26" Width="100"/>
             <!--End of Navigation Panel-->
 
 

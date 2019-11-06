@@ -5,11 +5,13 @@ using Microsoft.Kinect.VisualGestureBuilder;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Reflection;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Shapes;
 using Button = System.Windows.Controls.Button;
+using Point = System.Windows.Point;
 
 namespace MainScreenUI
 {
@@ -50,9 +52,9 @@ namespace MainScreenUI
             fib.SetIFC();
 
             FirebaseResponse res = new FireSharp.FirebaseClient(fib.ifc).Get(@"Users/" + Login.userDetail.Username);
-            User UserUpdatedPoint = res.ResultAs<User>(); //firebase result
 
             userName.Text = Login.userDetail.Name;
+            Add_file();
         }
 
         /// <summary>
@@ -71,8 +73,6 @@ namespace MainScreenUI
                     _reader.MultiSourceFrameArrived -= Reader_MultiSourceFrameArrived;
                     _reader.Dispose();
                     _reader = null;
-                    //_reader = _sensor.OpenMultiSourceFrameReader(FrameSourceTypes.Color | FrameSourceTypes.Body);
-                    //_reader.MultiSourceFrameArrived += Reader_MultiSourceFrameArrived;
                 }
 
                 _reader = _sensor.OpenMultiSourceFrameReader(FrameSourceTypes.Color | FrameSourceTypes.Body);
@@ -91,36 +91,26 @@ namespace MainScreenUI
         /// <summary>
         /// Specify the directory which contain the gesture files
         /// </summary>
-        private void Add_file(object sender, RoutedEventArgs e)
+        //private void Add_file(object sender, RoutedEventArgs e)
+        private void Add_file()
         {
-            var dialog = new System.Windows.Forms.OpenFileDialog
+            string currentDirectory = System.IO.Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+            string archiveFolder = System.IO.Path.Combine(currentDirectory, "Database");
+            string[] files = Directory.GetFiles(archiveFolder, "*.gbd");
+            //FileInfo _file = null;
+            for (int i = 0; i < files.Length; i++)
             {
-                InitialDirectory = "::{20D04FE0-3AEA-1069-A2D8-08002B30309D}"
-            };
+                selectedFiles.Add(new FileInfo(files[i]));
+                //Add Category
+                Button newCategoryButton = new System.Windows.Controls.Button();
+                TextBlock newTextBlock = new System.Windows.Controls.TextBlock();
 
-            System.Windows.Forms.DialogResult result = dialog.ShowDialog();
-            try
-            {
-                FileInfo _file = new FileInfo(dialog.FileName.ToString());
-                if (result == System.Windows.Forms.DialogResult.OK)
-                {
-                    {
-                        selectedFiles.Add(_file);
-
-                        //Add Category
-                        Button newCategoryButton = new System.Windows.Controls.Button();
-                        TextBlock newTextBlock = new System.Windows.Controls.TextBlock();
-
-                        newTextBlock.Style = Resources["WrappedTextBlock"] as Style;
-                        newCategoryButton.Style = Resources["RoundedBlueButtonRow0Column0"] as Style;
-                        newTextBlock.Text = _file.Name.Remove(_file.Name.Length-4);
-                        newCategoryButton.Content = newTextBlock;
-                        //newCategoryButton.Content = _file.Name;
-                        UICategory.Children.Insert(UICategory.Children.Count - 1, newCategoryButton);
-                    }
-                }
+                newTextBlock.Style = Resources["WrappedTextBlock"] as Style;
+                newCategoryButton.Style = Resources["RoundedBlueButtonRow0Column0"] as Style;
+                newTextBlock.Text = selectedFiles[i].Name.Remove(selectedFiles[i].Name.Length - 4);
+                newCategoryButton.Content = newTextBlock;
+                UICategory.Children.Add(newCategoryButton);
             }
-            catch { }
         }
 
         /// <summary>
@@ -131,6 +121,10 @@ namespace MainScreenUI
         /// <param name="e"></param>
         private void UICategoryButtonClick(object sender, RoutedEventArgs e)
         {
+            for (int i = 1; i < UICategory.Children.Count; i++)
+                ((Button)UICategory.Children[i]).Background = (SolidColorBrush)(new BrushConverter().ConvertFrom("#82CAFA"));
+
+            ((Button)e.OriginalSource).Background = (SolidColorBrush)(new BrushConverter().ConvertFrom("#4093CB"));
             UIExercises.Children.RemoveRange(1, UIExercises.Children.Count - 1);
             foreach (FileInfo _file in selectedFiles)
                 //var textBlockInButton = ((Button)e.OriginalSource).Content as TextBlock;
@@ -149,7 +143,6 @@ namespace MainScreenUI
 
                                 newTextBlock.Text = gesture.Name.Replace("_", " ");
                                 newExerciseButton.Content = newTextBlock;
-                                //newExerciseButton.Content = gesture.Name;
                                 Console.WriteLine(gesture.Name);
                                 UIExercises.Children.Add(newExerciseButton);
                             }
@@ -220,7 +213,7 @@ namespace MainScreenUI
                                         // Draw
                                         Ellipse ellipse = new Ellipse
                                         {
-                                            Fill = Brushes.Red,
+                                            Fill = System.Windows.Media.Brushes.Red,
                                             Width = 20,
                                             Height = 20
                                         };
@@ -261,8 +254,11 @@ namespace MainScreenUI
 
         private void UIExerciseButtonClick(object sender, RoutedEventArgs e)
         {
-            //((System.Windows.Controls.Button)sender).Content;
-            //selectedGesture = ((ListBox)sender).SelectedItem.ToString();
+            for (int i = 1; i < UIExercises.Children.Count; i++)
+                ((Button)UIExercises.Children[i]).Background = (SolidColorBrush)(new BrushConverter().ConvertFrom("#82CAFA"));
+
+            ((Button)e.OriginalSource).Background = (SolidColorBrush)(new BrushConverter().ConvertFrom("#4093CB"));
+
             Console.WriteLine(String.Concat("Clicked item is ", ((TextBlock)((Button)e.OriginalSource).Content).Text));
             foreach (FileInfo _file in selectedFiles)
                 using (database = new VisualGestureBuilderDatabase(_file.FullName))
@@ -273,12 +269,7 @@ namespace MainScreenUI
             {
                 detector.VGBPath = selectedDb;
                 detector.GestureName = ((TextBlock)((Button)e.OriginalSource).Content).Text.Replace(" ", "_").ToString();
-                //Console.WriteLine(String.Concat("detector.GestureName is ", ((TextBlock)((Button)e.OriginalSource).Content).Text.Replace(" ", "_").ToString()));
-                //Console.WriteLine(String.Concat("detector.GestureName is ", detector.GestureName));
             }
-            //Console.WriteLine(String.Concat("DataContext ", Newtonsoft.Json.JsonConvert.SerializeObject(DataContext.ToString(), Formatting.Indented)));
-
-            //UIGesture = Convert.ToString(UIListBox.SelectedItem);
             Connect_Kinnect(true);
         }
 

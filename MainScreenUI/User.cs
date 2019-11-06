@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Security.Cryptography;
 
 namespace MainScreenUI
 {
@@ -23,7 +18,9 @@ namespace MainScreenUI
 
         public int Points { get; set; }
 
-        public User(string user, string pass, string name, int age, double height, double weight, int points)
+        public int MaxPoints { get; set; }
+
+        public User(string user, string pass, string name, int age, double height, double weight, int points, int maxPoints)
         {
             Username = user;
             Password = pass;
@@ -32,6 +29,7 @@ namespace MainScreenUI
             Height = height;
             Weight = weight;
             Points = points;
+            MaxPoints = maxPoints;
         }
     }
 }

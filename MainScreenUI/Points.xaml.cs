@@ -1,6 +1,4 @@
-﻿using FireSharp.Config;
-using FireSharp.Interfaces;
-using FireSharp.Response;
+﻿using FireSharp.Response;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Navigation;
@@ -12,6 +10,7 @@ namespace MainScreenUI
     /// </summary>
     public partial class Points : Page
     {
+        FireS fib = new FireS();
         public Points()
         {
             InitializeComponent();
@@ -19,16 +18,14 @@ namespace MainScreenUI
 
         private void Page_Loaded(object sender, RoutedEventArgs e)
         {
-            IFirebaseConfig ifc = new FirebaseConfig()
-            {
-                AuthSecret = "5JF2869ie6NEZOnxh2YPqEVnvoa9UdttEdaSeKAG",
-                BasePath = "https://motiontracker-dd816.firebaseio.com/"
-            };
-            FirebaseResponse res = new FireSharp.FirebaseClient(ifc).Get(@"Users/" + Login.userDetail.Username);
+            fib.SetIFC();
+
+            FirebaseResponse res = new FireSharp.FirebaseClient(fib.ifc).Get(@"Users/" + Login.userDetail.Username);
             User UserUpdatedPoint = res.ResultAs<User>(); //firebase result
 
+            userName.Text = UserUpdatedPoint.Username;
             progressBar.Value = UserUpdatedPoint.Points;
-            progressText.Text = UserUpdatedPoint.Points.ToString() + "/100";
+            progressText.Text = UserUpdatedPoint.Points.ToString() + UserUpdatedPoint.MaxPoints.ToString();
         }
 
         private void GoToExercise(object sender, RoutedEventArgs e)

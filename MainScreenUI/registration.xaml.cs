@@ -1,20 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
-using System.Windows.Shapes;
-using FireSharp.Config;
 using FireSharp.Response;
-using FireSharp.Interfaces;
 using System.Security.Cryptography;
 
 namespace MainScreenUI
@@ -43,7 +32,7 @@ namespace MainScreenUI
             {
                 String passw = Encypt(RegPass.Password);
 
-                User newUser = new User(RegUserName.Text, passw, RegFullName.Text, int.Parse(RegAge.Text), Double.Parse(RegHeight.Text), Double.Parse(RegWeight.Text), 0);
+                User newUser = new User(RegUserName.Text, passw, RegFullName.Text, int.Parse(RegAge.Text), Double.Parse(RegHeight.Text), Double.Parse(RegWeight.Text), 0, 100);
 
                 SetResponse set = fib.client.Set(@"Users/" + RegUserName.Text, newUser);
 

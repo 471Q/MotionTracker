@@ -22,7 +22,9 @@ namespace MainScreenUI
     /// </summary>
     public class GestureDetector : IDisposable
     {
+        FireS fib = new FireS();
         Thread thread1 = null, thread2 = null;
+        bool repetitionFlag = false, matched = false, notmatched = false;
         float temp = 0f;
         int i = 0, exerciseDone = 0;
         IFirebaseClient client;
@@ -78,54 +80,61 @@ namespace MainScreenUI
 
                     System.Threading.Thread.Sleep(500);
                     Calculation();
-                    //for (i = 0; i < results.Count; i++)
                     if ((temp / (float)i) > 0.80f)
-                        {
-                            exerciseDone++;
-                            GestureResultView.UpdateGestureResult(true, true, (temp / (float)i));
-                            //break;
-                            //Console.WriteLine(String.Concat("Confidence ", (temp / (float)i)));
-                        }
-                        else
-                            GestureResultView.UpdateGestureResult(true, false, (temp / (float)i));
+                    {
+                        GestureResultView.UpdateGestureResult(true, true, (temp / (float)i));
+                        matched = true;
+                    }
+                    else
+                    {
+                        GestureResultView.UpdateGestureResult(true, false, (temp / (float)i));
+                        notmatched = true;
+                    }
+                    if (matched && notmatched)
+                    {
+                        exerciseDone++;
+                        matched = notmatched = false;
+                    }
                 }
             });
 
+            //Create a indefinitely looped independent task that wait for every 1 seconds; 
+            //Check if lastValue from previous exerciseDone and current is not the same or not
+            //Update the user point accordingly
             Task.Factory.StartNew(() =>
             {
                 int lastValue = 0;
                 thread2 = Thread.CurrentThread;
                 while (true)
                 {
-                    IFirebaseConfig ifc = new FirebaseConfig()
-                    {
-                        AuthSecret = "5JF2869ie6NEZOnxh2YPqEVnvoa9UdttEdaSeKAG",
-                        BasePath = "https://motiontracker-dd816.firebaseio.com/"
-                    };
+                    fib.SetIFC();
                     try
                     {
-                        client = new FireSharp.FirebaseClient(ifc);
+                        client = new FireSharp.FirebaseClient(fib.ifc);
                     }
                     catch
                     {
                         Console.WriteLine("No Internet or Connection Problem");
                     }
                     System.Threading.Thread.Sleep(1000);
-                    if (exerciseDone > 0 && lastValue != exerciseDone)
-                    {
-                        Login.userDetail.Points += exerciseDone;
-                        SetResponse set = client.Set(@"Users/" + Login.userDetail.Username, Login.userDetail);
-                        lastValue = exerciseDone;
-                    }
+                    if (Login.userDetail.Points <= Login.userDetail.MaxPoints)
+                        if (exerciseDone > 0 && lastValue != exerciseDone)
+                        {
+                            Login.userDetail.Points += exerciseDone;
+                            SetResponse set = client.Set(@"Users/" + Login.userDetail.Username, Login.userDetail);
+                            lastValue = exerciseDone;
+                            exerciseDone = 0;
+                        }
                     else
                     {
                         Console.WriteLine("No new value");
                     }
+                    else
+                    {
+                        Console.WriteLine("Max Point Reached");
+                    }
                 }
             });
-
-            //Task.Factory.StartNew((RunCalculationEvery550ms));
-            //Task.Factory.StartNew((UpdatePointsToDB));
         }
 
         private void Calculation()
