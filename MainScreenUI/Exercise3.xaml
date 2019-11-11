@@ -138,8 +138,9 @@
                     <Canvas Grid.Row="0" x:Name="UICanvasOutput" HorizontalAlignment="Stretch" Width="1920" Height="1080"/>
                     <StackPanel Grid.Row="1">
                         <TextBlock TextWrapping="Wrap" Text="{Binding UIDetected, StringFormat='Status: {0}'}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50"/>
-                        <TextBlock TextWrapping="Wrap" Text="{Binding BodyIndex, StringFormat='Body Index: {0}'}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50"/>
-                        <TextBlock TextWrapping="Wrap" Text="{Binding UIConfidence, StringFormat='Confidence Level: {0}'}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50"/>
+                        <!-- <TextBlock TextWrapping="Wrap" Text="{Binding BodyIndex, StringFormat='Body Index: {0}'}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50"/>
+                        <TextBlock TextWrapping="Wrap" Text="{Binding UIConfidence, StringFormat='Confidence Level: {0}'}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50"/> -->
+                        <TextBlock x:Name="UIScore" TextWrapping="Wrap" Text="Score: 0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50"/>
                     </StackPanel>
                 </Grid>
             </Viewbox>

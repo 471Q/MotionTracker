@@ -7,7 +7,7 @@
       mc:Ignorable="d"
       Background="White"
       d:DesignWidth="854" d:DesignHeight="480"
-      Title="UserProfile"  Loaded="Page_Loaded">
+      Title="UserProfile"  Loaded="Page_Loaded" Unloaded="Page_Unloaded">
 
     <Viewbox>
         <Grid Height="480" Width="854">
@@ -114,7 +114,7 @@
             <TextBlock HorizontalAlignment="Left" Margin="190,386,0,0" TextWrapping="Wrap" Text="Your Membership Status" VerticalAlignment="Top" FontSize="15"/>
             <TextBlock HorizontalAlignment="Left" Margin="190,419,0,0" TextWrapping="Wrap" Text="Active" VerticalAlignment="Top" FontSize="20" Foreground="#7CFC00" FontWeight="SemiBold"/>
             <TextBlock HorizontalAlignment="Left" Margin="190,143,0,0" TextWrapping="Wrap" Text="Cindy says:" VerticalAlignment="Top" FontSize="12"/>
-            <TextBlock x:Name="messageBox" HorizontalAlignment="Left" Margin="190,164,0,0" TextWrapping="Wrap" Text="Wow you're doing an amazing work this week. Keep up the good work, and make sure you drink a lot of water to keep yourself hydrated. Hit 100 exercises this week and you'll be entitled for a free therapy session." VerticalAlignment="Top" FontSize="12" Height="171" Width="374"/>
+            <TextBlock x:Name="messageBox" HorizontalAlignment="Left" Margin="190,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="12" Height="171" Width="374"/>
             <Border BorderBrush="#82CAFA" CornerRadius="10" BorderThickness="1" Height="84" Margin="406,0,354,26" VerticalAlignment="Bottom">
                 <Border.Effect>
                     <DropShadowEffect Color="#82CAFA" />

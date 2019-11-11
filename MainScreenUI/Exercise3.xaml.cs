@@ -6,6 +6,8 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
+using System.Threading;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -20,6 +22,8 @@ namespace MainScreenUI
     /// </summary>
     public partial class Exercise3 : Page
     {
+        Thread thread1;
+        FireS fib = new FireS();
         KinectSensor _sensor = null;
         MultiSourceFrameReader _reader = null;
         IList<Body> _bodies = null;
@@ -27,7 +31,6 @@ namespace MainScreenUI
         GestureDetector detector = null;
         List<FileInfo> selectedFiles = new List<FileInfo>();
         GestureResultView result = new GestureResultView(0, false, false, 0.0f);
-        FireS fib = new FireS();
 
         public string gestureText = "";
         private string selectedDb = "";
@@ -52,9 +55,25 @@ namespace MainScreenUI
             fib.SetIFC();
 
             FirebaseResponse res = new FireSharp.FirebaseClient(fib.ifc).Get(@"Users/" + Login.userDetail.Username);
+            User UserUpdatedPoint = res.ResultAs<User>(); //firebase result
 
-            userName.Text = Login.userDetail.Name;
+            userName.Text = UserUpdatedPoint.Name;
             Add_file();
+            
+            Task.Factory.StartNew(() =>
+            {
+                thread1 = Thread.CurrentThread;
+                while (true)
+                {
+                    res = new FireSharp.FirebaseClient(fib.ifc).Get(@"Users/" + Login.userDetail.Username);
+                    UserUpdatedPoint = res.ResultAs<User>(); //firebase result
+                    this.Dispatcher.Invoke(() =>
+                    {
+                        UIScore.Text = "Score: " + UserUpdatedPoint.Points.ToString() + "/" + UserUpdatedPoint.MaxPoints.ToString();
+                    });
+                    System.Threading.Thread.Sleep(1000);
+                }
+            });
         }
 
         /// <summary>
@@ -250,6 +269,7 @@ namespace MainScreenUI
                 _sensor.Close();
                 _sensor = null;
             }
+            thread1.Abort();
         }
 
         private void UIExerciseButtonClick(object sender, RoutedEventArgs e)

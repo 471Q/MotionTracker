@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -25,6 +26,7 @@ namespace MainScreenUI
     /// </summary>
     public partial class UserProfile : Page
     {
+        Thread thread1;
         FireS fib = new FireS();
         public UserProfile()
         {
@@ -44,8 +46,26 @@ namespace MainScreenUI
             age.Text = Login.userDetail.Age.ToString();
             height.Text = Login.userDetail.Height.ToString();
             weight.Text = Login.userDetail.Weight.ToString();
-            messageBox.Text = Login.userDetail.Message;
+            Task.Factory.StartNew(() =>
+            {
+                thread1 = Thread.CurrentThread;
+                while (true)
+                {
+                    res = new FireSharp.FirebaseClient(fib.ifc).Get(@"Users/" + Login.userDetail.Username);
+                    UserUpdatedPoint = res.ResultAs<User>(); //firebase result
+                    this.Dispatcher.Invoke(() =>
+                    {
+                        messageBox.Text = UserUpdatedPoint.Message;
+                    });
+                    System.Threading.Thread.Sleep(1000);
+                }
+            });
+            
             UIExerciseCompleted.Text = UserUpdatedPoint.Points.ToString();
+        }
+
+        private void Page_Unloaded(object sender, RoutedEventArgs e) {
+            thread1.Abort();
         }
 
         private void GoToExercise(object sender, RoutedEventArgs e)

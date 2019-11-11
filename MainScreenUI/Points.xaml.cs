@@ -25,7 +25,7 @@ namespace MainScreenUI
 
             userName.Text = UserUpdatedPoint.Username;
             progressBar.Value = UserUpdatedPoint.Points;
-            progressText.Text = UserUpdatedPoint.Points.ToString() + UserUpdatedPoint.MaxPoints.ToString();
+            progressText.Text = UserUpdatedPoint.Points.ToString() + "/" + UserUpdatedPoint.MaxPoints.ToString();
         }
 
         private void GoToExercise(object sender, RoutedEventArgs e)
