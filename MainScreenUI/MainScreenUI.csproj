@@ -248,6 +248,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Resource Include="Resources\login_background.jpg" />
+    <Resource Include="Resources\logout_icon.png" />
     <Content Include="vgbtechs\AdaBoostTech.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

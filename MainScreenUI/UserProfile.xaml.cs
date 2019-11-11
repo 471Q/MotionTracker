@@ -59,6 +59,12 @@ namespace MainScreenUI
             Points points = new Points();
             NavigationService.Navigate(points);
         }
+
+        private void GoToLogin(object sender, RoutedEventArgs e)
+        {
+            Login login = new Login();
+            NavigationService.Navigate(login);
+        }
     }
 
 }
