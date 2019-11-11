@@ -29,10 +29,10 @@ namespace MainScreenUI
         public UserProfile()
         {
             InitializeComponent();
-            Init();
         }
 
-        public void Init()
+   
+        private void Page_Loaded(object sender, RoutedEventArgs e)
         {
             fib.SetIFC();
 
@@ -44,6 +44,7 @@ namespace MainScreenUI
             age.Text = Login.userDetail.Age.ToString();
             height.Text = Login.userDetail.Height.ToString();
             weight.Text = Login.userDetail.Weight.ToString();
+            messageBox.Text = Login.userDetail.Message;
             UIExerciseCompleted.Text = UserUpdatedPoint.Points.ToString();
         }
 

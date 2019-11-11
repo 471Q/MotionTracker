@@ -32,7 +32,7 @@ namespace MainScreenUI
             {
                 String passw = Encypt(RegPass.Password);
 
-                User newUser = new User(RegUserName.Text, passw, RegFullName.Text, int.Parse(RegAge.Text), Double.Parse(RegHeight.Text), Double.Parse(RegWeight.Text), 0, 100);
+                User newUser = new User(RegUserName.Text, passw, RegFullName.Text, "No message!" ,int.Parse(RegAge.Text), Double.Parse(RegHeight.Text), Double.Parse(RegWeight.Text), 0, 100);
 
                 SetResponse set = fib.client.Set(@"Users/" + RegUserName.Text, newUser);
 
