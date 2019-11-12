@@ -26,12 +26,23 @@ namespace MainScreenUI
             User UserUpdatedPoint = res.ResultAs<User>(); //firebase result
 
             userName.Text = UserUpdatedPoint.Username;
+            progressBar.Maximum = UserUpdatedPoint.MaxPoints;
             progressBar.Value = UserUpdatedPoint.Points;
             progressText.Text = UserUpdatedPoint.Points.ToString() + "/" + UserUpdatedPoint.MaxPoints.ToString();
 
-            //Bronze.Source = new BitmapImage(new Uri(@"/Resources/bronzetrophy.png", UriKind.Relative));
-            //Silver.Source = new BitmapImage(new Uri(@"/Resources/silvertrophy.png", UriKind.Relative));
-            //Gold.Source = new BitmapImage(new Uri(@"/Resources/goldtrophy.png", UriKind.Relative));
+            UIBronzeTB.Text = Math.Round((UserUpdatedPoint.MaxPoints * 0.3333),0).ToString() + " Exercises";
+            UISilverTB.Text = Math.Round((UserUpdatedPoint.MaxPoints * 0.6666), 0).ToString() + " Exercises";
+            UIGoldTB.Text = UserUpdatedPoint.MaxPoints.ToString() + " Exercises";
+
+            int temp = (int)Math.Round(UserUpdatedPoint.MaxPoints * 0.3333, 0);
+            if (UserUpdatedPoint.Points >= temp)
+                Bronze.Source = new BitmapImage(new Uri(@"/Resources/bronzetrophy.png", UriKind.Relative));
+            temp = (int)Math.Round(UserUpdatedPoint.MaxPoints * 0.6666, 0);
+            if (UserUpdatedPoint.Points >= temp)
+                Silver.Source = new BitmapImage(new Uri(@"/Resources/silvertrophy.png", UriKind.Relative));
+            temp = UserUpdatedPoint.MaxPoints;
+            if (UserUpdatedPoint.Points >= temp)
+                Gold.Source = new BitmapImage(new Uri(@"/Resources/goldtrophy.png", UriKind.Relative));
         }
 
         private void GoToExercise(object sender, RoutedEventArgs e)

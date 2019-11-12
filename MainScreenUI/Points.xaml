@@ -7,7 +7,7 @@
       mc:Ignorable="d"
       Background="White"
       d:DesignWidth="854" d:DesignHeight="480"
-      Title="Points" Loaded="Page_Loaded" >
+      Title="Points" Loaded="Page_Loaded">
 
     <Viewbox>
         <Grid Width="854" Height="480">
@@ -89,9 +89,9 @@
             <TextBlock HorizontalAlignment="Left" Margin="456,285,0,0" TextWrapping="Wrap" Text="Silver" VerticalAlignment="Top" TextAlignment="Center" FontSize="11" Width="100"/>
             <TextBlock HorizontalAlignment="Left" Margin="664,285,0,0" TextWrapping="Wrap" Text="Gold" VerticalAlignment="Top" TextAlignment="Center" FontSize="11" Width="100"/>
 
-            <TextBlock HorizontalAlignment="Left" Margin="245,426,0,0" TextWrapping="Wrap" Text="100 Exercises" VerticalAlignment="Top" TextAlignment="Center" FontSize="11" Width="100"/>
-            <TextBlock HorizontalAlignment="Left" Margin="456,426,0,0" TextWrapping="Wrap" Text="150 Exercises" VerticalAlignment="Top" TextAlignment="Center" FontSize="11" Width="100"/>
-            <TextBlock HorizontalAlignment="Left" Margin="664,426,0,0" TextWrapping="Wrap" Text="200 Exercises" VerticalAlignment="Top" TextAlignment="Center" FontSize="11" Width="100"/>
+            <TextBlock x:Name="UIBronzeTB" HorizontalAlignment="Left" Margin="245,426,0,0" TextWrapping="Wrap" Text="100 Exercises" VerticalAlignment="Top" TextAlignment="Center" FontSize="11" Width="100"/>
+            <TextBlock x:Name="UISilverTB" HorizontalAlignment="Left" Margin="456,426,0,0" TextWrapping="Wrap" Text="150 Exercises" VerticalAlignment="Top" TextAlignment="Center" FontSize="11" Width="100"/>
+            <TextBlock x:Name="UIGoldTB" HorizontalAlignment="Left" Margin="664,426,0,0" TextWrapping="Wrap" Text="200 Exercises" VerticalAlignment="Top" TextAlignment="Center" FontSize="11" Width="100"/>
 
             <TextBlock HorizontalAlignment="Left" Margin="245,445,0,0" TextWrapping="Wrap" Text="20% off" VerticalAlignment="Top" TextAlignment="Center" FontSize="11" Width="100"/>
             <TextBlock HorizontalAlignment="Left" Margin="456,445,0,0" TextWrapping="Wrap" Text="35% off" VerticalAlignment="Top" TextAlignment="Center" FontSize="11" Width="100"/>
