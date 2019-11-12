@@ -12,6 +12,11 @@
     <Viewbox>
         <Grid Width="854" Height="480">
             <!--Navigation Panel-->
+            <Image Source="/Resources/lockedtrophy.png" Height="150" Margin="664,0,0,54" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="100" x:Name="Gold"/>
+
+            <Image Source="/Resources/lockedtrophy.png" Height="150" Margin="456,0,0,54" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="100" x:Name="Silver"/>
+            <Image Source="/Resources/lockedtrophy.png" Height="150" Margin="245,0,0,54" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="100" x:Name="Bronze"/>
+            <!--Navigation Panel-->
             <Border BorderBrush="#82CAFA" CornerRadius="5" BorderThickness="1" Height="460" VerticalAlignment="Top" Margin="5,10,703,0">
                 <Border.Effect>
                     <DropShadowEffect Color="#82CAFA" />
@@ -57,23 +62,41 @@
                 </StackPanel>
             </Button>
             <TextBlock x:Name="userName" HorizontalAlignment="Left" TextAlignment="Center" Margin="28,143,0,0" TextWrapping="Wrap" Text="Jesse McCree" VerticalAlignment="Top" Height="26" Width="100"/>
-            <!--End of Navigation Panel-->
 
 
-            <Border BorderBrush="#82CAFA" CornerRadius="5" BorderThickness="1" Height="213" Margin="174,10,10,0" VerticalAlignment="Top">
+            <!--Exercise Progress Bar-->
+            <Border BorderBrush="#82CAFA" CornerRadius="5" BorderThickness="1" Height="192" Margin="174,10,10,0" VerticalAlignment="Top">
                 <Border.Effect>
                     <DropShadowEffect Color="#82CAFA" />
                 </Border.Effect>
                 <ProgressBar x:Name="progressBar" Foreground="#82CAFA" BorderBrush="#82CAFA" HorizontalAlignment="Left" Height="15" VerticalAlignment="Top" Width="630" Margin="15,127,0,0"/>
             </Border>
-            <Border BorderBrush="#82CAFA" CornerRadius="5" BorderThickness="1" Margin="174,249,10,10">
+            <TextBlock HorizontalAlignment="Left" Margin="189,27,0,0" TextWrapping="Wrap" Text="Get rewarded with great discounts and perks when you complete exercises" VerticalAlignment="Top" FontSize="18"/>
+            <TextBlock HorizontalAlignment="Left" Margin="189,109,0,0" TextWrapping="Wrap" Text="Exercise completed this week" VerticalAlignment="Top" FontSize="14"/>
+            <TextBlock x:Name="progressText" HorizontalAlignment="Left" Margin="473,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"/>
+            <!--End of Exercise Progress Bar-->
+
+
+            <Border BorderBrush="#82CAFA" CornerRadius="5" BorderThickness="1" Margin="174,221,10,10">
                 <Border.Effect>
                     <DropShadowEffect Color="#82CAFA" />
                 </Border.Effect>
             </Border>
-            <TextBlock HorizontalAlignment="Left" Margin="189,27,0,0" TextWrapping="Wrap" Text="Get rewarded with great discounts and perks when you complete exercises" VerticalAlignment="Top" FontSize="18"/>
-            <TextBlock HorizontalAlignment="Left" Margin="189,109,0,0" TextWrapping="Wrap" Text="Exercise completed this week" VerticalAlignment="Top" FontSize="14"/>
-            <TextBlock x:Name="progressText" HorizontalAlignment="Left" Margin="473,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14"/>
+            <TextBlock HorizontalAlignment="Left" Margin="189,232,0,0" TextWrapping="Wrap" Text="Your Achievement" VerticalAlignment="Top" FontSize="18"/>
+            <TextBlock HorizontalAlignment="Left" Margin="189,261,0,0" TextWrapping="Wrap" Text="Unlock trophies to be entitled for special membership discounts" VerticalAlignment="Top" FontSize="14"/>
+
+            <TextBlock HorizontalAlignment="Left" Margin="245,285,0,0" TextWrapping="Wrap" Text="Bronze" VerticalAlignment="Top" TextAlignment="Center" FontSize="11" Width="100"/>
+            <TextBlock HorizontalAlignment="Left" Margin="456,285,0,0" TextWrapping="Wrap" Text="Silver" VerticalAlignment="Top" TextAlignment="Center" FontSize="11" Width="100"/>
+            <TextBlock HorizontalAlignment="Left" Margin="664,285,0,0" TextWrapping="Wrap" Text="Gold" VerticalAlignment="Top" TextAlignment="Center" FontSize="11" Width="100"/>
+
+            <TextBlock HorizontalAlignment="Left" Margin="245,426,0,0" TextWrapping="Wrap" Text="100 Exercises" VerticalAlignment="Top" TextAlignment="Center" FontSize="11" Width="100"/>
+            <TextBlock HorizontalAlignment="Left" Margin="456,426,0,0" TextWrapping="Wrap" Text="150 Exercises" VerticalAlignment="Top" TextAlignment="Center" FontSize="11" Width="100"/>
+            <TextBlock HorizontalAlignment="Left" Margin="664,426,0,0" TextWrapping="Wrap" Text="200 Exercises" VerticalAlignment="Top" TextAlignment="Center" FontSize="11" Width="100"/>
+
+            <TextBlock HorizontalAlignment="Left" Margin="245,445,0,0" TextWrapping="Wrap" Text="20% off" VerticalAlignment="Top" TextAlignment="Center" FontSize="11" Width="100"/>
+            <TextBlock HorizontalAlignment="Left" Margin="456,445,0,0" TextWrapping="Wrap" Text="35% off" VerticalAlignment="Top" TextAlignment="Center" FontSize="11" Width="100"/>
+            <TextBlock HorizontalAlignment="Left" Margin="664,445,0,0" TextWrapping="Wrap" Text="50% off" VerticalAlignment="Top" TextAlignment="Center" FontSize="11" Width="100"/>
+
         </Grid>
     </Viewbox>
 </Page>

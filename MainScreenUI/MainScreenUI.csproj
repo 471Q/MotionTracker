@@ -249,6 +249,10 @@
     </Compile>
     <Resource Include="Resources\login_background.jpg" />
     <Resource Include="Resources\logout_icon.png" />
+    <Resource Include="Resources\bronzetrophy.png" />
+    <Resource Include="Resources\goldtrophy.png" />
+    <Resource Include="Resources\lockedtrophy.png" />
+    <Resource Include="Resources\silvertrophy.png" />
     <Content Include="vgbtechs\AdaBoostTech.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

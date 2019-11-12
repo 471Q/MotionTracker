@@ -1,7 +1,9 @@
 ﻿using FireSharp.Response;
+using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Navigation;
+using System.Windows.Media.Imaging;
 
 namespace MainScreenUI
 {
@@ -26,6 +28,10 @@ namespace MainScreenUI
             userName.Text = UserUpdatedPoint.Username;
             progressBar.Value = UserUpdatedPoint.Points;
             progressText.Text = UserUpdatedPoint.Points.ToString() + "/" + UserUpdatedPoint.MaxPoints.ToString();
+
+            //Bronze.Source = new BitmapImage(new Uri(@"/Resources/bronzetrophy.png", UriKind.Relative));
+            //Silver.Source = new BitmapImage(new Uri(@"/Resources/silvertrophy.png", UriKind.Relative));
+            //Gold.Source = new BitmapImage(new Uri(@"/Resources/goldtrophy.png", UriKind.Relative));
         }
 
         private void GoToExercise(object sender, RoutedEventArgs e)
