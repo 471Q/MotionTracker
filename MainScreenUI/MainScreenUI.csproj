@@ -146,6 +146,9 @@
     </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="WpfAnimatedGif, Version=1.4.18.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WpfAnimatedGif.1.4.18\lib\net\WpfAnimatedGif.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -253,6 +256,23 @@
     <Resource Include="Resources\goldtrophy.png" />
     <Resource Include="Resources\lockedtrophy.png" />
     <Resource Include="Resources\silvertrophy.png" />
+    <Resource Include="Resources\bend elbow.gif" />
+    <Resource Include="Resources\Lift Front Leg.gif" />
+    <Content Include="Database\Bend Elbow.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database\Bend Knee.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database\Lift Front Arm.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database\Lift Front Leg.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database\Shrugging.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="vgbtechs\AdaBoostTech.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

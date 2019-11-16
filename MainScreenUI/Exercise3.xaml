@@ -135,6 +135,7 @@
                         <RowDefinition Height="auto"/>
                     </Grid.RowDefinitions>
                     <Image Grid.Row="0" RenderOptions.BitmapScalingMode="HighQuality" x:Name="UICameraOutput" Stretch="Uniform" ClipToBounds="True" Height="auto" Width="auto" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <Image Grid.Row="0" RenderOptions.BitmapScalingMode="HighQuality" x:Name="UIGIF" Stretch="Uniform" ClipToBounds="True" Height="500" Width="500" HorizontalAlignment="Left" VerticalAlignment="Top"/>
                     <Canvas Grid.Row="0" x:Name="UICanvasOutput" HorizontalAlignment="Stretch" Width="1920" Height="1080"/>
                     <StackPanel Grid.Row="1">
                         <TextBlock TextWrapping="Wrap" Text="{Binding UIDetected, StringFormat='Status: {0}'}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50"/>

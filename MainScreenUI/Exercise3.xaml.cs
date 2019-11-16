@@ -11,7 +11,9 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
+using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WpfAnimatedGif;
 using Button = System.Windows.Controls.Button;
 using Point = System.Windows.Point;
 
@@ -291,6 +293,16 @@ namespace MainScreenUI
                 detector.GestureName = ((TextBlock)((Button)e.OriginalSource).Content).Text.Replace(" ", "_").ToString();
             }
             Connect_Kinnect(true);
+            StartGif(((TextBlock)((Button)e.OriginalSource).Content).Text.ToString());
+        }
+
+        private void StartGif(String GifName)
+        {
+            var image = new BitmapImage();
+            image.BeginInit();
+            image.UriSource = new Uri(@"/Database/" + GifName + ".gif", UriKind.Relative);
+            image.EndInit();
+            ImageBehavior.SetAnimatedSource(UIGIF, image);
         }
 
         private void GoToPoints(object sender, RoutedEventArgs e)
