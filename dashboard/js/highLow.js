@@ -7,6 +7,7 @@ database.ref().once('value', function(snapshot){
 		var location = 1;
 		var currHighest = [];
 		var currName = [];
+		var percTask = [];
 		snapshot.forEach(function(data){
 			var val = data.val();
 			var keys = Object.keys(val);
@@ -16,8 +17,12 @@ database.ref().once('value', function(snapshot){
 				var k = keys[i];
 				
 				currHighest.push(val[k].Points);
-				currName.push(val[k].Name);				
+				currName.push(val[k].Name);	
+				var perc = val[k].Points*100/val[k].MaxPoints;
+				percTask.push(perc);
+				console.log(perc);
 			}
+
 			
 			//getting minimum
 			minimum = currHighest[0];
@@ -46,6 +51,39 @@ database.ref().once('value', function(snapshot){
 				}
 			}
 			document.getElementById("hpe").innerHTML = currName[location] + " : " + maximum;
+			
+			//getting minimum task completed
+			minimum = percTask[0];
+   
+			for (c = 1; c < percTask.length; c++)
+			{
+				if (percTask[c] < minimum)
+				{
+				   minimum = percTask[c];
+				   location = c;
+				   
+				//   console.log(minimum);
+				}
+			}
+			document.getElementById("mTask").style.width = minimum;
+			document.getElementById("mTaskNmbr").innerHTML = minimum+"%";
+			document.getElementById("mTaskTxt").innerHTML = "Least Task Completed: " + currName[location];
+			
+			//getting maximum task completed
+			maximum = percTask[0];
+   
+			for (c = 1; c < percTask.length; c++)
+			{
+				if (percTask[c] > maximum)
+				{
+				   maximum = percTask[c];
+				   location = c;
+				}
+			}
+			document.getElementById("hTask").style.width = maximum+"%";
+			document.getElementById("hTaskNmbr").innerHTML = maximum + "%";
+			document.getElementById("hTaskTxt").innerHTML = "Most Task Completed: " + currName[location];
+			
 		});
 	}
 });
