@@ -32,7 +32,7 @@ namespace MainScreenUI
             {
                 String passw = Encypt(RegPass.Password);
 
-                User newUser = new User(RegUserName.Text, passw, RegFullName.Text, "No message!" ,int.Parse(RegAge.Text), Double.Parse(RegHeight.Text), Double.Parse(RegWeight.Text), 0, 100);
+                User newUser = new User(RegUserName.Text, passw, RegFullName.Text, "No message!" ,int.Parse(RegAge.Text), Double.Parse(RegHeight.Text), Double.Parse(RegWeight.Text), 0, 100, (@"http://www.gravatar.com/avatar/" + HashUserNameForGravatar(RegUserName.Text) + "?size=100&d=identicon"));
 
                 SetResponse set = fib.client.Set(@"Users/" + RegUserName.Text, newUser);
 
@@ -41,6 +41,29 @@ namespace MainScreenUI
                 Login userLogin = new Login();
                 NavigationService.Navigate(userLogin);
             }
+        }
+
+        public static string HashUserNameForGravatar(string username)
+        {
+            // Create a new instance of the MD5CryptoServiceProvider object.  
+            //MD5 md5Hasher = MD5.Create();
+            SHA256 sha256Hash = SHA256.Create();
+
+            // Convert the input string to a byte array and compute the hash.  
+            byte[] data = sha256Hash.ComputeHash(Encoding.Default.GetBytes(username));
+
+            // Create a new Stringbuilder to collect the bytes  
+            // and create a string.  
+            StringBuilder sBuilder = new StringBuilder();
+
+            // Loop through each byte of the hashed data  
+            // and format each one as a hexadecimal string.  
+            for (int i = 0; i < data.Length; i++)
+            {
+                sBuilder.Append(data[i].ToString("x2"));
+            }
+
+            return sBuilder.ToString();  // Return the hexadecimal string. 
         }
 
         private string Encypt(string pass)

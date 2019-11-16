@@ -59,7 +59,9 @@ namespace MainScreenUI
             FirebaseResponse res = new FireSharp.FirebaseClient(fib.ifc).Get(@"Users/" + Login.userDetail.Username);
             User UserUpdatedPoint = res.ResultAs<User>(); //firebase result
 
-            userName.Text = UserUpdatedPoint.Name;
+            UIAvatar.ImageSource = new BitmapImage(new System.Uri(Login.userDetail.ProfileHash, UriKind.Absolute));
+
+            userName.Text = UserUpdatedPoint.Username;
             Add_file();
             
             Task.Factory.StartNew(() =>

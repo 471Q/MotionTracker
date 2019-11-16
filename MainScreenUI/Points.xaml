@@ -24,7 +24,7 @@
             </Border>
             <Ellipse HorizontalAlignment="Left"  Height="100" Margin="28,38,0,0" Stroke="Transparent" VerticalAlignment="Top" Width="100">
                 <Ellipse.Fill>
-                    <ImageBrush ImageSource="/Resources/profilepicture.jpg" Stretch="Fill" />
+                    <ImageBrush x:Name="UIAvatar" ImageSource="/Resources/profilepicture.jpg" Stretch="Fill" />
                 </Ellipse.Fill>
             </Ellipse>
 

@@ -30,6 +30,8 @@ namespace MainScreenUI
             progressBar.Value = UserUpdatedPoint.Points;
             progressText.Text = UserUpdatedPoint.Points.ToString() + "/" + UserUpdatedPoint.MaxPoints.ToString();
 
+            UIAvatar.ImageSource = new BitmapImage(new System.Uri(Login.userDetail.ProfileHash, UriKind.Absolute));
+
             UIBronzeTB.Text = Math.Round((UserUpdatedPoint.MaxPoints * 0.3333),0).ToString() + " Exercises";
             UISilverTB.Text = Math.Round((UserUpdatedPoint.MaxPoints * 0.6666), 0).ToString() + " Exercises";
             UIGoldTB.Text = UserUpdatedPoint.MaxPoints.ToString() + " Exercises";

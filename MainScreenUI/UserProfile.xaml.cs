@@ -1,23 +1,14 @@
-﻿using FireSharp.Config;
-using FireSharp.Interfaces;
-using FireSharp.Response;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
+﻿using FireSharp.Response;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Forms;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
-using System.Windows.Shapes;
+using System.Security.Cryptography;
+using System.Text;
+using System.Windows.Media.Imaging;
+using System;
+using FireSharp.Interfaces;
 
 namespace MainScreenUI
 {
@@ -42,7 +33,7 @@ namespace MainScreenUI
             User UserUpdatedPoint = res.ResultAs<User>(); //firebase result
 
             userName.Text = Login.userDetail.Name;
-            userNameNavPanel.Text = Login.userDetail.Name;
+            userNameNavPanel.Text = Login.userDetail.Username;
             age.Text = Login.userDetail.Age.ToString();
             height.Text = Login.userDetail.Height.ToString();
             weight.Text = Login.userDetail.Weight.ToString();
@@ -60,8 +51,36 @@ namespace MainScreenUI
                     System.Threading.Thread.Sleep(1000);
                 }
             });
-            
+            //UserUpdatedPoint.ProfileHash = (@"http://www.gravatar.com/avatar/" + HashUserNameForGravatar(userName.Text) + "?size=100&d=identicon");
             UIExerciseCompleted.Text = UserUpdatedPoint.Points.ToString();
+            UIAvatar.ImageSource = new BitmapImage(new System.Uri(Login.userDetail.ProfileHash, UriKind.Absolute));
+            UIAvatarSmall.ImageSource = new BitmapImage(new System.Uri(Login.userDetail.ProfileHash, UriKind.Absolute));
+            Console.WriteLine(new System.Uri(Login.userDetail.ProfileHash, UriKind.Absolute));
+        }
+
+        /// Hashes an email with MD5.  Suitable for use with Gravatar profile
+        /// image urls
+        public static string HashUserNameForGravatar(string username)
+        {
+            // Create a new instance of the MD5CryptoServiceProvider object.  
+            //MD5 md5Hasher = MD5.Create();
+            SHA256 sha256Hash = SHA256.Create();
+
+            // Convert the input string to a byte array and compute the hash.  
+            byte[] data = sha256Hash.ComputeHash(Encoding.Default.GetBytes(username));
+
+            // Create a new Stringbuilder to collect the bytes  
+            // and create a string.  
+            StringBuilder sBuilder = new StringBuilder();
+
+            // Loop through each byte of the hashed data  
+            // and format each one as a hexadecimal string.  
+            for (int i = 0; i < data.Length; i++)
+            {
+                sBuilder.Append(data[i].ToString("x2"));
+            }
+
+            return sBuilder.ToString();  // Return the hexadecimal string. 
         }
 
         private void Page_Unloaded(object sender, RoutedEventArgs e) {

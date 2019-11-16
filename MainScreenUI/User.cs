@@ -22,7 +22,9 @@ namespace MainScreenUI
 
         public int MaxPoints { get; set; }
 
-        public User(string user, string pass, string name, string message, int age, double height, double weight, int points, int maxPoints)
+        public string ProfileHash { get; set; }
+
+        public User(string user, string pass, string name, string message, int age, double height, double weight, int points, int maxPoints, String profilehash)
         {
             Username = user;
             Password = pass;
@@ -33,6 +35,7 @@ namespace MainScreenUI
             Weight = weight;
             Points = points;
             MaxPoints = maxPoints;
+            ProfileHash = profilehash;
         }
     }
 }
