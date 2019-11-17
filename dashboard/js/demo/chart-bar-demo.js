@@ -49,14 +49,14 @@ function genFunction(data) {
 		//console.log(data[k].Name + " " + data[k].Points);
 	}
 	
-	 for(var i=1; i<keys.length; i++) {
+	 for(var i=0; i<5; i++) {
 		var k = keys[i];
 		 
 		points.push(data[k]['Points']);
 		names.push(data[k]['Name']);
 		
       }
-	  
+	 // points.sort();
 	  // Bar Chart Example
 var ctx = document.getElementById("myBarChart");
 var myBarChart = new Chart(ctx, {
@@ -99,7 +99,7 @@ var myBarChart = new Chart(ctx, {
         ticks: {
           min: 0,
           max: 100,
-          maxTicksLimit: 5,
+          maxTicksLimit: 6,
           padding: 10,
           // Include a dollar sign in the ticks
           callback: function(value, index, values) {
@@ -133,7 +133,7 @@ var myBarChart = new Chart(ctx, {
       callbacks: {
         label: function(tooltipItem, chart) {
           var datasetLabel = chart.datasets[tooltipItem.datasetIndex].label || '';
-          return datasetLabel + ': $' + number_format(tooltipItem.yLabel);
+          return datasetLabel + ':' + number_format(tooltipItem.yLabel);
         }
       }
     },

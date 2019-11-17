@@ -16,8 +16,6 @@
 					content += '<td>' + val[k].Message + '</td>';							
 					content += '<td align="center">' + '<button data-toggle="modal" data-target="#editModal" onClick="run()" type="button" class="btn btn-primary">Send Message <i class="fa fa-paper-plane"></i></button>' +'</td>';
 					content += '</tr>';
-					
-					
 				}
             });
             $('#myTable').append(content);
