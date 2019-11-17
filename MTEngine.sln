@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainScreenUI", "MainScreenU
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D77B2125-239D-4CFA-A332-6D4A2E40A36E}"
 EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "Installer", "Installer\Installer.wixproj", "{4901C1A3-9C27-4682-A582-D126178B1C1A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +31,14 @@ Global
 		{DCED0807-6287-43EE-B0B8-8AC9FE4C5B05}.Release|x64.Build.0 = Release|x64
 		{DCED0807-6287-43EE-B0B8-8AC9FE4C5B05}.Release|x86.ActiveCfg = Release|x86
 		{DCED0807-6287-43EE-B0B8-8AC9FE4C5B05}.Release|x86.Build.0 = Release|x86
+		{4901C1A3-9C27-4682-A582-D126178B1C1A}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{4901C1A3-9C27-4682-A582-D126178B1C1A}.Debug|x64.ActiveCfg = Debug|x86
+		{4901C1A3-9C27-4682-A582-D126178B1C1A}.Debug|x86.ActiveCfg = Debug|x86
+		{4901C1A3-9C27-4682-A582-D126178B1C1A}.Debug|x86.Build.0 = Debug|x86
+		{4901C1A3-9C27-4682-A582-D126178B1C1A}.Release|Any CPU.ActiveCfg = Release|x86
+		{4901C1A3-9C27-4682-A582-D126178B1C1A}.Release|x64.ActiveCfg = Release|x86
+		{4901C1A3-9C27-4682-A582-D126178B1C1A}.Release|x86.ActiveCfg = Release|x86
+		{4901C1A3-9C27-4682-A582-D126178B1C1A}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

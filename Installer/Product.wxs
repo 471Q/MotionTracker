@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+     xmlns:netfx="http://schemas.microsoft.com/wix/NetFxExtension">
+	<Product Id="*" Name="Installer" Language="1033" Version="1.0.0.0" Manufacturer="Swinburne" UpgradeCode="e4a241bd-4158-4977-8d88-372013e5e0d4">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate />
+
+    <Condition Message ="This Product requires Microsoft .Net version 4.8 or higher."> MsiNetAssemblySupport >= "4.8.03752" </Condition>
+
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="DesktopFolder" Name="Desktop">
+        <Component Id="ApplicationShortcutDesktop" Guid="*">
+          <Shortcut Id="ApplicationDesktopShortcut"
+              Name="SwiftCare"
+              Description="SwiftCare Application"
+              Target="[APPLICATIONROOTDIRECTORY]mainscreenui.exe"
+              WorkingDirectory="APPLICATIONROOTDIRECTORY"/>
+          <Shortcut Id="UninstallProduct"
+            Name="Uninstall SwiftCare"
+            Target="[SystemFolder]msiexec.exe"
+            Arguments="/x [ProductCode]"
+            WorkingDirectory="APPLICATIONROOTDIRECTORY"
+            Description="Uninstall SwiftCare" />
+          <RemoveFolder Id="DesktopFolder" On="uninstall"/>
+          <RegistryValue
+              Root="HKCU"
+              Key="Software/SwiftCare"
+              Name="installed"
+              Type="integer"
+              Value="1"
+              KeyPath="yes"/>
+        </Component>
+      </Directory>
+
+      <Directory Id="ProgramFilesFolder" Name="SwiftCare">
+        <Directory Id="Swinburne" Name="Swinburne">
+          <Directory Id="APPLICATIONROOTDIRECTORY" Name="SwiftCare">
+            <!-- main installation files -->
+          </Directory>
+        </Directory>
+      </Directory>
+    </Directory>
+        
+    <!-- Step 3: Tell WiX to install the files -->
+    <Feature Id="MainApplication" Title="Main Application" Level="1">
+      <ComponentGroupRef Id="HeatGenerated" />
+      <ComponentRef Id="ApplicationShortcutDesktop" />
+    </Feature>
+    
+	</Product>
+</Wix>
