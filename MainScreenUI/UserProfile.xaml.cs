@@ -103,6 +103,8 @@ namespace MainScreenUI
         {
             Login login = new Login();
             NavigationService.Navigate(login);
+            Login.userDetail = null;
+            MessageBox.Show("You've been logged out!");
         }
     }
 
