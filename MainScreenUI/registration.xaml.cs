@@ -30,17 +30,54 @@ namespace MainScreenUI
             }
             else
             {
+               
+
                 String passw = Encypt(RegPass.Password);
 
-                User newUser = new User(RegUserName.Text, passw, RegFullName.Text, "No message!" ,int.Parse(RegAge.Text), Double.Parse(RegHeight.Text), Double.Parse(RegWeight.Text), 0, 100, (@"http://www.gravatar.com/avatar/" + HashUserNameForGravatar(RegUserName.Text) + "?size=100&d=identicon"));
+                if (!existUser(RegUserName.Text, passw))
+                {
+                    User newUser = new User(RegUserName.Text, passw, RegFullName.Text, "No message!", int.Parse(RegAge.Text), Double.Parse(RegHeight.Text), Double.Parse(RegWeight.Text), 0, 100, (@"http://www.gravatar.com/avatar/" + HashUserNameForGravatar(RegUserName.Text) + "?size=100&d=identicon"));
 
-                SetResponse set = fib.client.Set(@"Users/" + RegUserName.Text, newUser);
+                    SetResponse set = fib.client.Set(@"Users/" + RegUserName.Text, newUser);
 
-                MessageBox.Show("Successfully Registered");
+                    MessageBox.Show("Successfully Registered");
 
-                Login userLogin = new Login();
-                NavigationService.Navigate(userLogin);
+                    Login userLogin = new Login();
+                    NavigationService.Navigate(userLogin);
+                }
+                else
+                {
+                    MessageBox.Show("User already exists");
+                }
+               
             }
+        }
+
+        private Boolean existUser(String userName, String passw)
+        {
+            FirebaseResponse res = null;
+            try
+                {
+                    res = fib.client.Get(@"Users/" + userName);
+                }
+                catch
+                {
+                    Console.WriteLine("No Internet or Connection Problem");
+                    MessageBox.Show("Please check your internet connection");
+                    return false;
+                }
+                LogUser resUser = res.ResultAs<LogUser>(); //firebase result
+
+                LogUser currUser = new LogUser(userName, passw);
+
+                if (LogUser.Verify(resUser, currUser))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                 }
         }
 
         public static string HashUserNameForGravatar(string username)
