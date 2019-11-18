@@ -92,7 +92,28 @@ namespace MainScreenUI
                     }
                     if (matched && notmatched)
                     {
-                        exerciseDone++;
+                        //exerciseDone++;
+                        fib.SetIFC();
+                        try
+                        {
+                            client = new FireSharp.FirebaseClient(fib.ifc);
+                        }
+                        catch
+                        {
+                            Console.WriteLine("No Internet or Connection Problem");
+                        }
+                        //System.Threading.Thread.Sleep(1000);
+                        if (Login.userDetail.Points < Login.userDetail.MaxPoints)
+                        {
+                            Login.userDetail.Points += 1;
+                            SetResponse set = client.Set(@"Users/" + Login.userDetail.Username, Login.userDetail);
+                            //lastValue = exerciseDone;
+                            //exerciseDone = 0;
+                        }
+                        else
+                        {
+                            Console.WriteLine("Max Point Reached");
+                        }
                         matched = notmatched = false;
                     }
                 }
@@ -101,7 +122,7 @@ namespace MainScreenUI
             //Create a indefinitely looped independent task that wait for every 1 seconds; 
             //Check if lastValue from previous exerciseDone and current is not the same or not
             //Update the user point accordingly
-            Task.Factory.StartNew(() =>
+            /*Task.Factory.StartNew(() =>
             {
                 int lastValue = 0;
                 thread2 = Thread.CurrentThread;
@@ -117,8 +138,8 @@ namespace MainScreenUI
                         Console.WriteLine("No Internet or Connection Problem");
                     }
                     System.Threading.Thread.Sleep(1000);
-                    if (Login.userDetail.Points <= Login.userDetail.MaxPoints)
-                        if (exerciseDone > 0 && lastValue != exerciseDone)
+                    if (Login.userDetail.Points < Login.userDetail.MaxPoints)
+                        if (exerciseDone > 0 && lastValue != exerciseDone && exerciseDone < Login.userDetail.MaxPoints)
                         {
                             Login.userDetail.Points += exerciseDone;
                             SetResponse set = client.Set(@"Users/" + Login.userDetail.Username, Login.userDetail);
@@ -134,7 +155,7 @@ namespace MainScreenUI
                         Console.WriteLine("Max Point Reached");
                     }
                 }
-            });
+            });*/
         }
 
         private void Calculation()
@@ -276,7 +297,7 @@ namespace MainScreenUI
             }
             Console.WriteLine("GestureDectector Class Disposing.....");
             thread1.Abort();
-            thread2.Abort();
+            //thread2.Abort();
         }
 
         /// <summary>

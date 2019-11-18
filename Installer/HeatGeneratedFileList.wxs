@@ -141,6 +141,9 @@
                 <Component Id="cmp7F350E5B0CD48082BF4C1B8CDC602AB4" Guid="*">
                     <File Id="fil031D697FC205D0204EBB2F9FF5B5FD47" KeyPath="yes" Source="$(var.HarvestPath)\Database\Neck.gbd" />
                 </Component>
+                <Component Id="cmp8E1B6F4EEE6D8E92A6F7FFCD41E35D75" Guid="*">
+                    <File Id="fil2BF5F56FAFAD51EE9CCC07727ED6EC3E" KeyPath="yes" Source="$(var.HarvestPath)\Database\Nodding.gif" />
+                </Component>
                 <Component Id="cmpC25771738EA5BCC683C4C951F27290AE" Guid="*">
                     <File Id="fil8C02E792737B9507769A05796A20B78E" KeyPath="yes" Source="$(var.HarvestPath)\Database\Shoulder.gbd" />
                 </Component>
@@ -206,6 +209,7 @@
             <ComponentRef Id="cmp90813592DCEEF0CF1FC945E7133F5237" />
             <ComponentRef Id="cmpD1E7455FD97F3CF4A0E54E45D404DF26" />
             <ComponentRef Id="cmp7F350E5B0CD48082BF4C1B8CDC602AB4" />
+            <ComponentRef Id="cmp8E1B6F4EEE6D8E92A6F7FFCD41E35D75" />
             <ComponentRef Id="cmpC25771738EA5BCC683C4C951F27290AE" />
             <ComponentRef Id="cmp6DD5A242DB4598A26CB18066A5F55B82" />
             <ComponentRef Id="cmpBB4B553ACF3EA1148EC80EADE6738F79" />
