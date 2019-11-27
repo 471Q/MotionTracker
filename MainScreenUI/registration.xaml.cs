@@ -37,6 +37,8 @@ namespace MainScreenUI
                 if (!existUser(RegUserName.Text, passw))
                 {
                     User newUser = new User(RegUserName.Text, passw, RegFullName.Text, "No message!", int.Parse(RegAge.Text), Double.Parse(RegHeight.Text), Double.Parse(RegWeight.Text), 0, 100, (@"http://www.gravatar.com/avatar/" + HashUserNameForGravatar(RegUserName.Text) + "?size=100&d=identicon"));
+                    //User newUser = new User(RegUserName.Text, passw, RegFullName.Text, "No message!", int.Parse(RegAge.Text), Double.Parse(RegHeight.Text), Double.Parse(RegWeight.Text), 0, 10, (@"http://www.gravatar.com/avatar/" + HashUserNameForGravatar(RegUserName.Text) + "?size=100&d=identicon"));
+
 
                     SetResponse set = fib.client.Set(@"Users/" + RegUserName.Text, newUser);
 
