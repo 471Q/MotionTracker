@@ -5,7 +5,8 @@ Built using [Visual Studio](https://visualstudio.microsoft.com/) 2019
 
 Dependacies:
 1. [.NET](https://dotnet.microsoft.com/download) V4.8 SDK
-2. Nu-Get:
+2. [Kinect for Windows SDK 2.0](https://www.microsoft.com/en-us/download/details.aspx?id=44561) by Microsoft
+3. Nu-Get:
    * [MaterialDesignThemes](https://www.nuget.org/packages/MaterialDesignThemes) by James Willock
    * [MaterialDesignColors](https://www.nuget.org/packages/MaterialDesignColors) by James Willock
    * [MicrosoftKinect](https://www.nuget.org/packages/Microsoft.Kinect) by Microsoft
